@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "InIA9V+jL/r21kV70PbJ6jYg1f2YPhh44bly8vB1Jl1urynYjCeVhXb/nYiofuma0O01Bjf/NMIr2mFaTMo8Mw==",
+  "dgSpecHash": "yCfuO3j1CHzgRfMqr9h4rTjPqC2QyfFTR05rzwZ7NnCnkhXBPBQ5ftDa9UVGeburApYYiM0ey3KpIAupj4UtTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi\\InterfacesDAL\\InterfacesDAL.csproj",
+  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi_1\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
