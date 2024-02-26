@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yGnZ0TQlqiRzvVWT8/7bR24aZs/tBrOzw2MCkMfFmk/f4mUJzV42WHy0u02ZNLJOkwe4MLQIILyQ4GrVegZ7bw==",
+  "dgSpecHash": "tZMI1whdk+CiBBnloiokLplk+djWMXo8LGDp/yRugtT4BV1hKeNOhdGIC0DscLQPmPx2Bu9oD1iUS2pnVBVfWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi_1\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

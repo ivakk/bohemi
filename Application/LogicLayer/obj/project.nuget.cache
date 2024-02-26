@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L2tX6p8peyxg2nh2laFS33dckSxDFQNjKQqubbgl/F1OomgocjBB4DeiOvJGqEv7hxme+kgjFH/sbFrKyznuVg==",
+  "dgSpecHash": "KN6nCk6VbIxKeRLdWgjwROE3EEcMpX9MM6shwE1oflGfhjWBXcLDdQFR8lWSK6d0UCq+H4UCSx+sdyUttlHFIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi\\LogicLayer\\LogicLayer.csproj",
+  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi_1\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
