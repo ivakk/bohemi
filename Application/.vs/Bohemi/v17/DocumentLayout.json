@@ -1,7 +1,48 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ivoml\\Desktop\\repos\\Bohemi_1\\bohemi\\Application\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\likedbeverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\likedbeverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\likedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\likedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\soft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\soft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|c:\\users\\ivk\\desktop\\ok\\bohemi\\application\\classes\\alcohol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\alcohol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +50,137 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LikedEvent.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\LikedEvent.cs",
+              "RelativeDocumentMoniker": "Classes\\LikedEvent.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\LikedEvent.cs",
+              "RelativeToolTip": "Classes\\LikedEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:40:11.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LikedBeverage.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\LikedBeverage.cs",
+              "RelativeDocumentMoniker": "Classes\\LikedBeverage.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\LikedBeverage.cs",
+              "RelativeToolTip": "Classes\\LikedBeverage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:38:07.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Report.cs",
+              "RelativeDocumentMoniker": "Classes\\Report.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Report.cs",
+              "RelativeToolTip": "Classes\\Report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:32:11.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Event.cs",
+              "RelativeDocumentMoniker": "Classes\\Event.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Event.cs",
+              "RelativeToolTip": "Classes\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:29:12.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Reservation.cs",
+              "RelativeDocumentMoniker": "Classes\\Reservation.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Reservation.cs",
+              "RelativeToolTip": "Classes\\Reservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:25:38.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Comments.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Comments.cs",
+              "RelativeDocumentMoniker": "Classes\\Comments.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Comments.cs",
+              "RelativeToolTip": "Classes\\Comments.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:24:21.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Beverage.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Beverage.cs",
+              "RelativeDocumentMoniker": "Classes\\Beverage.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Beverage.cs",
+              "RelativeToolTip": "Classes\\Beverage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:14:02.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Soft.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Soft.cs",
+              "RelativeDocumentMoniker": "Classes\\Soft.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Soft.cs",
+              "RelativeToolTip": "Classes\\Soft.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:19:19.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\User.cs",
+              "RelativeDocumentMoniker": "Classes\\User.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\User.cs",
+              "RelativeToolTip": "Classes\\User.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:05:59.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Alcohol.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Alcohol.cs",
+              "RelativeDocumentMoniker": "Classes\\Alcohol.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\Classes\\Alcohol.cs",
+              "RelativeToolTip": "Classes\\Alcohol.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T15:16:16.642Z",
+              "EditorCaption": ""
             }
           ]
         }
