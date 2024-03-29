@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {
+    "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
         "projectName": "DesktopApplication",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\DesktopApplication\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

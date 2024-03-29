@@ -1,11 +1,86 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Classes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Classes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Classes.dll": {}
+        }
+      },
+      "DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTOs.dll": {}
+        }
+      },
+      "InterfacesDAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Classes": "1.0.0",
+          "DTOs": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InterfacesDAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfacesDAL.dll": {}
+        }
+      },
+      "InterfacesLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Classes": "1.0.0",
+          "DTOs": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InterfacesLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfacesLL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Classes/1.0.0": {
+      "type": "project",
+      "path": "../Classes/Classes.csproj",
+      "msbuildProject": "../Classes/Classes.csproj"
+    },
+    "DTOs/1.0.0": {
+      "type": "project",
+      "path": "../DTOs/DTOs.csproj",
+      "msbuildProject": "../DTOs/DTOs.csproj"
+    },
+    "InterfacesDAL/1.0.0": {
+      "type": "project",
+      "path": "../InterfacesDAL/InterfacesDAL.csproj",
+      "msbuildProject": "../InterfacesDAL/InterfacesDAL.csproj"
+    },
+    "InterfacesLL/1.0.0": {
+      "type": "project",
+      "path": "../InterfacesLL/InterfacesLL.csproj",
+      "msbuildProject": "../InterfacesLL/InterfacesLL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Classes >= 1.0.0",
+      "DTOs >= 1.0.0",
+      "InterfacesDAL >= 1.0.0",
+      "InterfacesLL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ivk\\.nuget\\packages\\": {}
@@ -13,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
       "projectName": "LogicLayer",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\ok\\bohemi\\Application\\LogicLayer\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\LogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +108,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\Classes\\Classes.csproj"
+            },
+            "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DTOs\\DTOs.csproj"
+            },
+            "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+            },
+            "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

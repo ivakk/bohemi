@@ -9,9 +9,9 @@ namespace Classes
     public class Report
     {
         public int Id { get; }
-        public int CommentId { get; set; }
-        public int ReporterId { get; set; }
-        public string Information { get; set; }
+        public int CommentId { get; private set; }
+        public int ReporterId { get; private set; }
+        public string Information { get; private set; }
 
         public Report(int id, int commentId, int reporterId, string information)
         {

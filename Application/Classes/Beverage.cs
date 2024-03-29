@@ -9,10 +9,10 @@ namespace Classes
     public class Beverage
     {
         public int Id { get; }
-        public byte[] Picture { get; set; }
-        public string Name { get; set; }
-        public int Size { get; set; }
-        public double Price { get; set; }
+        public byte[] Picture { get; private set; }
+        public string Name { get; private set; }
+        public int Size { get; private set; }
+        public double Price { get; private set; }
 
         public Beverage(int id, byte[] picture, string name, int size, double price)
         {
