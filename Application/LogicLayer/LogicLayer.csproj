@@ -6,4 +6,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Classes\Classes.csproj" />
+    <ProjectReference Include="..\DTOs\DTOs.csproj" />
+    <ProjectReference Include="..\InterfacesDAL\InterfacesDAL.csproj" />
+    <ProjectReference Include="..\InterfacesLL\InterfacesLL.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -8,7 +8,7 @@ namespace Classes
 {
     public class Soft : Beverage
     {
-        public string Carbonated { get; set; }
+        public string Carbonated { get; private set; }
 
         public Soft(int id, byte[] picture, string name, int size, double price, string carbonated) : base(id, picture, name, size, price) 
         {

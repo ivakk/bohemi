@@ -9,11 +9,11 @@ namespace Classes
     public class Comments
     {
         public int Id { get; }
-        public int UserId { get; set; }
-        public int EventId { get; set; }
-        public DateTime CommentDate { get; set; }
-        public string Information { get; set; }
-        public string Username { get; set; }
+        public int UserId { get; private set; }
+        public int EventId { get; private set; }
+        public DateTime CommentDate { get; private set; }
+        public string Information { get; private set; }
+        public string Username { get; private set; }
 
         public Comments(int id, int userId, int eventId, DateTime commentDate, string information)
         {

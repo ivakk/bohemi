@@ -8,8 +8,8 @@ namespace Classes
 {
     public class LikedEvent
     {
-        public int UserId { get; set; }
-        public int EventId { get; set; }
+        public int UserId { get; private set; }
+        public int EventId { get; private set; }
 
         public LikedEvent(int userId, int eventId)
         {
