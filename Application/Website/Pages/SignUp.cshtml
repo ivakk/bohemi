@@ -28,48 +28,48 @@
                 <div class="topform">Signup</div>
                 <form method="post" novalidate>
                     <div class="field input-field">
-                        <input type="text" asp-for="Username" placeholder="Username *" class="input">
-                        <span asp-validation-for="Username" class="text-danger"></span>
+                        <input type="text" asp-for="RegisterDTO.Username" placeholder="Username *" class="input">
+                        <span asp-validation-for="RegisterDTO.Username" class="text-danger"></span>
                     </div>
 
                     <!-- Grouping First name and Last name -->
                     <div class="fields-row">
                         <div class="field input-field half">
-                            <input type="text" asp-for="FirstName" placeholder="First name *" class="input">
-                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                            <input type="text" asp-for="RegisterDTO.FirstName" placeholder="First name *" class="input">
+                            <span asp-validation-for="RegisterDTO.FirstName" class="text-danger"></span>
                         </div>
                         <div class="field input-field half">
-                            <input type="text" asp-for="LastName" placeholder="Last name *" class="input">
-                            <span asp-validation-for="LastName" class="text-danger"></span>
+                            <input type="text" asp-for="RegisterDTO.LastName" placeholder="Last name *" class="input">
+                            <span asp-validation-for="RegisterDTO.LastName" class="text-danger"></span>
                         </div>
                     </div>
 
                     <div class="field input-field">
-                        <input type="email" asp-for="Email" placeholder="Email *" class="input">
-                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <input type="email" asp-for="RegisterDTO.Email" placeholder="Email *" class="input">
+                        <span asp-validation-for="RegisterDTO.Email" class="text-danger"></span>
                     </div>
 
                     <div class="field input-field">
-                        <input type="tel" asp-for="PhoneNumber" placeholder="Phone number *" class="input">
-                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        <input type="tel" asp-for="RegisterDTO.PhoneNumber" placeholder="Phone number *" class="input">
+                        <span asp-validation-for="RegisterDTO.PhoneNumber" class="text-danger"></span>
                     </div>
 
                     <!-- Grouping Password and Confirm Password -->
                     <div class="fields-row">
                         <div class="field input-field half">
-                            <input type="password" asp-for="Password" placeholder="Password *" class="password">
+                            <input type="password" asp-for="RegisterDTO.Password" placeholder="Password *" class="password">
                             <i class='bx bx-hide eye-icon'></i>
-                            <span asp-validation-for="Password" class="text-danger"></span>
+                            <span asp-validation-for="RegisterDTO.Password" class="text-danger"></span>
                         </div>
                         <div class="field input-field half">
-                            <input type="password" asp-for="ConfirmPassword" placeholder="Confirm password *" class="password">
-                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                            <input type="password" asp-for="RegisterDTO.ConfirmPassword" placeholder="Confirm password *" class="password">
+                            <span asp-validation-for="RegisterDTO.ConfirmPassword" class="text-danger"></span>
                         </div>
                     </div>
 
                     <div class="field input-field">
-                        <input type="datetime" asp-for="Birthdate" placeholder="Birthdate *" class="input">
-                        <span asp-validation-for="Birthdate" class="text-danger"></span>
+                        <input type="datetime" asp-for="RegisterDTO.Birthday" placeholder="Birthdate *" class="input">
+                        <span asp-validation-for="RegisterDTO.Birthday" class="text-danger"></span>
                     </div>
 
                     <div class="field button-field">
@@ -111,4 +111,6 @@
         });
     </script>
     <script src="js/LoginSignup.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </body>

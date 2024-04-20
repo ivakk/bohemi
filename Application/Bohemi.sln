@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicLayer", "LogicLayer\Lo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTOs", "DTOs\DTOs.csproj", "{1B281EEB-2F63-417E-9555-FA4AF6C5513E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Website", "Website\Website.csproj", "{48637191-3604-46DE-A90F-9156C1F03306}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Website", "Website\Website.csproj", "{48637191-3604-46DE-A90F-9156C1F03306}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

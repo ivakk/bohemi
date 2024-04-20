@@ -1,17 +1,153 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
-        "projectName": "DesktopApplication",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj",
+        "projectName": "Classes",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\boh\\bohemi\\Application\\DesktopApplication\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
+        "projectName": "DesktopApplication",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DesktopApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +163,26 @@
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +199,16 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,6 +226,273 @@
             },
             "Microsoft.WindowsDesktop.App.WindowsForms": {
               "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj",
+        "projectName": "DTOs",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+        "projectName": "InterfacesDAL",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj",
+        "projectName": "InterfacesLL",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
+        "projectName": "LogicLayer",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\LogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\Classes\\Classes.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\DTOs\\DTOs.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+              },
+              "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
