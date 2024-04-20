@@ -14,12 +14,7 @@ namespace Website.Pages
     public class LoginModel : PageModel
     {
         [BindProperty]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Username field is required!")]
-        public string? Username { get; set; }
-
-        [BindProperty]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Password field is required!")]
-        public string? Password { get; set; }
+        public LoginDTO? LoginDTO { get; set; }
 
         private readonly IUserLL _userLL;
 
@@ -46,7 +41,7 @@ namespace Website.Pages
 
             try
             {
-                LoginDTO user = _userLL.CheckUser(Username, Password);
+                LoginDTO user = _userLL.CheckUser(LoginDTO.Username, LoginDTO.PasswordEntry);
 
                 var claims = new List<Claim>
                 {

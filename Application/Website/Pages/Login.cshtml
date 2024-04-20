@@ -20,14 +20,14 @@
                 <div class="topform">Login</div>
                 <form method="post" novalidate>
                     <div class="field input-field">
-                        <input type="text" placeholder="Username *" asp-for="Username" class="input">
-                        <span asp-validation-for="Username" class="text-danger"></span>
+                        <input type="text" placeholder="Username *" asp-for="LoginDTO.Username" class="input">
+                        <span asp-validation-for="LoginDTO.Username" class="text-danger"></span>
                     </div>
 
                     <div class="field input-field">
-                        <input type="password" placeholder="Password *" asp-for="Password" class="password">
+                        <input type="password" placeholder="Password *" asp-for="LoginDTO.PasswordEntry" class="password">
                         <i class='bx bx-hide eye-icon'></i>
-                        <span asp-validation-for="Password" class="text-danger"></span>
+                        <span asp-validation-for="LoginDTO.PasswordEntry" class="text-danger"></span>
                     </div>
 
                     <div class="form-link">
@@ -65,4 +65,6 @@
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
 </body>
