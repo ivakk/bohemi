@@ -69,13 +69,14 @@ namespace DataAccessLayer
             LoginDTO user = null;
             string query = $"SELECT * FROM {tableName} WHERE username = @username";
 
-            // Open the connection
-            connection.Open();
-
-            SqlCommand command = new SqlCommand(query, connection);
 
             try
             {
+                // Open the connection
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
                 // Add the parameters
                 command.Parameters.AddWithValue("@username", username);
 
@@ -83,9 +84,43 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new LoginDTO((int)reader.GetValue(0), (string)reader.GetValue(1), password,
-                        (string)reader.GetValue(7), (string)reader.GetValue(8),
-                        (string)reader.GetValue(10));
+                    user = new LoginDTO((int)reader["id"], (string)reader["username"], password,
+                        (string)reader["passwordHash"], (string)reader["passwordSalt"], (string)reader["role"]);
+                }
+            }
+            catch (SqlException e)
+            {
+                // Handle any errors that may have occurred.
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return user;
+        }
+
+        public Users GetUserByIdDAL(int id)
+        {
+            Users user = null;
+            string query = $"SELECT * FROM {tableName} WHERE id = @id";
+
+            try
+            {
+                // Open the connection
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                // Add the parameters
+                command.Parameters.AddWithValue("@id", id);
+
+                // Execute the query and get the data
+                using SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    user = new Users((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"],
+                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["phoneNumber"], (string)reader["role"]);
                 }
             }
             catch (SqlException e)

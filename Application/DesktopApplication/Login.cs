@@ -54,7 +54,8 @@ namespace DesktopApplication
                     LoginDTO user = _userLL.CheckUser(usernameEntry.Text, passwordEntry.Text);
                     if (user.Role == "admin" || user.Role == "customer") // make it admin only when ready
                     {
-                        Menu menu = new Menu(user, this);
+
+                        Menu menu = new Menu(_userLL.GetUserById(user.Id), this);
                         menu.Show();
                         this.Hide();
                     }

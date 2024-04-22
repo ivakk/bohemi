@@ -9,7 +9,7 @@ namespace Classes
     public class Users
     {
         public int Id { get; }
-        public byte[] ProfilePicture { get; private set; }
+        public byte[]? ProfilePicture { get; private set; }
         public string FirstName { get; private set; }
         public string LastName { get; private set; }
         public DateTime Birthday { get; private set; }
@@ -18,7 +18,7 @@ namespace Classes
         public string PhoneNumber { get; private set; }
         public string Role { get; private set; }
 
-        public Users(int id, byte[] profilePicture, string firstName, string lastName, DateTime birthday, string username, string email, string phoneNumber,  string role)
+        public Users(int id, byte[]? profilePicture, string firstName, string lastName, DateTime birthday, string username, string email, string phoneNumber,  string role)
         {
             Id = id;
             ProfilePicture = profilePicture;

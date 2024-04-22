@@ -63,18 +63,6 @@ namespace DesktopApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap DALLE2024_03_2914_00_48_Refinethescenetoahyper_realisticluxurypianobarsettingwithastrictverticalseparationdownthemiddle_Ononesidetheinteriorisdrench_ezgif_com_webp_to_jpg_converter {
-            get {
-                object obj = ResourceManager.GetObject("DALLE2024-03-2914.00.48-Refinethescenetoahyper-realisticluxurypianobarsettingwith" +
-                        "astrictverticalseparationdownthemiddle.Ononesidetheinteriorisdrench-ezgif.com-we" +
-                        "bp-to-jpg-converter", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Desktop {
             get {
                 object obj = ResourceManager.GetObject("Desktop", resourceCulture);

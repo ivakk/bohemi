@@ -3,114 +3,109 @@
 @{
 }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS -->
+@section Styles {
     <link rel="stylesheet" href="/css/LoginSignup.css">
 
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <!-- Error Modal -->
-    <div id="errorModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="errorMessage"></p>
-        </div>
+}
+<!-- Error Modal -->
+<div id="errorModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="errorMessage"></p>
     </div>
+</div>
 
-    <section class="contain forms">
-        <div class="form login">
-            <div class="form-content">
-                <div class="topform">Signup</div>
-                <form method="post" novalidate>
-                    <div class="field input-field">
-                        <input type="text" asp-for="RegisterDTO.Username" placeholder="Username *" class="input">
-                        <span asp-validation-for="RegisterDTO.Username" class="text-danger"></span>
-                    </div>
-
-                    <!-- Grouping First name and Last name -->
-                    <div class="fields-row">
-                        <div class="field input-field half">
-                            <input type="text" asp-for="RegisterDTO.FirstName" placeholder="First name *" class="input">
-                            <span asp-validation-for="RegisterDTO.FirstName" class="text-danger"></span>
-                        </div>
-                        <div class="field input-field half">
-                            <input type="text" asp-for="RegisterDTO.LastName" placeholder="Last name *" class="input">
-                            <span asp-validation-for="RegisterDTO.LastName" class="text-danger"></span>
-                        </div>
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="email" asp-for="RegisterDTO.Email" placeholder="Email *" class="input">
-                        <span asp-validation-for="RegisterDTO.Email" class="text-danger"></span>
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="tel" asp-for="RegisterDTO.PhoneNumber" placeholder="Phone number *" class="input">
-                        <span asp-validation-for="RegisterDTO.PhoneNumber" class="text-danger"></span>
-                    </div>
-
-                    <!-- Grouping Password and Confirm Password -->
-                    <div class="fields-row">
-                        <div class="field input-field half">
-                            <input type="password" asp-for="RegisterDTO.Password" placeholder="Password *" class="password">
-                            <i class='bx bx-hide eye-icon'></i>
-                            <span asp-validation-for="RegisterDTO.Password" class="text-danger"></span>
-                        </div>
-                        <div class="field input-field half">
-                            <input type="password" asp-for="RegisterDTO.ConfirmPassword" placeholder="Confirm password *" class="password">
-                            <span asp-validation-for="RegisterDTO.ConfirmPassword" class="text-danger"></span>
-                        </div>
-                    </div>
-
-                    <div class="field input-field">
-                        <input type="datetime" asp-for="RegisterDTO.Birthday" placeholder="Birthdate *" class="input">
-                        <span asp-validation-for="RegisterDTO.Birthday" class="text-danger"></span>
-                    </div>
-
-                    <div class="field button-field">
-                        <input type="submit" class="button" value="Sign Up">
-                    </div>
-                </form>
-
-
-                <div class="form-link">
-                    <span>Already have an account? <a href="/Login" class="link login-link">Login</a></span>
+<section class="contain forms">
+    <div class="form login">
+        <div class="form-content">
+            <div class="topform">Signup</div>
+            <form method="post" novalidate>
+                <div class="field input-field">
+                    <input type="text" asp-for="RegisterDTO.Username" placeholder="Username *" class="input">
+                    <span asp-validation-for="RegisterDTO.Username" class="text-danger"></span>
                 </div>
+
+                <!-- Grouping First name and Last name -->
+                <div class="fields-row">
+                    <div class="field input-field half">
+                        <input type="text" asp-for="RegisterDTO.FirstName" placeholder="First name *" class="input">
+                        <span asp-validation-for="RegisterDTO.FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="field input-field half">
+                        <input type="text" asp-for="RegisterDTO.LastName" placeholder="Last name *" class="input">
+                        <span asp-validation-for="RegisterDTO.LastName" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="field input-field">
+                    <input type="email" asp-for="RegisterDTO.Email" placeholder="Email *" class="input">
+                    <span asp-validation-for="RegisterDTO.Email" class="text-danger"></span>
+                </div>
+
+                <div class="field input-field">
+                    <input type="tel" asp-for="RegisterDTO.PhoneNumber" placeholder="Phone number *" class="input">
+                    <span asp-validation-for="RegisterDTO.PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <!-- Grouping Password and Confirm Password -->
+                <div class="fields-row">
+                    <div class="field input-field half">
+                        <input type="password" asp-for="RegisterDTO.Password" placeholder="Password *" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                        <span asp-validation-for="RegisterDTO.Password" class="text-danger"></span>
+                    </div>
+                    <div class="field input-field half">
+                        <input type="password" asp-for="RegisterDTO.ConfirmPassword" placeholder="Confirm password *" class="password">
+                        <span asp-validation-for="RegisterDTO.ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="field input-field">
+                    <input type="datetime" asp-for="RegisterDTO.Birthday" placeholder="Birthdate *" class="input">
+                    <span asp-validation-for="RegisterDTO.Birthday" class="text-danger"></span>
+                </div>
+
+                <div class="field button-field">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+            </form>
+
+
+            <div class="form-link">
+                <span>Already have an account? <a href="~/Login" class="link login-link">Login</a></span>
             </div>
-
-            <div class="line"></div>
-
-            <div class="media-options">
-                <a href="#" class="field facebook">
-                    <i class='bx bxl-facebook facebook-icon'></i>
-                    <span>Login with Facebook</span>
-                </a>
-            </div>
-
-            <div class="media-options">
-                <a href="#" class="field google">
-                    <img src="#" alt="" class="google-img">
-                    <span>Login with Google</span>
-                </a>
-            </div>
-
         </div>
-    </section>
 
+        <div class="line"></div>
+
+        <div class="media-options">
+            <a href="#" class="field facebook">
+                <i class='bx bxl-facebook facebook-icon'></i>
+                <span>Login with Facebook</span>
+            </a>
+        </div>
+
+        <div class="media-options">
+            <a href="#" class="field google">
+                <img src="#" alt="" class="google-img">
+                <span>Login with Google</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+@section Scripts
+{
     <!-- JavaScript -->
-    <script>
-        document.getElementById('birthdate').addEventListener('blur', function () {
-            if (!this.value) {
-                this.type = 'text';
-            }
-        });
-    </script>
     <script src="js/LoginSignup.js"></script>
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-</body>
+    <partial name="_ValidationScriptsPartial" />
+}

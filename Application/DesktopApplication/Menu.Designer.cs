@@ -31,7 +31,7 @@
             pictureBox1 = new PictureBox();
             pnlMenu = new Panel();
             flpMenu = new FlowLayoutPanel();
-            panel1 = new Panel();
+            pnlMain = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnlMenu.SuspendLayout();
             SuspendLayout();
@@ -62,21 +62,21 @@
             flpMenu.Size = new Size(273, 669);
             flpMenu.TabIndex = 0;
             // 
-            // panel1
+            // pnlMain
             // 
-            panel1.BackColor = SystemColors.ControlDarkDark;
-            panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Location = new Point(432, 36);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1126, 774);
-            panel1.TabIndex = 2;
+            pnlMain.BackColor = SystemColors.ControlDarkDark;
+            pnlMain.BorderStyle = BorderStyle.Fixed3D;
+            pnlMain.Location = new Point(432, 36);
+            pnlMain.Name = "pnlMain";
+            pnlMain.Size = new Size(1126, 774);
+            pnlMain.TabIndex = 2;
             // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1584, 861);
-            Controls.Add(panel1);
+            Controls.Add(pnlMain);
             Controls.Add(pnlMenu);
             Controls.Add(pictureBox1);
             Name = "Menu";
@@ -92,6 +92,6 @@
         private PictureBox pictureBox1;
         private Panel pnlMenu;
         private FlowLayoutPanel flpMenu;
-        private Panel panel1;
+        public Panel pnlMain;
     }
 }

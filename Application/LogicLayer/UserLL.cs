@@ -64,5 +64,10 @@ namespace LogicLayer
 
             return _userDAL.GetUserForDTODAL(username, password);
         }
+
+        public Users GetUserById(int id)
+        {
+            return _userDAL.GetUserByIdDAL(id);
+        }
     }
 }
