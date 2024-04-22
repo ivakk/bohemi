@@ -12,5 +12,6 @@ namespace InterfacesDAL
     {
         public bool CreateUserDAL(RegisterDTO newUser);
         public LoginDTO GetUserForDTODAL(string username, string password);
+        public Users GetUserByIdDAL(int id);
     }
 }

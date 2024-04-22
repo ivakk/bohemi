@@ -23,7 +23,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/Login";
         options.LogoutPath = "/Logout";
-        //options.AccessDeniedPath = "/AccessDenied";
+        options.AccessDeniedPath = "/Index";
     });
 
 builder.Services.AddTransient<IUserLL, UserLL>();
