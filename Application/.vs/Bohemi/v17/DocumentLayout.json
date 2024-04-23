@@ -1,12 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ivk\\Desktop\\bohemi\\Application\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|c:\\users\\ivoml\\desktop\\s\\s\\application\\website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginSignup.css",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\LoginSignup.css",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
+              "RelativeToolTip": "Website\\wwwroot\\css\\LoginSignup.css",
+              "ViewState": "AQIAAM8AAAAAAAAAAAAowO0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-22T11:38:12.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginSignup.js",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\js\\LoginSignup.js",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
+              "RelativeToolTip": "Website\\wwwroot\\js\\LoginSignup.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-22T11:15:30.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\Pages\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\Pages\\SignUp.cshtml",
+              "RelativeToolTip": "Website\\Pages\\SignUp.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T11:05:09.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\s\\s\\Application\\Website\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Login.cshtml",
+              "ViewState": "AQIAADQAAAAAAAAAAAAkwEcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T11:04:50.595Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

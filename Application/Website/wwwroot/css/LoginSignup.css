@@ -210,3 +210,30 @@ a.google {
 .field.input-field.half {
     width: calc(50% - 10px); /* Adjust the subtraction value based on your gap preference */
 }
+
+/* Input field container */
+.field {
+    position: relative;
+    margin-bottom: 20px; /* Increase spacing between fields */
+}
+
+/* Error message styling */
+.text-danger {
+    color: red;
+    display: block;
+    margin-top: 4px; /* Ensure there's some space between the input and the error message */
+    font-size: 0.8rem; /* Adjust font size to fit better if needed */
+    white-space: normal; /* Allow text to wrap if longer messages */
+    background-color: #fff; /* Add a contrasting background for readability */
+    padding: 2px 5px; /* Padding around text for better visibility */
+    border-radius: 3px; /* Optional: rounded corners for aesthetic */
+    width: 100%; /* Ensure it spans the width of the input field */
+}
+
+/* Adjust input fields to handle error display */
+.input, .password {
+    width: calc(100% - 10px); /* Adjust width to prevent overflow */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+

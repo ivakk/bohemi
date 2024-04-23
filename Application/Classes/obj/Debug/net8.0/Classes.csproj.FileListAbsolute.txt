@@ -31,3 +31,14 @@ C:\Users\ivk\Desktop\New folder (4)\bohemi\Application\Classes\obj\Debug\net8.0\
 C:\Users\ivk\Desktop\New folder (4)\bohemi\Application\Classes\obj\Debug\net8.0\refint\Classes.dll
 C:\Users\ivk\Desktop\New folder (4)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.pdb
 C:\Users\ivk\Desktop\New folder (4)\bohemi\Application\Classes\obj\Debug\net8.0\ref\Classes.dll
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\bin\Debug\net8.0\Classes.deps.json
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\bin\Debug\net8.0\Classes.dll
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\bin\Debug\net8.0\Classes.pdb
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.AssemblyInfoInputs.cache
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.AssemblyInfo.cs
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.csproj.CoreCompileInputs.cache
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.dll
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\refint\Classes.dll
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\Classes.pdb
+C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\Classes\obj\Debug\net8.0\ref\Classes.dll
