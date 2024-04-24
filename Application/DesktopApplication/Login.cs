@@ -17,10 +17,12 @@ namespace DesktopApplication
     public partial class Login : Form
     {
         private readonly IUserLL _userLL;
-        public Login(IUserLL _userLL)
+        private readonly IPasswordHashingLL _passwordHashingLL;
+        public Login(IUserLL _userLL, IPasswordHashingLL passwordHashingLL)
         {
             InitializeComponent();
             this._userLL = _userLL;
+            _passwordHashingLL = passwordHashingLL;
         }
 
         private void reveal_MouseUp_1(object sender, MouseEventArgs e)
@@ -55,7 +57,7 @@ namespace DesktopApplication
                     if (user.Role == "admin" || user.Role == "customer") // make it admin only when ready
                     {
 
-                        Menu menu = new Menu(_userLL.GetUserById(user.Id), this);
+                        Menu menu = new Menu(_userLL.GetUserById(user.Id), this, _userLL, _passwordHashingLL);
                         menu.Show();
                         this.Hide();
                     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfacesLL
 {
-    public interface _PasswordHashingLL
+    public interface IPasswordHashingLL
     {
         public string PassSalt(int length);
         public string PassHash(string password, string salt);

@@ -35,5 +35,10 @@ namespace Classes
         {
 
         }
+
+        public string GetObjectString()
+        {
+            return Id.ToString() + Username + FirstName + LastName + Email + Role + Birthday.ToString();
+        }
     }
 }

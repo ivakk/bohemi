@@ -14,9 +14,9 @@ namespace Website.Pages
         public RegisterDTO RegisterDTO { get; set; }
 
         private readonly IUserLL _userLL;
-        private readonly _PasswordHashingLL _passwordHashingLL;
+        private readonly IPasswordHashingLL _passwordHashingLL;
 
-        public SignUpModel(IUserLL _userLL, _PasswordHashingLL _passwordHashingLL)
+        public SignUpModel(IUserLL _userLL, IPasswordHashingLL _passwordHashingLL)
         {
             this._userLL = _userLL;
             this._passwordHashingLL = _passwordHashingLL;
@@ -39,7 +39,7 @@ namespace Website.Pages
             {
                 RegisterDTO.PasswordSalt = _passwordHashingLL.PassSalt(10);
                 RegisterDTO.PasswordHash = _passwordHashingLL.PassHash(RegisterDTO.Password, RegisterDTO.PasswordSalt);
-                RegisterDTO regUser = new RegisterDTO(
+                RegisterDTO regUser = new RegisterDTO(0,
                                         RegisterDTO.FirstName,
                                         RegisterDTO.LastName,
                                         RegisterDTO.Birthday,

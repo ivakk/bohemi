@@ -9,7 +9,7 @@ namespace DTOs
 {
     public class RegisterDTO
     {
-
+        public int Id { get; set; }
         [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Please enter a valid first name!")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Required field!")]
         public string FirstName { get; set; }
@@ -47,8 +47,9 @@ namespace DTOs
         public string PhoneNumber { get; set; }
         public string Role { get; set; }
 
-        public RegisterDTO(string firstName, string lastName, DateTime birthday, string username, string email, string passwordHash, string passwordSalt, string phoneNumber, string role)
+        public RegisterDTO(int id, string firstName, string lastName, DateTime birthday, string username, string email, string passwordHash, string passwordSalt, string phoneNumber, string role)
         {
+            Id = id;
             FirstName = firstName;
             LastName = lastName;
             Birthday = birthday;

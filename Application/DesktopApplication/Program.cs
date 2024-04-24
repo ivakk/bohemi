@@ -32,6 +32,7 @@ namespace DesktopApplication
                 .ConfigureServices((context, services) => {
                     services.AddTransient<IUserDAL, UserDAL>();
                     services.AddTransient<IUserLL, UserLL>();
+                    services.AddTransient<IPasswordHashingLL, PasswordHashingLL>();
                     services.AddTransient<Login>();
                 });
         }

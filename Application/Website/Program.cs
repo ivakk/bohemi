@@ -28,7 +28,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddTransient<IUserLL, UserLL>();
 builder.Services.AddTransient<IUserDAL, UserDAL>();
-builder.Services.AddTransient<_PasswordHashingLL, PasswordHashingLL>();
+builder.Services.AddTransient<IPasswordHashingLL, PasswordHashingLL>();
 
 var app = builder.Build();
 
