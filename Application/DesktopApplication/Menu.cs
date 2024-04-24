@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Classes;
 using DesktopApplication.Forms;
 using DesktopApplication.UserControls;
+using InterfacesLL;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace DesktopApplication
@@ -23,12 +24,19 @@ namespace DesktopApplication
 
         private UserForm userForm;
 
-        public Menu(Users user, Login login)
+        private readonly IUserLL _userLL;
+        private readonly IPasswordHashingLL _passwordHashingLL;
+
+        public Menu(Users user, Login login, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
         {
-            InitializeComponent();
             this.login = login;
             this.loggedInUser = user;
+            this._userLL = userLL;
+            this._passwordHashingLL = passwordHashingLL;
 
+            userForm = new UserForm(this, _userLL, _passwordHashingLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            InitializeComponent();
+            
             LoadMenuButtons();
         }
 
@@ -38,5 +46,11 @@ namespace DesktopApplication
             flpMenu.Controls.Add(menuButtons[menuButtons.Count - 1]);
         }
 
+        public void ChangeShownForm(Form form)
+        {
+            pnlMain.Controls.Clear();
+            pnlMain.Controls.Add(form);
+            form.Show();
+        }
     }
 }

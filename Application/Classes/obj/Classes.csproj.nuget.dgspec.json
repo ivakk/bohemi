@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivoml\\Desktop\\s\\Application\\Classes\\Classes.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\s\\s\\Application\\Classes\\Classes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivoml\\Desktop\\s\\Application\\Classes\\Classes.csproj": {
+    "C:\\Users\\ivk\\Desktop\\s\\s\\Application\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\s\\Application\\Classes\\Classes.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\s\\s\\Application\\Classes\\Classes.csproj",
         "projectName": "Classes",
-        "projectPath": "C:\\Users\\ivoml\\Desktop\\s\\Application\\Classes\\Classes.csproj",
-        "packagesPath": "C:\\Users\\ivoml\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivoml\\Desktop\\s\\Application\\Classes\\obj\\",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\s\\s\\Application\\Classes\\Classes.csproj",
+        "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\s\\s\\Application\\Classes\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ivoml\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
