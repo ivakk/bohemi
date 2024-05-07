@@ -66,6 +66,7 @@
             // 
             pnlMain.BackColor = SystemColors.ControlDarkDark;
             pnlMain.BorderStyle = BorderStyle.Fixed3D;
+            pnlMain.ForeColor = Color.Black;
             pnlMain.Location = new Point(432, 36);
             pnlMain.Name = "pnlMain";
             pnlMain.Size = new Size(1126, 774);

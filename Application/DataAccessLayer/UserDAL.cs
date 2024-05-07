@@ -372,8 +372,9 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    users.Add(new Users((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"],
-                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["phoneNumber"], (string)reader["role"]));
+                    users.Add(new Users((int)reader["id"], !string.IsNullOrEmpty(reader["profilePicture"].ToString()) ? (byte[])reader["profilePicture"] : null, 
+                        (string)reader["firstName"], (string)reader["lastName"], (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], 
+                        !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, (string)reader["role"]));
                 }
                 reader.Close();
                 return users;
@@ -394,7 +395,7 @@ namespace DataAccessLayer
             string query =
                 $"UPDATE {tableName} " +
                 $"SET username = @username, profilePicture = @profilePicture, firstName = @firstName, lastName = @lastName, email = @email, birthdate = @birthday, passwordHash = @passwordHash, " +
-                $"passwordSalt = @passwordSalt, phoneNumber = @phoneNumber, role = @role)";
+                $"passwordSalt = @passwordSalt, phoneNumber = @phoneNumber, role = @role";
 
             try
             {
@@ -410,7 +411,8 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@firstName", updateUser.FirstName);
                 command.Parameters.AddWithValue("@lastName", updateUser.LastName);
                 command.Parameters.AddWithValue("@email", updateUser.Email);
-                command.Parameters.AddWithValue("@birthdate", updateUser.Birthday);
+                command.Parameters.AddWithValue("@birthday", updateUser.Birthday);
+                command.Parameters.AddWithValue("@phoneNumber", updateUser.PhoneNumber);
                 command.Parameters.AddWithValue("@passwordHash", updateUser.PasswordHash);
                 command.Parameters.AddWithValue("@passwordSalt", updateUser.PasswordSalt);
                 command.Parameters.AddWithValue("@role", updateUser.Role);
@@ -452,8 +454,9 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new UpdateUserDTO((int)reader["id"], (byte[])reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"], (DateTime)reader["birthdate"],
-                        (string)reader["username"], (string)reader["email"], (string)reader["passwordHash"], (string)reader["passwordSalt"], (string)reader["phoneNumber"], 
+                    user = new UpdateUserDTO((int)reader["id"], !string.IsNullOrEmpty(reader["profilePicture"].ToString()) ? (byte[])reader["profilePicture"] : null, 
+                        (string)reader["firstName"], (string)reader["lastName"], (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], 
+                        (string)reader["passwordHash"], (string)reader["passwordSalt"], !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, 
                         (string)reader["role"]);
                 }
             }

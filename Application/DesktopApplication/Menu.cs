@@ -27,10 +27,10 @@ namespace DesktopApplication
         private readonly IUserLL _userLL;
         private readonly IPasswordHashingLL _passwordHashingLL;
 
-        public Menu(Users user, Login login, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
+        public Menu(Login login, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
         {
             this.login = login;
-            this.loggedInUser = user;
+            //this.loggedInUser = user;
             this._userLL = userLL;
             this._passwordHashingLL = passwordHashingLL;
 

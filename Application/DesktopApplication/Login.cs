@@ -57,7 +57,7 @@ namespace DesktopApplication
                     if (user.Role == "admin" || user.Role == "customer") // make it admin only when ready
                     {
 
-                        Menu menu = new Menu(_userLL.GetUserById(user.Id), this, _userLL, _passwordHashingLL);
+                        Menu menu = new Menu(this, _userLL, _passwordHashingLL);
                         menu.Show();
                         this.Hide();
                     }

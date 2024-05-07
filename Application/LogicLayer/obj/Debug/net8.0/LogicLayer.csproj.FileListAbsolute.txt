@@ -82,3 +82,24 @@ C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\LogicLayer\obj\Debug\ne
 C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\LogicLayer\obj\Debug\net8.0\refint\LogicLayer.dll
 C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.pdb
 C:\Users\ivoml\Desktop\New folder (2)\bohemi\Application\LogicLayer\obj\Debug\net8.0\ref\LogicLayer.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\LogicLayer.deps.json
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\LogicLayer.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\LogicLayer.pdb
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\Classes.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\DTOs.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\InterfacesDAL.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\InterfacesLL.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\Classes.pdb
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\DTOs.pdb
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\InterfacesDAL.pdb
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\bin\Debug\net8.0\InterfacesLL.pdb
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.AssemblyInfoInputs.cache
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.AssemblyInfo.cs
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.csproj.Up2Date
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\refint\LogicLayer.dll
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\LogicLayer.pdb
+C:\Users\ivoml\Desktop\l\bohemi\Application\LogicLayer\obj\Debug\net8.0\ref\LogicLayer.dll

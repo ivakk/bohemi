@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            btnRemovePfp = new Button();
+            btnUploadPfp = new Button();
+            pbPfp = new PictureBox();
+            ProfilePicture = new Label();
+            tbPhoneNumber = new TextBox();
+            label5 = new Label();
             label11 = new Label();
             tbUsername = new TextBox();
             label10 = new Label();
@@ -44,14 +50,17 @@
             btnAdd = new Button();
             tbFirstName = new TextBox();
             label1 = new Label();
-            tbPhoneNumber = new TextBox();
-            label5 = new Label();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbPfp).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.LightGray;
+            groupBox1.Controls.Add(btnRemovePfp);
+            groupBox1.Controls.Add(btnUploadPfp);
+            groupBox1.Controls.Add(pbPfp);
+            groupBox1.Controls.Add(ProfilePicture);
             groupBox1.Controls.Add(tbPhoneNumber);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label11);
@@ -72,16 +81,75 @@
             groupBox1.Font = new Font("Segoe UI", 30F);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(500, 590);
+            groupBox1.Size = new Size(915, 493);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "ADD/EDIT USER";
+            // 
+            // btnRemovePfp
+            // 
+            btnRemovePfp.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnRemovePfp.Location = new Point(408, 435);
+            btnRemovePfp.Name = "btnRemovePfp";
+            btnRemovePfp.Size = new Size(75, 23);
+            btnRemovePfp.TabIndex = 40;
+            btnRemovePfp.Text = "Remove";
+            btnRemovePfp.UseVisualStyleBackColor = true;
+            btnRemovePfp.Click += btnRemovePfp_Click;
+            // 
+            // btnUploadPfp
+            // 
+            btnUploadPfp.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnUploadPfp.Location = new Point(408, 406);
+            btnUploadPfp.Name = "btnUploadPfp";
+            btnUploadPfp.Size = new Size(75, 23);
+            btnUploadPfp.TabIndex = 39;
+            btnUploadPfp.Text = "Upload";
+            btnUploadPfp.UseVisualStyleBackColor = true;
+            btnUploadPfp.Click += btnUploadPfp_Click;
+            // 
+            // pbPfp
+            // 
+            pbPfp.BorderStyle = BorderStyle.FixedSingle;
+            pbPfp.Location = new Point(202, 283);
+            pbPfp.Name = "pbPfp";
+            pbPfp.Size = new Size(200, 200);
+            pbPfp.TabIndex = 38;
+            pbPfp.TabStop = false;
+            // 
+            // ProfilePicture
+            // 
+            ProfilePicture.AutoSize = true;
+            ProfilePicture.Font = new Font("Segoe UI", 14F);
+            ProfilePicture.Location = new Point(53, 283);
+            ProfilePicture.Name = "ProfilePicture";
+            ProfilePicture.Size = new Size(135, 25);
+            ProfilePicture.TabIndex = 37;
+            ProfilePicture.Text = "Profile picture:";
+            // 
+            // tbPhoneNumber
+            // 
+            tbPhoneNumber.Font = new Font("Segoe UI", 14F);
+            tbPhoneNumber.Location = new Point(461, 164);
+            tbPhoneNumber.Name = "tbPhoneNumber";
+            tbPhoneNumber.Size = new Size(400, 32);
+            tbPhoneNumber.TabIndex = 36;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14F);
+            label5.Location = new Point(461, 136);
+            label5.Name = "label5";
+            label5.Size = new Size(140, 25);
+            label5.TabIndex = 35;
+            label5.Text = "Phone Number";
             // 
             // label11
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 14F);
-            label11.Location = new Point(49, 131);
+            label11.Location = new Point(53, 73);
             label11.Name = "label11";
             label11.Size = new Size(97, 25);
             label11.TabIndex = 34;
@@ -90,7 +158,7 @@
             // tbUsername
             // 
             tbUsername.Font = new Font("Segoe UI", 14F);
-            tbUsername.Location = new Point(51, 159);
+            tbUsername.Location = new Point(55, 101);
             tbUsername.Name = "tbUsername";
             tbUsername.Size = new Size(400, 32);
             tbUsername.TabIndex = 33;
@@ -126,18 +194,18 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 14F);
-            label6.Location = new Point(49, 465);
+            label6.Location = new Point(461, 199);
             label6.Name = "label6";
-            label6.Size = new Size(86, 25);
+            label6.Size = new Size(82, 25);
             label6.TabIndex = 25;
-            label6.Text = "Birthday:";
+            label6.Text = "Birthday";
             // 
             // dtpbirthday
             // 
             dtpbirthday.Font = new Font("Segoe UI", 14F);
             dtpbirthday.Format = DateTimePickerFormat.Short;
             dtpbirthday.ImeMode = ImeMode.NoControl;
-            dtpbirthday.Location = new Point(175, 465);
+            dtpbirthday.Location = new Point(461, 227);
             dtpbirthday.Name = "dtpbirthday";
             dtpbirthday.Size = new Size(276, 32);
             dtpbirthday.TabIndex = 24;
@@ -155,7 +223,7 @@
             // tbEmail
             // 
             tbEmail.Font = new Font("Segoe UI", 14F);
-            tbEmail.Location = new Point(51, 348);
+            tbEmail.Location = new Point(461, 101);
             tbEmail.Name = "tbEmail";
             tbEmail.Size = new Size(400, 32);
             tbEmail.TabIndex = 17;
@@ -164,7 +232,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14F);
-            label4.Location = new Point(51, 320);
+            label4.Location = new Point(461, 73);
             label4.Name = "label4";
             label4.Size = new Size(128, 25);
             label4.TabIndex = 16;
@@ -173,7 +241,7 @@
             // tbLastName
             // 
             tbLastName.Font = new Font("Segoe UI", 14F);
-            tbLastName.Location = new Point(51, 285);
+            tbLastName.Location = new Point(55, 227);
             tbLastName.Name = "tbLastName";
             tbLastName.Size = new Size(400, 32);
             tbLastName.TabIndex = 15;
@@ -182,7 +250,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(51, 257);
+            label2.Location = new Point(55, 199);
             label2.Name = "label2";
             label2.Size = new Size(100, 25);
             label2.TabIndex = 14;
@@ -190,11 +258,11 @@
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.FromArgb(117, 54, 112);
+            btnAdd.BackColor = Color.Gold;
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            btnAdd.ForeColor = Color.WhiteSmoke;
-            btnAdd.Location = new Point(314, 534);
+            btnAdd.ForeColor = Color.Black;
+            btnAdd.Location = new Point(724, 444);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(137, 43);
             btnAdd.TabIndex = 13;
@@ -205,7 +273,7 @@
             // tbFirstName
             // 
             tbFirstName.Font = new Font("Segoe UI", 14F);
-            tbFirstName.Location = new Point(51, 222);
+            tbFirstName.Location = new Point(55, 164);
             tbFirstName.Name = "tbFirstName";
             tbFirstName.Size = new Size(400, 32);
             tbFirstName.TabIndex = 3;
@@ -214,36 +282,18 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(51, 194);
+            label1.Location = new Point(55, 136);
             label1.Name = "label1";
             label1.Size = new Size(102, 25);
             label1.TabIndex = 0;
             label1.Text = "First Name";
-            // 
-            // tbPhoneNumber
-            // 
-            tbPhoneNumber.Font = new Font("Segoe UI", 14F);
-            tbPhoneNumber.Location = new Point(51, 414);
-            tbPhoneNumber.Name = "tbPhoneNumber";
-            tbPhoneNumber.Size = new Size(400, 32);
-            tbPhoneNumber.TabIndex = 36;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14F);
-            label5.Location = new Point(49, 386);
-            label5.Name = "label5";
-            label5.Size = new Size(140, 25);
-            label5.TabIndex = 35;
-            label5.Text = "Phone Number";
             // 
             // AddUserForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(51, 51, 51);
-            ClientSize = new Size(1450, 1000);
+            ClientSize = new Size(939, 517);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddUserForm";
@@ -251,6 +301,7 @@
             Load += AddUserForm_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbPfp).EndInit();
             ResumeLayout(false);
         }
 
@@ -274,5 +325,9 @@
         private TextBox tbUsername;
         private TextBox tbPhoneNumber;
         private Label label5;
+        private Label ProfilePicture;
+        private PictureBox pbPfp;
+        private Button btnRemovePfp;
+        private Button btnUploadPfp;
     }
 }

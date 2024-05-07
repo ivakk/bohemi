@@ -63,6 +63,16 @@ namespace DesktopApplication.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap defaultPfp {
+            get {
+                object obj = ResourceManager.GetObject("defaultPfp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Desktop {
             get {
                 object obj = ResourceManager.GetObject("Desktop", resourceCulture);
