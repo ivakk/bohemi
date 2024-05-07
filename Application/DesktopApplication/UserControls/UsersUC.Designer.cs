@@ -39,7 +39,7 @@
             // lbFirstName
             // 
             lbFirstName.AutoSize = true;
-            lbFirstName.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            lbFirstName.Font = new Font("Segoe UI", 30F);
             lbFirstName.Location = new Point(-2, 0);
             lbFirstName.Name = "lbFirstName";
             lbFirstName.Size = new Size(214, 54);
@@ -49,7 +49,7 @@
             // lbLastName
             // 
             lbLastName.AutoSize = true;
-            lbLastName.Font = new Font("Segoe UI", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            lbLastName.Font = new Font("Segoe UI", 30F);
             lbLastName.Location = new Point(3, 54);
             lbLastName.Name = "lbLastName";
             lbLastName.Size = new Size(209, 54);
@@ -58,10 +58,10 @@
             // 
             // btnEdit
             // 
-            btnEdit.BackColor = Color.FromArgb(117, 54, 112);
+            btnEdit.BackColor = Color.Gold;
             btnEdit.FlatStyle = FlatStyle.Flat;
-            btnEdit.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEdit.ForeColor = Color.WhiteSmoke;
+            btnEdit.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            btnEdit.ForeColor = Color.Black;
             btnEdit.Location = new Point(218, 12);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(137, 43);
@@ -72,10 +72,10 @@
             // 
             // btnDelete
             // 
-            btnDelete.BackColor = Color.FromArgb(117, 54, 112);
+            btnDelete.BackColor = Color.Gold;
             btnDelete.FlatStyle = FlatStyle.Flat;
-            btnDelete.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDelete.ForeColor = Color.WhiteSmoke;
+            btnDelete.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            btnDelete.ForeColor = Color.Black;
             btnDelete.Location = new Point(218, 61);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(137, 43);
@@ -87,7 +87,7 @@
             // lbEmail
             // 
             lbEmail.AutoSize = true;
-            lbEmail.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            lbEmail.Font = new Font("Segoe UI", 20F);
             lbEmail.Location = new Point(3, 108);
             lbEmail.Name = "lbEmail";
             lbEmail.Size = new Size(326, 37);
@@ -97,7 +97,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 16F);
             label1.Location = new Point(546, 20);
             label1.Name = "label1";
             label1.Size = new Size(0, 30);

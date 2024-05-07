@@ -1,4 +1,5 @@
 ﻿using Classes;
+using DesktopApplication.Properties;
 using DTOs;
 using InterfacesLL;
 using LogicLayer;
@@ -73,7 +74,7 @@ namespace DesktopApplication.Forms.UserSubForms
                 {
                     MessageBox.Show("Enter a valid email address!");
                 }
-                else if (!_userLL.IsPhoneNumber(tbPhoneNumber.Text))
+                else if (tbPhoneNumber.Text != "" && !_userLL.IsPhoneNumber(tbPhoneNumber.Text))
                 {
                     MessageBox.Show("Enter a valid phone number!");
                 }
@@ -124,6 +125,7 @@ namespace DesktopApplication.Forms.UserSubForms
                     {
                         updateUser = _userLL.GetUserForUpdateDTO(user.Id);
                         UpdateUserDTO updatedUser = new UpdateUserDTO(updateUser.Id,
+                        ImageToByteArray(pbPfp),
                         tbFirstName.Text,
                         tbLastName.Text,
                         dtpbirthday.Value,
@@ -143,6 +145,31 @@ namespace DesktopApplication.Forms.UserSubForms
                 }
                 userForm.LoadUsers(_userLL.GetAllUsers());
             }
+        }
+
+        private void btnUploadPfp_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Images files (*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg;*.jpeg;*.gif;*.bmp;*.png";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                pbPfp.Image = new Bitmap(openFileDialog.FileName);
+            }
+        }
+
+        private byte[] ImageToByteArray(PictureBox picBox)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                Bitmap bmpImage = new Bitmap(picBox.Image);
+                bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                return ms.ToArray();
+            }
+        }
+
+        private void btnRemovePfp_Click(object sender, EventArgs e)
+        {
+            pbPfp.Image = Properties.Resources.defaultPfp;
         }
     }
 }

@@ -58,10 +58,10 @@
             // 
             // btnUnbanLoad
             // 
-            btnUnbanLoad.BackColor = Color.FromArgb(117, 54, 112);
+            btnUnbanLoad.BackColor = Color.Gold;
             btnUnbanLoad.FlatStyle = FlatStyle.Flat;
             btnUnbanLoad.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            btnUnbanLoad.ForeColor = Color.WhiteSmoke;
+            btnUnbanLoad.ForeColor = Color.Black;
             btnUnbanLoad.Location = new Point(408, 122);
             btnUnbanLoad.Name = "btnUnbanLoad";
             btnUnbanLoad.Size = new Size(188, 43);
@@ -72,10 +72,10 @@
             // 
             // btnBanLoad
             // 
-            btnBanLoad.BackColor = Color.FromArgb(117, 54, 112);
+            btnBanLoad.BackColor = Color.Gold;
             btnBanLoad.FlatStyle = FlatStyle.Flat;
             btnBanLoad.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            btnBanLoad.ForeColor = Color.WhiteSmoke;
+            btnBanLoad.ForeColor = Color.Black;
             btnBanLoad.Location = new Point(215, 122);
             btnBanLoad.Name = "btnBanLoad";
             btnBanLoad.Size = new Size(154, 43);
@@ -86,10 +86,10 @@
             // 
             // btnAdd
             // 
-            btnAdd.BackColor = Color.FromArgb(117, 54, 112);
+            btnAdd.BackColor = Color.Gold;
             btnAdd.FlatStyle = FlatStyle.Flat;
             btnAdd.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            btnAdd.ForeColor = Color.WhiteSmoke;
+            btnAdd.ForeColor = Color.Black;
             btnAdd.Location = new Point(26, 122);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(154, 43);
@@ -109,10 +109,10 @@
             // 
             // btnSearch
             // 
-            btnSearch.BackColor = Color.FromArgb(117, 54, 112);
+            btnSearch.BackColor = Color.Gold;
             btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            btnSearch.ForeColor = Color.WhiteSmoke;
+            btnSearch.ForeColor = Color.Black;
             btnSearch.Location = new Point(959, 57);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(137, 43);
