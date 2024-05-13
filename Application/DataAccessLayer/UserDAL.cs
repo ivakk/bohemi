@@ -372,8 +372,8 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    users.Add(new Users((int)reader["id"], !string.IsNullOrEmpty(reader["profilePicture"].ToString()) ? (byte[])reader["profilePicture"] : null, 
-                        (string)reader["firstName"], (string)reader["lastName"], (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], 
+                    users.Add(new Users((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"], 
+                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], 
                         !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, (string)reader["role"]));
                 }
                 reader.Close();
@@ -454,9 +454,9 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new UpdateUserDTO((int)reader["id"], !string.IsNullOrEmpty(reader["profilePicture"].ToString()) ? (byte[])reader["profilePicture"] : null, 
-                        (string)reader["firstName"], (string)reader["lastName"], (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], 
-                        (string)reader["passwordHash"], (string)reader["passwordSalt"], !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, 
+                    user = new UpdateUserDTO((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"], 
+                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["passwordHash"], 
+                        (string)reader["passwordSalt"], !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, 
                         (string)reader["role"]);
                 }
             }

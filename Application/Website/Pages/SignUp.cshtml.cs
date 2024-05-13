@@ -22,11 +22,24 @@ namespace Website.Pages
             this._passwordHashingLL = _passwordHashingLL;
         }
 
+        public void OnGet()
+        {
+            if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("/Index");
+            }
+        }
+
         public IActionResult OnPost()
         {
+            RegisterDTO.Id = 0;
+            RegisterDTO.Role = "customer";
+            RegisterDTO.PasswordSalt = _passwordHashingLL.PassSalt(10);
+            RegisterDTO.PasswordHash = _passwordHashingLL.PassHash(RegisterDTO.Password, RegisterDTO.PasswordSalt);
             if (!ModelState.IsValid)
             {
                 ViewData["Error"] = "Something went wrong!";
+
                 return Page();
             }
 
@@ -37,9 +50,7 @@ namespace Website.Pages
             }
             else
             {
-                RegisterDTO.PasswordSalt = _passwordHashingLL.PassSalt(10);
-                RegisterDTO.PasswordHash = _passwordHashingLL.PassHash(RegisterDTO.Password, RegisterDTO.PasswordSalt);
-                RegisterDTO regUser = new RegisterDTO(0,
+                RegisterDTO regUser = new RegisterDTO(RegisterDTO.Id,
                                         RegisterDTO.FirstName,
                                         RegisterDTO.LastName,
                                         RegisterDTO.Birthday,
@@ -48,7 +59,7 @@ namespace Website.Pages
                                         RegisterDTO.PasswordHash,
                                         RegisterDTO.PasswordSalt,
                                         RegisterDTO.PhoneNumber,
-                                        "customer");
+                                        RegisterDTO.Role);
                 _userLL.CreateUser(regUser);
                 return RedirectToPage("/Login");
             }

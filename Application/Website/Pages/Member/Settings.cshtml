@@ -1,0 +1,107 @@
+﻿@page
+@model Website.Pages.Member.SettingsModel
+@{
+    ViewData["Title"] = "Profile Settings";
+    Layout = "_LoggedInLayout";
+}
+
+<meta charset="utf-8">
+@section Styles {
+    <link rel="stylesheet" href="/css/Settings.css">
+}
+
+<div class="container-xl px-4 mt-4">
+    <div class="row">
+        <div class="col-xl-4">
+            <div class="card mb-4 mb-xl-0">
+                <div class="card-header">Profile Picture</div>
+                <div class="card-body text-center">
+                    @if (Model.IsLoggedIn && Model.LoggedInUser.ProfilePicture != null && Model.LoggedInUser.ProfilePicture.Length > 0)
+                    {
+                        <img class="img-account-profile rounded-circle mb-2" src="@Url.Page("/Member/Settings", "UserImage")" alt="Your Profile Picture">
+                    }
+                    else
+                    {
+                        <img class="img-account-profile rounded-circle mb-2" src="/images/defaultPfp.png" alt="Your Profile Picture">
+                    }
+                    <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                    <form asp-page-handler="UploadPicture" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="fileUpload">Upload new image:</label>
+                            <input type="file" asp-for="UploadedPicture" class="form-control-file" accept=".jpg, .jpeg, .png">
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8">
+            <div class="card mb-4">
+                <div class="card-header">Account Details</div>
+                <div class="card-body">
+                    <form asp-page-handler="Details" method="post" novalidate>
+                        <div class="mb-3">
+                            <label class="small mb-1" for="Username">Username</label>
+                            <input class="form-control" asp-for="UpdateUserDTO.Username" placeholder="@if (Model.IsLoggedIn)
+                                {
+                                    @:(@Model.LoggedInUser.Username)
+                                }">
+                            <span asp-validation-for="UpdateUserDTO.Username" class="text-danger"></span>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="FirstName">First name</label>
+                                <input class="form-control" asp-for="UpdateUserDTO.FirstName" placeholder="@if (Model.IsLoggedIn)
+                                {
+                                    @:(@Model.LoggedInUser.FirstName)
+                                }">
+                                <span asp-validation-for="UpdateUserDTO.FirstName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="LastName">Last name</label>
+                                <input class="form-control" asp-for="UpdateUserDTO.LastName" placeholder="@if (Model.IsLoggedIn)
+                                {
+                                    @:(@Model.LoggedInUser.LastName)
+                                }">
+                                <span asp-validation-for="UpdateUserDTO.LastName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="Password">Password</label>
+                                <input type="password" class="form-control" asp-for="UpdateUserDTO.Password" placeholder="Enter your new password">
+                                <span asp-validation-for="UpdateUserDTO.Password" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="ReenterPassword">Re-enter Password</label>
+                                <input type="password" class="form-control" asp-for="UpdateUserDTO.ConfirmPassword" placeholder="Re-enter your new password">
+                                <span asp-validation-for="UpdateUserDTO.ConfirmPassword" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="small mb-1" for="EmailAddress">Email address</label>
+                            <input class="form-control" asp-for="UpdateUserDTO.Email" placeholder="@if (Model.IsLoggedIn)
+                                {
+                                    @:(@Model.LoggedInUser.Email)
+                                }">
+                            <span asp-validation-for="UpdateUserDTO.Email" class="text-danger"></span>
+                        </div>
+                        <div class="row gx-3 mb-3">
+                            <div class="col-md-6">
+                                <label class="small mb-1" for="PhoneNumber">Phone number</label>
+                                <input class="form-control" asp-for="UpdateUserDTO.PhoneNumber" placeholder="@if (Model.IsLoggedIn)
+                                {
+                                    @:(@Model.LoggedInUser.PhoneNumber)
+                                }">
+                                <span asp-validation-for="UpdateUserDTO.PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

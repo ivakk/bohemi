@@ -26,8 +26,7 @@ namespace Website.Pages
         {
             if (User.Identity != null && User.Identity.IsAuthenticated)
             {
-                //Response.Redirect("");
-                return;
+                Response.Redirect("/Index");
             }
         }
 
@@ -38,10 +37,11 @@ namespace Website.Pages
                 ViewData["Error"] = "Something went wrong!";
                 return Page();
             }
-
+            
             try
             {
                 LoginDTO user = _userLL.CheckUser(LoginDTO.Username, LoginDTO.PasswordEntry);
+                
 
                 var claims = new List<Claim>
                 {
@@ -50,6 +50,7 @@ namespace Website.Pages
 
                 var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 HttpContext.SignInAsync(new ClaimsPrincipal(identity));
+                
 
                 return RedirectToPage("/Index");
             }

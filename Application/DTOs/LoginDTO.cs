@@ -14,9 +14,9 @@ namespace DTOs
         public string Username { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Password field is required!")]
         public string PasswordEntry { get; set; }
-        public string PasswordHash { get; set; }
-        public string PasswordSalt { get; set; }
-        public string Role { get; set; }
+        public string? PasswordHash { get; set; }
+        public string? PasswordSalt { get; set; }
+        public string? Role { get; set; }
 
         public LoginDTO(int id, string username, string passwordEntry, string passwordHash, string passwordSalt, string role)
         {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj": {
+    "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj",
+        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj",
         "projectName": "Classes",
-        "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj",
+        "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj",
         "packagesPath": "C:\\Users\\ivoml\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\obj\\",
+        "outputPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\ivoml\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -96,14 +96,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj": {
-                "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj"
+              "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj"
               },
-              "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj"
+              "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
-                "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+              "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+                "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj",
+        "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj",
         "packagesPath": "C:\\Users\\ivoml\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\obj\\",
+        "outputPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -212,14 +212,14 @@
         }
       }
     },
-    "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+    "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+        "projectUniqueName": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
         "projectName": "InterfacesDAL",
-        "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+        "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
         "packagesPath": "C:\\Users\\ivoml\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\obj\\",
+        "outputPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -240,11 +240,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj": {
-                "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Classes.csproj"
+              "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Classes.csproj"
               },
-              "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\DTOs.csproj"
+              "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\DTOs.csproj"
               }
             }
           }

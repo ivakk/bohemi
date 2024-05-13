@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xY78wF0yMT7tO2W02aERx1I+29AMOs1RosRnZI6QmKqzzjZUaEf7hpVgrTy6ptzdPQA8JakUM+EtiY7cg9QtBA==",
+  "dgSpecHash": "hpbq7qRM/Y+X9ula+wxy5Tj9xib0oEseqq6tNDsaHUhF2z3PpGaH70LCrwBWFc4uLJfgGIpn3n0AGx5mNRUdHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Website.csproj",
+  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Website.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivoml\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ivoml\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

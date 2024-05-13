@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "76HT94F7s/89qKZjCyXT8uV/eM6w3Rll2EBNdom/t9AWxew9N3CixnZVjMha7PeSWqWIzYwX9hKvzcHbt+X1rw==",
+  "dgSpecHash": "SYXCribm6/goDGQUMeB06A/2jHyokSdy1CQ/9xKJyJH9QNDxVW+k6GdY4OIuixhNeq/mbs04W4u76PAyuAPcNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\DesktopApplication.csproj",
+  "projectFilePath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\DesktopApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivoml\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\ivoml\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
