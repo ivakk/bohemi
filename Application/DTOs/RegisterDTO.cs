@@ -39,13 +39,13 @@ namespace DTOs
         [Required(AllowEmptyStrings = false, ErrorMessage = "Email field is required!")]
         public string Email { get; set; }
 
-        public string PasswordHash { get; set; }
-        public string PasswordSalt { get; set; }
+        public string? PasswordHash { get; set; }
+        public string? PasswordSalt { get; set; }
 
         [RegularExpression(@"^\+?(\d{1,3})?[-.\s]?(\d{1,4})?[-.\s]?(\d{1,4})?[-.\s]?(\d{1,4})?[-.\s]?(\d{1,9})$", ErrorMessage = "Please enter a valid phone number!")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Phone number field is required!")]
         public string PhoneNumber { get; set; }
-        public string Role { get; set; }
+        public string? Role { get; set; }
 
         public RegisterDTO(int id, string firstName, string lastName, DateTime birthday, string username, string email, string passwordHash, string passwordSalt, string phoneNumber, string role)
         {

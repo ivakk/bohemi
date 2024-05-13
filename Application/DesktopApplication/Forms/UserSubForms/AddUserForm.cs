@@ -59,12 +59,20 @@ namespace DesktopApplication.Forms.UserSubForms
                 tbEmail.Text = user.Email;
                 dtpbirthday.Value = user.Birthday;
                 tbPhoneNumber.Text = user.PhoneNumber;
+                if (user.ProfilePicture != null && user.ProfilePicture.Length > 0)
+                {
+                    pbPfp.Image = ByteArrayToImage(user.ProfilePicture);
+                }
+                else
+                {
+                    pbPfp.Image = Properties.Resources.defaultPfp;
+                }
             }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (tbFirstName.Text == null || tbLastName.Text == null || tbUsername.Text == null || tbEmail.Text == null || dtpbirthday.Text == null)
+            if (tbFirstName.Text == "" || tbLastName.Text == "" || tbUsername.Text == "" || tbEmail.Text == "" || dtpbirthday.Text == "")
             {
                 MessageBox.Show("All fields are mandatory!");
             }
@@ -164,6 +172,23 @@ namespace DesktopApplication.Forms.UserSubForms
                 Bitmap bmpImage = new Bitmap(picBox.Image);
                 bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
                 return ms.ToArray();
+            }
+        }
+
+        private Image ByteArrayToImage(byte[] byteArray)
+        {
+            if (byteArray == null || byteArray.Length == 0) return null;
+            try
+            {
+                using (MemoryStream ms = new MemoryStream(byteArray))
+                {
+                    return Image.FromStream(ms);
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show("Failed to convert byte array to image: " + ex.Message);
+                return null;
             }
         }
 

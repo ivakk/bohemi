@@ -1,158 +1,226 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ivoml\\Desktop\\l\\Application\\",
+  "WorkspaceRootPath": "C:\\Users\\ivoml\\Desktop\\d\\Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|c:\\users\\ivoml\\desktop\\l\\application\\unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\unittests\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\dataaccesslayer\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\resources\\desktop.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\resources\\desktop.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\website\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|c:\\users\\ivoml\\desktop\\d\\application\\website\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\logiclayer\\userll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\userll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\usercontrols\\usersuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\desktopapplication\\forms\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\member\\settings.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\member\\settings.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\member\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\member\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\unittests\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\dataaccesslayer\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\logiclayer\\userll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\userll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\shared\\_loggedinlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\shared\\_loggedinlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\wwwroot\\css\\settings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\settings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\l\\Application\\website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\website.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\website.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\resources\\desktop.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\resources\\desktop.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\usercontrols\\usersuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\desktopapplication\\forms\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivoml\\Desktop\\d\\Application\\dtos\\logindto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\logindto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,7 +230,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,23 +238,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitTests",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\UnitTests\\UnitTests.csproj",
-              "RelativeDocumentMoniker": "UnitTests\\UnitTests.csproj",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\UnitTests\\UnitTests.csproj",
-              "RelativeToolTip": "UnitTests\\UnitTests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-02T08:40:05.492Z"
+              "DocumentIndex": 9,
+              "Title": "UserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\UserDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UserDAL.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DataAccessLayer\\UserDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\UserDAL.cs",
+              "ViewState": "AQIAAJMBAAAAAAAAAAAjwKMBAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:50:01.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "UpdateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\UpdateUserDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UpdateUserDTO.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\UpdateUserDTO.cs",
+              "RelativeToolTip": "DTOs\\UpdateUserDTO.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwA4AAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:29:32.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAmwEoAAACIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:00:34.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MockUserDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\UnitTests\\MockUserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\UnitTests\\MockUserDAL.cs",
               "RelativeDocumentMoniker": "UnitTests\\MockUserDAL.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\UnitTests\\MockUserDAL.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\UnitTests\\MockUserDAL.cs",
               "RelativeToolTip": "UnitTests\\MockUserDAL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -194,351 +286,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserTests.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\UnitTests\\UserTests.cs",
-              "RelativeDocumentMoniker": "UnitTests\\UserTests.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\UnitTests\\UserTests.cs",
-              "RelativeToolTip": "UnitTests\\UserTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Settings.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Member\\Settings.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Member\\Settings.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Member\\Settings.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Member\\Settings.cshtml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwEoAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T08:31:41.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T16:16:53.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Resources.resx",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Properties\\Resources.resx",
-              "RelativeDocumentMoniker": "DesktopApplication\\Properties\\Resources.resx",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Properties\\Resources.resx",
-              "RelativeToolTip": "DesktopApplication\\Properties\\Resources.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-04-27T19:47:05.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Desktop.png",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Resources\\Desktop.png",
-              "RelativeDocumentMoniker": "DesktopApplication\\Resources\\Desktop.png",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Resources\\Desktop.png",
-              "RelativeToolTip": "DesktopApplication\\Resources\\Desktop.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2024-04-27T19:46:13.677Z"
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Login.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Login.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T11:04:50.595Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\UserDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\UserDAL.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DataAccessLayer\\UserDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\UserDAL.cs",
-              "ViewState": "AQIAALQBAAAAAAAAAAAswNsBAAAAAAAA",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDMAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:50:01.232Z"
+              "WhenOpened": "2024-05-11T16:08:42.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserForm.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAswDQAAAAmAAAA",
+              "DocumentIndex": 0,
+              "Title": "SignUp.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\SignUp.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\SignUp.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\SignUp.cshtml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAjwCYAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:50:49.472Z"
+              "WhenOpened": "2024-04-24T00:02:33.538Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAUwEwAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:00:34.502Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:53:06.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Menu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Menu.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Menu.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Menu.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\Menu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:53:17.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 1,
               "Title": "SignUp.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Pages\\SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\SignUp.cshtml",
               "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Pages\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\SignUp.cshtml",
               "RelativeToolTip": "Website\\Pages\\SignUp.cshtml",
-              "ViewState": "AQIAACYAAAAAAAAAAAAwwGQAAAAAAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-22T11:05:09.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Menu.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Menu.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Menu.cs",
-              "RelativeToolTip": "DesktopApplication\\Menu.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:47:08.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Login.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Login.cs",
-              "RelativeToolTip": "DesktopApplication\\Login.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAA9wDsAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:56:31.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Login.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T19:16:35.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Program.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Program.cs",
-              "RelativeToolTip": "DesktopApplication\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:55:25.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T23:34:41.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IUserDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\IUserDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IUserDAL.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesDAL\\IUserDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IUserDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:51:45.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 10,
               "Title": "UserLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\LogicLayer\\UserLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\LogicLayer\\UserLL.cs",
               "RelativeDocumentMoniker": "LogicLayer\\UserLL.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\LogicLayer\\UserLL.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\LogicLayer\\UserLL.cs",
               "RelativeToolTip": "LogicLayer\\UserLL.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAmwIgAAAAAAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA7wIgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T23:03:27.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IUserLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesLL\\IUserLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\IUserLL.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesLL\\IUserLL.cs",
-              "RelativeToolTip": "InterfacesLL\\IUserLL.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T23:08:40.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UpdateUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\UpdateUserDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\UpdateUserDTO.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\UpdateUserDTO.cs",
-              "RelativeToolTip": "DTOs\\UpdateUserDTO.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAcwC4AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T23:29:32.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SignUp.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Pages\\SignUp.cshtml.cs",
-              "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Pages\\SignUp.cshtml.cs",
-              "RelativeToolTip": "Website\\Pages\\SignUp.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T00:02:33.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UsersUC.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:06:34.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Users.cs",
-              "RelativeDocumentMoniker": "Classes\\Users.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Classes\\Users.cs",
-              "RelativeToolTip": "Classes\\Users.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAcwCkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T00:00:47.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DTOs\\RegisterDTO.cs",
-              "RelativeToolTip": "DTOs\\RegisterDTO.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAQwDgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T00:02:00.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UnbanUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAUwDIAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:01:57.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UnbanUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:02:48.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "BanUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
-              "RelativeToolTip": "..\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:02:49.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UsersUC.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
-              "RelativeToolTip": "DesktopApplication\\UserControls\\UsersUC.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAkwCkAAABmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:06:37.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "BanUserForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAAiwEcAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:02:35.689Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "BanUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAADwvzMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:01:30.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UnbanUserForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAiwEMAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:02:25.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 11,
               "Title": "IPasswordHashingLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesLL\\IPasswordHashingLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesLL\\IPasswordHashingLL.cs",
               "RelativeDocumentMoniker": "InterfacesLL\\IPasswordHashingLL.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\InterfacesLL\\IPasswordHashingLL.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesLL\\IPasswordHashingLL.cs",
               "RelativeToolTip": "InterfacesLL\\IPasswordHashingLL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -546,11 +371,482 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Logout.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Logout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:42.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Member\\Settings.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Member\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Member\\Settings.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Member\\Settings.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:10:14.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Program.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Program.cs",
+              "RelativeToolTip": "DesktopApplication\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:55:25.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "DTOs\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:08:34.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_LoggedInLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T07:52:26.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:08:42.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddUserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:34:41.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Menu.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Menu.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Menu.cs",
+              "RelativeToolTip": "DesktopApplication\\Menu.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAjwDQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:47:08.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:41.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Settings.css",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\wwwroot\\css\\Settings.css",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\Settings.css",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\wwwroot\\css\\Settings.css",
+              "RelativeToolTip": "Website\\wwwroot\\css\\Settings.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-11T16:19:23.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginSignup.css",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\LoginSignup.css",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
+              "RelativeToolTip": "Website\\wwwroot\\css\\LoginSignup.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-22T11:38:12.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:42.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "DTOs\\RegisterDTO.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAQwDgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T00:02:00.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:08:42.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Privacy.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Privacy.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Privacy.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Privacy.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Privacy.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:08:42.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Website\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:42.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Website\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:43.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Website",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Website.csproj",
+              "RelativeDocumentMoniker": "Website\\Website.csproj",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Website.csproj",
+              "RelativeToolTip": "Website\\Website.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-11T16:08:45.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Error.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Error.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Error.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Error.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Error.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:08:41.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:41.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UnitTests",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\UnitTests\\UnitTests.csproj",
+              "RelativeDocumentMoniker": "UnitTests\\UnitTests.csproj",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\UnitTests\\UnitTests.csproj",
+              "RelativeToolTip": "UnitTests\\UnitTests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-02T08:40:05.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserTests.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\UnitTests\\UserTests.cs",
+              "RelativeDocumentMoniker": "UnitTests\\UserTests.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\UnitTests\\UserTests.cs",
+              "RelativeToolTip": "UnitTests\\UserTests.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAwwG4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T08:31:41.672Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "DesktopApplication\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Properties\\Resources.resx",
+              "RelativeToolTip": "DesktopApplication\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-04-27T19:47:05.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Desktop.png",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Resources\\Desktop.png",
+              "RelativeDocumentMoniker": "DesktopApplication\\Resources\\Desktop.png",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Resources\\Desktop.png",
+              "RelativeToolTip": "DesktopApplication\\Resources\\Desktop.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-04-27T19:46:13.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserForm.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAswDQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:50:49.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:53:06.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Menu.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Menu.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Menu.cs [Design]",
+              "RelativeToolTip": "..\\..\\k\\bohemi\\Application\\DesktopApplication\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:53:17.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Login.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Login.cs",
+              "RelativeToolTip": "DesktopApplication\\Login.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAA9wDsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:56:31.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Login.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
+              "RelativeToolTip": "..\\..\\l\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T19:16:35.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IUserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\IUserDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IUserDAL.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesDAL\\IUserDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IUserDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:51:45.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IUserLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesLL\\IUserLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\IUserLL.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\InterfacesLL\\IUserLL.cs",
+              "RelativeToolTip": "InterfacesLL\\IUserLL.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:08:40.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UsersUC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
+              "RelativeToolTip": "..\\..\\l\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:06:34.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Users.cs",
+              "RelativeDocumentMoniker": "Classes\\Users.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Classes\\Users.cs",
+              "RelativeToolTip": "Classes\\Users.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwCkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T00:00:47.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UnbanUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAUwDIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:57.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UnbanUserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:02:48.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "BanUserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:02:49.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "UsersUC.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
+              "RelativeToolTip": "DesktopApplication\\UserControls\\UsersUC.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAkwCkAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:06:37.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "BanUserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAiwEcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:02:35.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "BanUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvzMAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:30.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UnbanUserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAiwEMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:02:25.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
               "Title": "UsersUC.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\UserControls\\UsersUC.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\UserControls\\UsersUC.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.Designer.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\UserControls\\UsersUC.Designer.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\UserControls\\UsersUC.Designer.cs",
               "RelativeToolTip": "DesktopApplication\\UserControls\\UsersUC.Designer.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAowAAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -558,11 +854,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 51,
               "Title": "AddUserForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
               "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
               "ViewState": "AQIAAMQAAAAAAAAAAAAowNwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -570,11 +866,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 52,
               "Title": "UserForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserForm.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\DesktopApplication\\Forms\\UserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\DesktopApplication\\Forms\\UserForm.Designer.cs",
               "RelativeToolTip": "DesktopApplication\\Forms\\UserForm.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -582,39 +878,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "LoginSignup.css",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
-              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\LoginSignup.css",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
-              "RelativeToolTip": "Website\\wwwroot\\css\\LoginSignup.css",
-              "ViewState": "AQIAAM8AAAAAAAAAAAAowO0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-22T11:38:12.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 53,
               "Title": "LoginSignup.js",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
+              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
               "RelativeDocumentMoniker": "Website\\wwwroot\\js\\LoginSignup.js",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
+              "ToolTip": "C:\\Users\\ivoml\\Desktop\\d\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
               "RelativeToolTip": "Website\\wwwroot\\js\\LoginSignup.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-04-22T11:15:30.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\Application\\Website\\Pages\\Login.cshtml",
-              "RelativeToolTip": "Website\\Pages\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-22T11:04:50.595Z"
             }
           ]
         }
