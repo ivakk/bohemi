@@ -8,10 +8,10 @@ namespace Classes
 {
     public class Alcohol : Beverage
     {
-        public double Percentage { get; private set; }
+        public int Percentage { get; private set; }
         public int Age { get; private set; }
         
-        public Alcohol(int id, byte[] picture, string name, int size, double price, double percentage, int age) : base(id, picture, name, size, price)
+        public Alcohol(int id, byte[] picture, string name, int size, double price, int percentage, int age) : base(id, picture, name, size, price)
         {
             Percentage = percentage;
             Age = age;

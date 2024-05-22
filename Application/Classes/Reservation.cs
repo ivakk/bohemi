@@ -12,9 +12,9 @@ namespace Classes
         public string Person { get; private set; }
         public int EventId { get; private set; }
         public string Seats { get; private set; }
-        public int PhoneNumber { get; private set; }
+        public string PhoneNumber { get; private set; }
 
-        public Reservation(int id, string person, int eventId, string seats, int phoneNumber) 
+        public Reservation(int id, string person, int eventId, string seats, string phoneNumber) 
         {
             Id = id;
             Person = person;

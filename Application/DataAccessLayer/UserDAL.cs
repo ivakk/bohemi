@@ -395,7 +395,8 @@ namespace DataAccessLayer
             string query =
                 $"UPDATE {tableName} " +
                 $"SET username = @username, profilePicture = @profilePicture, firstName = @firstName, lastName = @lastName, email = @email, birthdate = @birthday, passwordHash = @passwordHash, " +
-                $"passwordSalt = @passwordSalt, phoneNumber = @phoneNumber, role = @role";
+                $"passwordSalt = @passwordSalt, phoneNumber = @phoneNumber, role = @role " +
+                $"WHERE id = @id";
 
             try
             {
