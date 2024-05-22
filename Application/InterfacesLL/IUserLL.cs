@@ -10,22 +10,22 @@ namespace InterfacesLL
 {
     public interface IUserLL
     {
-        public bool CreateUser(RegisterDTO newUser);
-        public bool IsPasswordCorrect(string username, string password);
-        public LoginDTO CheckUser(string username, string password);
-        public Users GetUserById(int id);
-        public void BanUser(Users banUser, string reason);
-        public void UnbanUser(Users banUser);
-        public bool IsUserBanned(Users bannedUser);
-        public bool IsUsernameUsed(string username);
-        public bool IsEmailUsed(string email);
-        public void DeleteUser(int id);
-        public Users GetUserByUsername(string username);
-        public bool IsEmail(string email);
-        public bool IsPhoneNumber(string phoneNumber);
+        bool CreateUser(RegisterDTO newUser);
+        bool IsPasswordCorrect(string username, string password);
+        LoginDTO CheckUser(string username, string password);
+        Users GetUserById(int id);
+        void BanUser(Users banUser, string reason);
+        void UnbanUser(Users banUser);
+        bool IsUserBanned(Users bannedUser);
+        bool IsUsernameUsed(string username);
+        bool IsEmailUsed(string email);
+        void DeleteUser(int id);
+        Users GetUserByUsername(string username);
+        bool IsEmail(string email);
+        bool IsPhoneNumber(string phoneNumber);
         public List<Users> GetAllUsers();
-        public bool UpdateUser(UpdateUserDTO updateUser);
-        public List<Users> GetUsersBySearch(string search);
-        public UpdateUserDTO GetUserForUpdateDTO(int id);
+        bool UpdateUser(UpdateUserDTO updateUser);
+        List<Users> GetUsersBySearch(string search);
+        UpdateUserDTO GetUserForUpdateDTO(int id);
     }
 }
