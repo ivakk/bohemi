@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,9 @@ namespace InterfacesDAL
 {
     public interface IReportDAL
     {
+        Report GetReportByIdDAL(int id);
+        List<Report> GetAllReportsDAL(int eventId);
+        bool CreateReportDAL(Report report);
+        bool DeleteReportDAL(int id);
     }
 }

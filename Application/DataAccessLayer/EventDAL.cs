@@ -43,6 +43,11 @@ namespace DataAccessLayer
                 System.Diagnostics.Debug.WriteLine(e.Message);
                 return false;
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                return false;
+            }
             finally
             {
                 connection.Close();
@@ -81,7 +86,7 @@ namespace DataAccessLayer
             }
             return newEvent;
         }
-        public void DeleteEventDAL(int id)
+        public bool DeleteEventDAL(int id)
         {
             // Set up the query
             string query = $"DELETE FROM {tableName} WHERE id = @id";
@@ -98,16 +103,22 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@id", id);
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
+                return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
         public List<Event> GetAllEventsDAL()
         {
@@ -136,6 +147,10 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {
@@ -167,15 +182,17 @@ namespace DataAccessLayer
 
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
-
-                connection.Close();
                 return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                connection.Close();
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 return false;
             }
             finally

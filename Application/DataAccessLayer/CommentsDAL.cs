@@ -42,6 +42,10 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
@@ -83,6 +87,10 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
@@ -90,7 +98,7 @@ namespace DataAccessLayer
             return new List<Comments>();
         }
 
-        public void CreateCommentDAL(Comments comment)
+        public bool CreateCommentDAL(Comments comment)
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +
@@ -112,7 +120,7 @@ namespace DataAccessLayer
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
 
-                connection.Close();
+                return true;
             }
             catch (SqlException e)
             {
@@ -120,13 +128,18 @@ namespace DataAccessLayer
                 System.Diagnostics.Debug.WriteLine(e.Message);
                 connection.Close();
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
 
-        public void DeleteCommentDAL(int id)
+        public bool DeleteCommentDAL(int id)
         {
             string query = $"DELETE FROM {tableName} WHERE id = @id";
 
@@ -148,10 +161,15 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
 
         public string GetCommentUserDAL(int id)
@@ -179,7 +197,10 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {

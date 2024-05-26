@@ -1,15 +1,17 @@
 ﻿using Classes;
 using DTOs;
+using InterfacesDAL;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class AlcoholDAL : BeverageDAL
+    public class AlcoholDAL : BeverageDAL, IAlcoholDAL
     {
         private readonly string tableName = "Alcohol";
 
@@ -20,7 +22,7 @@ namespace DataAccessLayer
             // Set up the query
             string query = $"INSERT INTO {tableName} JOIN Drinks " +
                            $"(id, percentage, age) " +
-                           $"VALUES (@picture, @description, @day, @picture)";
+                           $"VALUES (@id, @percentage, @age)";
 
             try
             {
@@ -41,6 +43,11 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 return false;
             }
             finally
@@ -76,13 +83,17 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
             return newAlcohol;
         }
-        public void DeleteAlcoholDAL(int id)
+        public bool DeleteAlcoholDAL(int id)
         {
             base.DeleteBeverageDAL(id);
             // Set up the query
@@ -100,16 +111,22 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@id", id);
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
+                return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
         public List<Alcohol> GetAllAlcoholsDAL()
         {
@@ -140,17 +157,23 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
             return alcohols;
         }
-        public bool UpdateEventDAL(AlcoholDTO updateEvent)
+        public bool UpdateAlcoholDAL(AlcoholDTO updateAlcohol)
         {
+            base.UpdateBeverageDAL(updateAlcohol);
+
             string query =
                 $"UPDATE {tableName} " +
-                $"SET title = @title, description = @description, day = @day, picture = @picture " +
+                $"SET percentage = @percentage, age = @age " +
                 $"WHERE id = @id";
 
             try
@@ -162,23 +185,23 @@ namespace DataAccessLayer
                 SqlCommand command = new SqlCommand(query, Connection.connection);
 
                 // Add the parameters
-                command.Parameters.AddWithValue("@id", updateEvent.Id);
-                command.Parameters.AddWithValue("@title", updateEvent.Title);
-                command.Parameters.AddWithValue("@description", updateEvent.Description);
-                command.Parameters.AddWithValue("@day", updateEvent.Day);
-                command.Parameters.AddWithValue("@picture", updateEvent.Picture);
+                command.Parameters.AddWithValue("@id", updateAlcohol.Id);
+                command.Parameters.AddWithValue("@title", updateAlcohol.Percentage);
+                command.Parameters.AddWithValue("@description", updateAlcohol.Age);
 
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
-
-                connection.Close();
                 return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                connection.Close();
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 return false;
             }
             finally

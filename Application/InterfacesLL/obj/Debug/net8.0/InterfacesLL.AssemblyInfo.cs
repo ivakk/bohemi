@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InterfacesLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de4f8a10fcdd893186d4bf2ead56db3f85e751d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca34f19be298638b439967490933fcc526df02fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("InterfacesLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InterfacesLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

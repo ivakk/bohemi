@@ -23,30 +23,38 @@ namespace LogicLayer
             passwordHashingLL = new PasswordHashingLL();
         }
 
-        public UserLL()
-        {
-        }
-
         public bool CreateUser(RegisterDTO newUser)
         {
-            return _userDAL.CreateUserDAL(newUser);
+            if (newUser == null)
+            {
+                return false;
+            }
+            else if (string.IsNullOrEmpty(newUser.FirstName) || string.IsNullOrEmpty(newUser.LastName) || newUser.Birthday == null || string.IsNullOrEmpty(newUser.Username) || string.IsNullOrEmpty(newUser.Email)
+                 || string.IsNullOrEmpty(newUser.PasswordHash) || string.IsNullOrEmpty(newUser.PasswordSalt) || string.IsNullOrEmpty(newUser.PhoneNumber) || string.IsNullOrEmpty(newUser.Role))
+            {
+                return true;
+            }
+            else
+            {
+                return _userDAL.CreateUserDAL(newUser);
+            }
         }
         public bool IsPasswordCorrect(string username, string password)
         {
             /// This function returns true, if the password is correct for the given username.
 
             // Get user by username property, 
-            LoginDTO user = _userDAL.GetUserForLoginDTODAL(username, password);
+            Tuple<string, string> hashSalt = _userDAL.hashSaltDAL(username);
 
             // If there is no user with the given username address, return false.
-            if (user == null)
+            if (hashSalt == null)
             {
                 return false;
             }
 
-            string hashedPasswordToCheck = passwordHashingLL.PassHash(password, user.PasswordSalt);
+            string hashedPasswordToCheck = passwordHashingLL.PassHash(password, hashSalt.Item2);
 
-            if (user.PasswordHash == hashedPasswordToCheck)
+            if (hashSalt.Item1 == hashedPasswordToCheck)
             {
                 return true;
             }
@@ -57,44 +65,106 @@ namespace LogicLayer
         }
         public LoginDTO CheckUser(string username, string password)
         {
-            if (!IsPasswordCorrect(username, password))
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                throw new ArgumentNullException("username");
+            }
+            else if (!IsPasswordCorrect(username, password))
             {
                 throw new Exception();
             }
-
-            return _userDAL.GetUserForLoginDTODAL(username, password);
+            else
+            {
+                return _userDAL.GetUserForLoginDTODAL(username, password);
+            }
         }
         public Users GetUserById(int id)
         {
-            return _userDAL.GetUserByIdDAL(id);
+            if (id < 0 || id == null)
+            {
+                throw new ArgumentNullException("id");
+            }
+            else
+            {
+                return _userDAL.GetUserByIdDAL(id);
+            }
         }
-        public void BanUser(Users banUser, string reason)
+        public bool BanUser(Users banUser, string reason)
         {
-            _userDAL.BanUserDAL(banUser, reason);
+            if (banUser == null || string.IsNullOrEmpty(reason))
+            {
+                return false;
+            }
+            else
+            {
+                return _userDAL.BanUserDAL(banUser, reason);
+            }
         }
-        public void UnbanUser(Users banUser)
+        public bool UnbanUser(Users banUser)
         {
-            _userDAL.UnbanUserDAL(banUser);
+            if (banUser == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _userDAL.UnbanUserDAL(banUser); ;
+            }
         }
         public bool IsUserBanned(Users bannedUser)
         {
-            return _userDAL.IsUserBannedDAL(bannedUser);
+            if(bannedUser == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _userDAL.IsUserBannedDAL(bannedUser);
+            }
         }
         public bool IsUsernameUsed(string username)
         {
-            return _userDAL.IsUsernameUsedDAL(username);
+            if (username == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _userDAL.IsUsernameUsedDAL(username);
+            }
         }
         public bool IsEmailUsed(string email)
         {
-            return _userDAL.IsEmailUsedDAL(email);
+            if (email == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _userDAL.IsEmailUsedDAL(email);
+            }
         }
-        public void DeleteUser(int id)
+        public bool DeleteUser(int id)
         {
-            _userDAL.DeleteUserDAL(id);
+            if (id < 0 || id == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _userDAL.DeleteUserDAL(id);
+            }
         }
         public Users GetUserByUsername(string username)
         {
-            return _userDAL.GetUserByUsernameDAL(username);
+            if (string.IsNullOrEmpty(username))
+            {
+                throw new ArgumentNullException("username");
+            }
+            else
+            {
+                return _userDAL.GetUserByUsernameDAL(username);
+            }
         }
         public bool IsEmail(string email)
         {
@@ -114,7 +184,20 @@ namespace LogicLayer
         }
         public bool UpdateUser(UpdateUserDTO updateUser)
         {
-            return _userDAL.UpdateUserDAL(updateUser);
+            if (updateUser == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else if (string.IsNullOrEmpty(updateUser.FirstName) || string.IsNullOrEmpty(updateUser.LastName) || updateUser.Birthday == null || string.IsNullOrEmpty(updateUser.Username) 
+                 || string.IsNullOrEmpty(updateUser.Email) || string.IsNullOrEmpty(updateUser.PasswordHash) || string.IsNullOrEmpty(updateUser.PasswordSalt) || string.IsNullOrEmpty(updateUser.PhoneNumber) 
+                 || string.IsNullOrEmpty(updateUser.Role))
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _userDAL.UpdateUserDAL(updateUser);
+            }
         }
         public List<Users> GetUsersBySearch(string search)
         {
@@ -130,7 +213,14 @@ namespace LogicLayer
         }
         public UpdateUserDTO GetUserForUpdateDTO(int id)
         {
-            return _userDAL.GetUserForUpdateDTODAL(id);
+            if (id < 0 || id == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _userDAL.GetUserForUpdateDTODAL(id);
+            }
         }
     }
 }

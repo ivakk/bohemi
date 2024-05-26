@@ -58,10 +58,15 @@ namespace DataAccessLayer
                 System.Diagnostics.Debug.WriteLine(e.Message);
                 return false;
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
 
         public LoginDTO GetUserForLoginDTODAL(string username, string password)
@@ -84,14 +89,17 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new LoginDTO((int)reader["id"], (string)reader["username"], password,
-                        (string)reader["passwordHash"], (string)reader["passwordSalt"], (string)reader["role"]);
+                    user = new LoginDTO((int)reader["id"], (string)reader["username"], password, (string)reader["role"]);
                 }
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {
@@ -128,6 +136,10 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
@@ -135,7 +147,7 @@ namespace DataAccessLayer
             return user;
         }
 
-        public void BanUserDAL(Users banUser, string reason)
+        public bool BanUserDAL(Users banUser, string reason)
         {
             string query = $"INSERT INTO Banned " +
                            $"(reason, userId) " +
@@ -150,19 +162,25 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@reason", reason);
 
                 using SqlDataReader reader = command.ExecuteReader();
+                return true;
             }
             catch (SqlException e)
             {
                 System.Diagnostics.Debug.WriteLine(e.Message);
                 connection.Close();
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
 
-        public void UnbanUserDAL(Users bannedUser)
+        public bool UnbanUserDAL(Users bannedUser)
         {
             // Set up the query
             string query = $"DELETE FROM Banned WHERE userId = @userId";
@@ -180,17 +198,22 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@userId", bannedUser.Id);
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
-                reader.Close();
+                return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
 
         public bool IsUserBannedDAL(Users bannedUser)
@@ -218,6 +241,10 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {
@@ -251,6 +278,10 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
@@ -283,13 +314,17 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
             return false;
         }
-        public void DeleteUserDAL(int id)
+        public bool DeleteUserDAL(int id)
         {
             // Set up the query
             string query = $"DELETE FROM {tableName} WHERE id = @id";
@@ -297,29 +332,35 @@ namespace DataAccessLayer
             {
                 UnbanUserDAL(GetUserByIdDAL(id));
             }
-            // Open the connection
-            connection.Open();
-
-            // Creating Command string to combine the query and the connection String
-            SqlCommand command = new SqlCommand(query, Connection.connection);
-
-            // Add the parameters
-            command.Parameters.AddWithValue("@id", id);
-
+            
             try
             {
+                // Open the connection
+                connection.Open();
+
+                // Creating Command string to combine the query and the connection String
+                SqlCommand command = new SqlCommand(query, Connection.connection);
+
+                // Add the parameters
+                command.Parameters.AddWithValue("@id", id);
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
+                return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
         public Users GetUserByUsernameDAL(string username)
         {
@@ -348,6 +389,10 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {
@@ -383,6 +428,10 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {
@@ -427,7 +476,11 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                connection.Close();
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 return false;
             }
             finally
@@ -466,11 +519,51 @@ namespace DataAccessLayer
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
             return user;
+        }
+        public Tuple<string, string> hashSaltDAL(string username)
+        {
+            string query = $"SELECT passwordHash, passwordSalt FROM {tableName} WHERE username = @username";
+            Tuple<string, string> hashSalt = null;
+            try
+            {
+                // Open the connection
+                connection.Open();
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                // Add the parameters
+                command.Parameters.AddWithValue("@username", username);
+
+                // Execute the query and get the data
+                using SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    hashSalt = new Tuple<string, string>((string)reader["passwordHash"], (string)reader["passwordSalt"]);
+                }
+            }
+            catch (SqlException e)
+            {
+                // Handle any errors that may have occurred.
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch(Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return hashSalt;
         }
     }
 }

@@ -1,12 +1,14 @@
 using Classes;
 using DTOs;
 using InterfacesLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Linq;
 
 namespace Website.Pages.Member
 {
+    [Authorize]
     public class SettingsModel : PageModel
     {
         [BindProperty]
@@ -39,10 +41,6 @@ namespace Website.Pages.Member
             {
                 IsLoggedIn = true;
                 LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
-            }
-            if (User.Identity == null && !User.Identity.IsAuthenticated)
-            {
-                Response.Redirect("/Login");
             }
         }
         public IActionResult OnPostUploadPicture()

@@ -82,7 +82,7 @@ namespace DataAccessLayer
                 connection.Close();
             }
         }
-        public void DeleteBeverageDAL(int id)
+        public bool DeleteBeverageDAL(int id)
         {
             // Set up the query
             string query = $"DELETE FROM {tableName} WHERE id = @id";
@@ -100,16 +100,22 @@ namespace DataAccessLayer
             {
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
+                return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
             }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
             finally
             {
                 connection.Close();
             }
+            return false;
         }
         public bool UpdateBeverageDAL(BeverageDTO updateBeverage)
         {
@@ -135,15 +141,17 @@ namespace DataAccessLayer
 
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
-
-                connection.Close();
                 return true;
             }
             catch (SqlException e)
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                connection.Close();
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
                 return false;
             }
             finally

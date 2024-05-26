@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,10 @@ namespace InterfacesDAL
 {
     public interface ICommentsDAL
     {
+        Comments GetCommentByIdDAL(int id);
+        List<Comments> GetAllCommentsDAL(int eventId);
+        bool CreateCommentDAL(Comments comment);
+        bool DeleteCommentDAL(int id);
+        string GetCommentUserDAL(int id);
     }
 }
