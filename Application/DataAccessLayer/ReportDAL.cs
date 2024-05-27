@@ -57,10 +57,9 @@ namespace DataAccessLayer
         /**
         * Query that gets all reports
         */
-        public List<Report> GetAllReportsDAL(int eventId)
+        public List<Report> GetAllReportsDAL()
         {
             string query = $"SELECT * FROM {tableName}";
-
 
             try
             {
@@ -70,7 +69,6 @@ namespace DataAccessLayer
                 // Creating Command string to combine the query and the connection String
                 SqlCommand command = new SqlCommand(query, Connection.connection);
 
-                command.Parameters.AddWithValue("@id", eventId);
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
                 List<Report> reports = new List<Report>();
@@ -125,7 +123,6 @@ namespace DataAccessLayer
             {
                 // Handle any errors that may have occurred.
                 System.Diagnostics.Debug.WriteLine(e.Message);
-                connection.Close();
             }
             catch (Exception ex)
             {

@@ -11,7 +11,7 @@ namespace InterfacesDAL
     public interface IUserDAL
     {
         bool CreateUserDAL(RegisterDTO newUser);
-        LoginDTO GetUserForLoginDTODAL(string username, string password);
+        UserDTO GetUserDTOForLoginDAL(string username);
         Users GetUserByIdDAL(int id);
         bool BanUserDAL(Users banUser, string reason);
         bool UnbanUserDAL(Users banUser);

@@ -3,10 +3,10 @@
 @{
 }
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 @section Styles {
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/LoginSignup.css">
 
     <!-- Boxicons CSS -->
@@ -16,6 +16,7 @@
     <div class="form login">
         <div class="form-content">
             <div class="topform">Login</div>
+            <div><h6 class="error-message">@ViewData["Error"]</h6></div>
             <form method="post" novalidate>
                 <div class="field input-field">
                     <input type="text" placeholder="Username *" asp-for="LoginDTO.Username" class="input">

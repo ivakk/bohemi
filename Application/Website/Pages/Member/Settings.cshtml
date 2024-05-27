@@ -5,8 +5,8 @@
     Layout = "_LoggedInLayout";
 }
 
-<meta charset="utf-8">
 @section Styles {
+    <meta charset="utf-8">
     <link rel="stylesheet" href="/css/Settings.css">
 }
 
@@ -39,6 +39,7 @@
         <div class="col-xl-8">
             <div class="card mb-4">
                 <div class="card-header">Account Details</div>
+                <div><h6 class="error-message">@ViewData["Error"]</h6></div>
                 <div class="card-body">
                     <form asp-page-handler="Details" method="post" novalidate>
                         <div class="mb-3">

@@ -1,5 +1,6 @@
 ﻿using Classes;
 using DTOs;
+using InterfacesDAL;
 using InterfacesLL;
 using System;
 using System.Collections.Generic;
@@ -11,29 +12,86 @@ namespace LogicLayer
 {
     public class EventLL : IEventLL
     {
+        public readonly IEventDAL _eventDAL;
+
+        public EventLL(IEventDAL eventDAL)
+        {
+            this._eventDAL = eventDAL;
+        }
+
         public bool CreateEvent(EventDTO newEvent)
         {
-            throw new NotImplementedException();
+            if (newEvent == null)
+            {
+                return false;
+            }
+            else if (newEvent.Id == null || string.IsNullOrEmpty(newEvent.Title) || string.IsNullOrEmpty(newEvent.Description) || string.IsNullOrEmpty(newEvent.Day.ToString())
+                 || string.IsNullOrEmpty(newEvent.Picture.ToString()))
+            {
+                return false;
+            }
+            else
+            {
+                return _eventDAL.CreateEventDAL(newEvent);
+            }
         }
 
         public bool DeleteEvent(int id)
         {
-            throw new NotImplementedException();
+            if (id < 0 || id == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _eventDAL.DeleteEventDAL(id);
+            }
         }
 
         public List<Event> GetAllEvents()
         {
-            throw new NotImplementedException();
+            return _eventDAL.GetAllEventsDAL();
         }
 
         public Event GetEventById(int id)
         {
-            throw new NotImplementedException();
+            if (id < 0 || id == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _eventDAL.GetEventByIdDAL(id);
+            }
         }
 
         public bool UpdateEvent(EventDTO updateEvent)
         {
-            throw new NotImplementedException();
+            if (updateEvent == null)
+            {
+                return false;
+            }
+            else if (updateEvent.Id == null || string.IsNullOrEmpty(updateEvent.Title) || string.IsNullOrEmpty(updateEvent.Description) || string.IsNullOrEmpty(updateEvent.Day.ToString())
+                 || string.IsNullOrEmpty(updateEvent.Picture.ToString()))
+            {
+                return false;
+            }
+            else
+            {
+                return _eventDAL.UpdateEventDAL(updateEvent);
+            }
+        }
+        public List<Event> GetEventsBySearch(string search)
+        {
+            List<Event> result = new List<Event>();
+            foreach (Event Event in GetAllEvents())
+            {
+                if (Event.GetObjectString().Contains(search))
+                {
+                    result.Add(Event);
+                }
+            }
+            return result;
         }
     }
 }

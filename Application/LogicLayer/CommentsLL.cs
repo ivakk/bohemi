@@ -1,4 +1,5 @@
 ﻿using Classes;
+using InterfacesDAL;
 using InterfacesLL;
 using System;
 using System.Collections.Generic;
@@ -10,29 +11,75 @@ namespace LogicLayer
 {
     public class CommentsLL : ICommentsLL
     {
+        private readonly ICommentsDAL _commentsDAL;
+
+        public CommentsLL(ICommentsDAL commentsDAL)
+        {
+            this._commentsDAL = commentsDAL;
+        }
         public bool CreateComment(Comments comment)
         {
-            throw new NotImplementedException();
+            if (comment == null)
+            {
+                return false;
+            }
+            else if (comment.Id == null || string.IsNullOrEmpty(comment.UserId.ToString()) || string.IsNullOrEmpty(comment.EventId.ToString()) || string.IsNullOrEmpty(comment.CommentDate.ToString())
+                 || string.IsNullOrEmpty(comment.Information.ToString()))
+            {
+                return false;
+            }
+            else
+            {
+                return _commentsDAL.CreateCommentDAL(comment);
+            }
         }
 
         public bool DeleteComment(int id)
         {
-            throw new NotImplementedException();
+            if (id < 0 || id == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _commentsDAL.DeleteCommentDAL(id);
+            }
         }
 
         public List<Comments> GetAllComments(int eventId)
         {
-            throw new NotImplementedException();
+            if (eventId < 0 || eventId == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _commentsDAL.GetAllCommentsDAL(eventId);
+            }
         }
 
         public Comments GetCommentById(int id)
         {
-            throw new NotImplementedException();
+            if (id < 0 || id == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _commentsDAL.GetCommentByIdDAL(id);
+            }
         }
 
         public string GetCommentUser(int id)
         {
-            throw new NotImplementedException();
+            if (id < 0 || id == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _commentsDAL.GetCommentUserDAL(id);
+            }
         }
     }
 }

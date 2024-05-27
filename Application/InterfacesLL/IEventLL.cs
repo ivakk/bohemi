@@ -15,5 +15,6 @@ namespace InterfacesLL
         bool DeleteEvent(int id);
         List<Event> GetAllEvents();
         bool UpdateEvent(EventDTO updateEvent);
+        List<Event> GetEventsBySearch(string search);
     }
 }

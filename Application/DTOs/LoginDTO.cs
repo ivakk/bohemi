@@ -9,19 +9,15 @@ namespace DTOs
 {
     public class LoginDTO
     {
-        public int Id { get; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Username field is required!")]
         public string Username { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Password field is required!")]
         public string PasswordEntry { get; set; }
-        public string? Role { get; set; }
 
-        public LoginDTO(int id, string username, string passwordEntry, string role)
+        public LoginDTO(string username, string passwordEntry)
         {
-            Id = id;
             Username = username;
             PasswordEntry = passwordEntry;
-            Role = role;
         }
         
         public LoginDTO() 

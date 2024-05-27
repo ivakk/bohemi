@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,10 @@ namespace Classes
             Description = description;
             Day = day;
             Picture = picture;
+        }
+        public string GetObjectString()
+        {
+            return Id.ToString() + Title + Day.ToString();
         }
     }
 }

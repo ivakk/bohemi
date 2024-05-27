@@ -8,17 +8,14 @@ namespace Website.Pages
 {
     public class IndexModel : PageModel
     {
-        public Users LoggedInUser { get; set; }
-
         private readonly IUserLL _userLL;
 
         public bool IsLoggedIn { get; set; }
         private readonly ILogger<IndexModel> _logger;
 
-        public IndexModel(ILogger<IndexModel> logger, IUserLL _userLL)
+        public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
-            this._userLL = _userLL;
         }
 
         public void OnGet()

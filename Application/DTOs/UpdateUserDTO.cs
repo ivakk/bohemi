@@ -40,7 +40,7 @@ namespace DTOs
         [StringLength(32, MinimumLength = 8, ErrorMessage = "Passwords should match!")]
         public string? ConfirmPassword { get; set; }
 
-        public UpdateUserDTO(int id, byte[] profilePicture, string firstName, string lastName, DateTime birthday, string username, string email, string passwordHash, string passwordSalt, string phoneNumber, string role)
+        public UpdateUserDTO(int id, byte[] profilePicture, string firstName, string lastName, DateTime birthday, string username, string email, string password, string phoneNumber, string role)
         {
             Id = id;
             ProfilePicture = profilePicture;
@@ -49,8 +49,7 @@ namespace DTOs
             Birthday = birthday;
             Username = username;
             Email = email;
-            PasswordHash = passwordHash;
-            PasswordSalt = passwordSalt;
+            Password = password;
             PhoneNumber = phoneNumber;
             Role = role;
         }

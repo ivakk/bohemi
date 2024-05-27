@@ -69,10 +69,10 @@ namespace DataAccessLayer
             return false;
         }
 
-        public LoginDTO GetUserForLoginDTODAL(string username, string password)
+        public UserDTO GetUserDTOForLoginDAL(string username)
         {
-            LoginDTO user = null;
-            string query = $"SELECT * FROM {tableName} WHERE username = @username";
+            UserDTO user = null;
+            string query = $"SELECT id, role FROM {tableName} WHERE username = @username";
 
 
             try
@@ -89,7 +89,7 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new LoginDTO((int)reader["id"], (string)reader["username"], password, (string)reader["role"]);
+                    user = (new UserDTO((int)reader["id"], (string)reader["role"]));
                 }
             }
             catch (SqlException e)
@@ -509,8 +509,8 @@ namespace DataAccessLayer
                 while (reader.Read())
                 {
                     user = new UpdateUserDTO((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"], 
-                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["passwordHash"], 
-                        (string)reader["passwordSalt"], !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, 
+                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["password"],
+                        !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, 
                         (string)reader["role"]);
                 }
             }

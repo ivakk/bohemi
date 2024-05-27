@@ -1742,6 +1742,36 @@
         "runtime": {
           "bin/placeholder/InterfacesDAL.dll": {}
         }
+      },
+      "InterfacesLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Classes": "1.0.0",
+          "DTOs": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InterfacesLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfacesLL.dll": {}
+        }
+      },
+      "LogicLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Classes": "1.0.0",
+          "DTOs": "1.0.0",
+          "InterfacesDAL": "1.0.0",
+          "InterfacesLL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LogicLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LogicLayer.dll": {}
+        }
       }
     }
   },
@@ -5546,12 +5576,23 @@
       "type": "project",
       "path": "../InterfacesDAL/InterfacesDAL.csproj",
       "msbuildProject": "../InterfacesDAL/InterfacesDAL.csproj"
+    },
+    "InterfacesLL/1.0.0": {
+      "type": "project",
+      "path": "../InterfacesLL/InterfacesLL.csproj",
+      "msbuildProject": "../InterfacesLL/InterfacesLL.csproj"
+    },
+    "LogicLayer/1.0.0": {
+      "type": "project",
+      "path": "../LogicLayer/LogicLayer.csproj",
+      "msbuildProject": "../LogicLayer/LogicLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Classes >= 1.0.0",
       "InterfacesDAL >= 1.0.0",
+      "LogicLayer >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.8.0",
       "coverlet.collector >= 6.0.0",
       "xunit >= 2.5.3",
@@ -5590,6 +5631,9 @@
             },
             "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
               "projectPath": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+            },
+            "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj"
             }
           }
         }

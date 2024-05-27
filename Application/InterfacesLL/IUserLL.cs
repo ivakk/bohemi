@@ -12,7 +12,7 @@ namespace InterfacesLL
     {
         bool CreateUser(RegisterDTO newUser);
         bool IsPasswordCorrect(string username, string password);
-        LoginDTO CheckUser(string username, string password);
+        UserDTO CheckUser(string username, string password);
         Users GetUserById(int id);
         bool BanUser(Users banUser, string reason);
         bool UnbanUser(Users banUser);

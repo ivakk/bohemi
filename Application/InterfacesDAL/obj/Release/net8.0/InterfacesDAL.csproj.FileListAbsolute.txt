@@ -1,0 +1,17 @@
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\InterfacesDAL.deps.json
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\InterfacesDAL.dll
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\InterfacesDAL.pdb
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\Classes.dll
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\DTOs.dll
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\Classes.pdb
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\bin\Release\net8.0\DTOs.pdb
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.csproj.AssemblyReference.cache
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.AssemblyInfoInputs.cache
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.AssemblyInfo.cs
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.csproj.CoreCompileInputs.cache
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\Interfac.3BC132DC.Up2Date
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.dll
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\refint\InterfacesDAL.dll
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\InterfacesDAL.pdb
+C:\Users\ivk\Desktop\k\bohemi\Application\InterfacesDAL\obj\Release\net8.0\ref\InterfacesDAL.dll

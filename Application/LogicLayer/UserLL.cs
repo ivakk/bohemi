@@ -29,13 +29,23 @@ namespace LogicLayer
             {
                 return false;
             }
-            else if (string.IsNullOrEmpty(newUser.FirstName) || string.IsNullOrEmpty(newUser.LastName) || newUser.Birthday == null || string.IsNullOrEmpty(newUser.Username) || string.IsNullOrEmpty(newUser.Email)
-                 || string.IsNullOrEmpty(newUser.PasswordHash) || string.IsNullOrEmpty(newUser.PasswordSalt) || string.IsNullOrEmpty(newUser.PhoneNumber) || string.IsNullOrEmpty(newUser.Role))
+            else if (string.IsNullOrEmpty(newUser.FirstName) || string.IsNullOrEmpty(newUser.LastName) || newUser.Birthday == null || string.IsNullOrEmpty(newUser.Username) || 
+                string.IsNullOrEmpty(newUser.Password) || string.IsNullOrEmpty(newUser.Email) || string.IsNullOrEmpty(newUser.PhoneNumber) || string.IsNullOrEmpty(newUser.Role))
             {
-                return true;
+                return false;
+            }
+            else if (IsUsernameUsed(newUser.Username) == true)
+            {
+                throw new ApplicationException();
+            }
+            else if (IsEmailUsed(newUser.Email) == true)
+            {
+                throw new ArgumentOutOfRangeException();
             }
             else
             {
+                newUser.PasswordSalt = passwordHashingLL.PassSalt(10);
+                newUser.PasswordHash = passwordHashingLL.PassHash(newUser.Password, newUser.PasswordSalt);
                 return _userDAL.CreateUserDAL(newUser);
             }
         }
@@ -63,11 +73,11 @@ namespace LogicLayer
                 return false;
             }
         }
-        public LoginDTO CheckUser(string username, string password)
+        public UserDTO CheckUser(string username, string password)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                throw new ArgumentNullException("username");
+                throw new ArgumentNullException("username or password");
             }
             else if (!IsPasswordCorrect(username, password))
             {
@@ -75,7 +85,7 @@ namespace LogicLayer
             }
             else
             {
-                return _userDAL.GetUserForLoginDTODAL(username, password);
+                return _userDAL.GetUserDTOForLoginDAL(username);
             }
         }
         public Users GetUserById(int id)
@@ -186,16 +196,35 @@ namespace LogicLayer
         {
             if (updateUser == null)
             {
-                throw new ArgumentNullException();
+                return false;
             }
             else if (string.IsNullOrEmpty(updateUser.FirstName) || string.IsNullOrEmpty(updateUser.LastName) || updateUser.Birthday == null || string.IsNullOrEmpty(updateUser.Username) 
-                 || string.IsNullOrEmpty(updateUser.Email) || string.IsNullOrEmpty(updateUser.PasswordHash) || string.IsNullOrEmpty(updateUser.PasswordSalt) || string.IsNullOrEmpty(updateUser.PhoneNumber) 
+                 || string.IsNullOrEmpty(updateUser.Email) || string.IsNullOrEmpty(updateUser.Password) || string.IsNullOrEmpty(updateUser.PasswordSalt) || string.IsNullOrEmpty(updateUser.PhoneNumber) 
                  || string.IsNullOrEmpty(updateUser.Role))
             {
-                throw new ArgumentNullException();
+                return false;
+            }
+            else if (IsUsernameUsed(updateUser.Username) == true)
+            {
+                throw new ApplicationException();
+            }
+            else if (IsEmailUsed(updateUser.Email) == true)
+            {
+                throw new ArgumentOutOfRangeException();
             }
             else
             {
+                if (updateUser.Password == "")
+                {
+                    Tuple<string, string> hashSalt = _userDAL.hashSaltDAL(updateUser.Username);
+                    updateUser.PasswordHash = hashSalt.Item1;
+                    updateUser.PasswordSalt = hashSalt.Item2;
+                }
+                else
+                {
+                    updateUser.PasswordSalt = passwordHashingLL.PassSalt(10);
+                    updateUser.PasswordHash = passwordHashingLL.PassHash(updateUser.Password, updateUser.PasswordSalt);
+                }
                 return _userDAL.UpdateUserDAL(updateUser);
             }
         }

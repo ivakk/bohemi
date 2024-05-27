@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Website.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Index.css"
+    },
+    {
       "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
       "PackagePath": "staticwebassets\\css\\LoginSignup.css"
     },
@@ -23,6 +27,22 @@
     {
       "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\images\\LoginSignupBackground.jpg",
       "PackagePath": "staticwebassets\\images\\LoginSignupBackground.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\images\\piano1.jpg",
+      "PackagePath": "staticwebassets\\images\\piano1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\images\\piano2.jpg",
+      "PackagePath": "staticwebassets\\images\\piano2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\images\\piano3.jpg",
+      "PackagePath": "staticwebassets\\images\\piano3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Index.js"
     },
     {
       "Id": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\LoginSignup.js",

@@ -27,7 +27,7 @@ namespace LogicLayer
             else if (newAlcohol.Picture == null || string.IsNullOrEmpty(newAlcohol.Name) || string.IsNullOrEmpty(newAlcohol.Size.ToString()) || string.IsNullOrEmpty(newAlcohol.Price.ToString())
                  || string.IsNullOrEmpty(newAlcohol.Percentage.ToString()) || string.IsNullOrEmpty(newAlcohol.Age.ToString()))
             {
-                return true;
+                return false;
             }
             else
             {
@@ -68,12 +68,12 @@ namespace LogicLayer
         {
             if (newAlcohol == null)
             {
-                throw new ArgumentNullException();
+                return false;
             }
             else if (newAlcohol.Picture == null || string.IsNullOrEmpty(newAlcohol.Name) || string.IsNullOrEmpty(newAlcohol.Size.ToString()) || string.IsNullOrEmpty(newAlcohol.Price.ToString())
                  || string.IsNullOrEmpty(newAlcohol.Percentage.ToString()) || string.IsNullOrEmpty(newAlcohol.Age.ToString()))
             {
-                throw new ArgumentNullException();
+                return false;
             }
             else
             {

@@ -24,15 +24,14 @@ namespace Website.Pages.Member
         private string updatedUsername;
         private string updatedEmail;
         private string updatedPhoneNumber;
+        private string updatedPassword;
 
 
         private readonly IUserLL _userLL;
-        private readonly IPasswordHashingLL _passwordHashingLL;
 
-        public SettingsModel(IUserLL userLL, IPasswordHashingLL passwordHashingLL)
+        public SettingsModel(IUserLL userLL)
         {
             _userLL = userLL;
-            _passwordHashingLL = passwordHashingLL;
         }
         public void OnGet(int id)
         {
@@ -66,7 +65,7 @@ namespace Website.Pages.Member
                 LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
                 UpdateUserDTO updateUser = _userLL.GetUserForUpdateDTO(LoggedInUser.Id);
                 _userLL.UpdateUser(new UpdateUserDTO(LoggedInUser.Id, pictureBytes, LoggedInUser.FirstName, LoggedInUser.LastName, LoggedInUser.Birthday, LoggedInUser.Username,
-                    LoggedInUser.Email, updateUser.PasswordHash, updateUser.PasswordSalt, LoggedInUser.PhoneNumber, LoggedInUser.Role));
+                    LoggedInUser.Email, updateUser.Password, LoggedInUser.PhoneNumber, LoggedInUser.Role));
                 Message = "File uploaded and processed successfully.";
 
 
@@ -76,88 +75,111 @@ namespace Website.Pages.Member
         }
         public IActionResult OnPostDetails()
         {
-            if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8 && UpdateUserDTO.Password != UpdateUserDTO.ConfirmPassword)
+            try 
             {
-                ViewData["Error"] = "Passwords don't match!";
+                if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8 && UpdateUserDTO.Password != UpdateUserDTO.ConfirmPassword)
+                {
+                    ViewData["Error"] = "Passwords don't match!";
+                    return Page();
+                }
+                else
+                {
+                    LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
+
+                    if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8)
+                    {
+                        updatedPassword = UpdateUserDTO.Password;
+                    }
+                    else
+                    {
+                        updatedPassword = "";
+                    }
+
+                    if (UpdateUserDTO.FirstName != null && UpdateUserDTO.FirstName.Length > 0)
+                    {
+                        updatedFirstName = UpdateUserDTO.FirstName;
+                    }
+                    else
+                    {
+                        updatedFirstName = LoggedInUser.FirstName;
+                    }
+
+                    if (UpdateUserDTO.LastName != null && UpdateUserDTO.LastName.Length > 0)
+                    {
+                        updatedLastName = UpdateUserDTO.LastName;
+                    }
+                    else
+                    {
+                        updatedLastName = LoggedInUser.LastName;
+                    }
+
+                    if (UpdateUserDTO.Username != null && UpdateUserDTO.Username.Length >= 3)
+                    {
+                        updatedUsername = UpdateUserDTO.Username;
+                    }
+                    else
+                    {
+                        updatedUsername = LoggedInUser.Username;
+                    }
+
+                    if (UpdateUserDTO.Email != null && UpdateUserDTO.Email.Length > 0)
+                    {
+                        updatedEmail = UpdateUserDTO.Email;
+                    }
+                    else
+                    {
+                        updatedEmail = LoggedInUser.Email;
+                    }
+
+                    if (UpdateUserDTO.PhoneNumber != null && UpdateUserDTO.PhoneNumber.Length > 0)
+                    {
+                        updatedPhoneNumber = UpdateUserDTO.PhoneNumber;
+                    }
+                    else
+                    {
+                        updatedPhoneNumber = LoggedInUser.PhoneNumber;
+                    }
+
+                    UpdateUserDTO userUpdate = _userLL.GetUserForUpdateDTO(LoggedInUser.Id);
+                    UpdateUserDTO updateUser = new UpdateUserDTO(LoggedInUser.Id,
+                                            LoggedInUser.ProfilePicture,
+                                            updatedFirstName,
+                                            updatedLastName,
+                                            LoggedInUser.Birthday,
+                                            updatedUsername,
+                                            updatedEmail,
+                                            userUpdate.Password,
+                                            updatedPhoneNumber,
+                                            LoggedInUser.Role);
+                    
+                    bool success = _userLL.UpdateUser(updateUser);
+
+                    if (success)
+                    {
+                        return RedirectToPage(new { id = LoggedInUser.Id });
+                    }
+                    else
+                    {
+                        return RedirectToPage(new { id = LoggedInUser.Id });
+                    }
+                }
+            }
+            catch (ApplicationException)
+            {
+                ViewData["Error"] = "Username is already in use!";
                 return Page();
             }
-            else
+            catch (ArgumentOutOfRangeException)
             {
-                LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
-                
-                System.Diagnostics.Debug.WriteLine(LoggedInUser.LastName);
-
-                if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8)
-                {
-                    UpdateUserDTO.PasswordSalt = _passwordHashingLL.PassSalt(10);
-                    UpdateUserDTO.PasswordHash = _passwordHashingLL.PassHash(UpdateUserDTO.Password, UpdateUserDTO.PasswordSalt);
-                }
-                else
-                {
-                    UpdateUserDTO.PasswordSalt = _userLL.GetUserForUpdateDTO(LoggedInUser.Id).PasswordSalt;
-                    UpdateUserDTO.PasswordHash = _userLL.GetUserForUpdateDTO(LoggedInUser.Id).PasswordHash;
-                }
-
-                if (UpdateUserDTO.FirstName != null && UpdateUserDTO.FirstName.Length > 0)
-                {
-                    updatedFirstName = UpdateUserDTO.FirstName;
-                }
-                else
-                {
-                    updatedFirstName = LoggedInUser.FirstName;
-                }
-
-                if (UpdateUserDTO.LastName != null && UpdateUserDTO.LastName.Length > 0)
-                {
-                    updatedLastName = UpdateUserDTO.LastName;
-                }
-                else
-                {
-                    updatedLastName = LoggedInUser.LastName;
-                }
-
-                if (UpdateUserDTO.Username != null && UpdateUserDTO.Username.Length >= 3)
-                {
-                    updatedUsername = UpdateUserDTO.Username;
-                }
-                else
-                {
-                    updatedUsername = LoggedInUser.Username;
-                }
-
-                if (UpdateUserDTO.Email != null && UpdateUserDTO.Email.Length > 0)
-                {
-                    updatedEmail = UpdateUserDTO.Email;
-                }
-                else
-                {
-                    updatedEmail = LoggedInUser.Email;
-                }
-
-                if (UpdateUserDTO.PhoneNumber != null && UpdateUserDTO.PhoneNumber.Length > 0)
-                {
-                    updatedPhoneNumber = UpdateUserDTO.PhoneNumber;
-                }
-                else
-                {
-                    updatedPhoneNumber = LoggedInUser.PhoneNumber;
-                }
-
-                UpdateUserDTO userUpdate = _userLL.GetUserForUpdateDTO(LoggedInUser.Id);
-                UpdateUserDTO updateUser = new UpdateUserDTO(LoggedInUser.Id,
-                                        LoggedInUser.ProfilePicture,
-                                        updatedFirstName,
-                                        updatedLastName,
-                                        LoggedInUser.Birthday,
-                                        updatedUsername,
-                                        updatedEmail,
-                                        userUpdate.PasswordHash,
-                                        userUpdate.PasswordSalt,
-                                        updatedPhoneNumber,
-                                        LoggedInUser.Role);
-                _userLL.UpdateUser(updateUser);
-                return RedirectToPage(new { id = LoggedInUser.Id });
+                ViewData["Error"] = "Email address is already in use!";
+                return Page();
             }
+            catch (Exception)
+            {
+                ViewData["Error"] = "Something went wrong!";
+                return Page();
+            }
+
         }
         public IActionResult OnGetUserImage()
         {
@@ -168,7 +190,6 @@ namespace Website.Pages.Member
             }
             if (LoggedInUser.ProfilePicture != null && LoggedInUser.ProfilePicture.Length > 0)
             {
-                // Assume JPEG for simplicity. You might need to store the image format or detect it dynamically.
                 return File(LoggedInUser.ProfilePicture, "image/jpeg");
             }
             return NotFound();

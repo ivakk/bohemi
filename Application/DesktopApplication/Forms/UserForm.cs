@@ -23,15 +23,13 @@ namespace DesktopApplication.Forms
 
 
         private readonly IUserLL _userLL;
-        private readonly IPasswordHashingLL _passwordHashingLL;
 
-        public UserForm(Menu menu, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
+        public UserForm(Menu menu, IUserLL userLL)
         {
             InitializeComponent();
             this.menu = menu;
             this._userLL = userLL;
-            this._passwordHashingLL = passwordHashingLL;
-            addUserForm = new AddUserForm(this, _userLL, _passwordHashingLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            addUserForm = new AddUserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             banUserForm = new BanUserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             unbanUserForm = new UnbanUserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
         }
@@ -58,7 +56,7 @@ namespace DesktopApplication.Forms
             flpUsers.Controls.Clear();
             foreach (Users user in users)
             {
-                UsersUC userControl = new UsersUC(user, this, this._userLL, this._passwordHashingLL);
+                UsersUC userControl = new UsersUC(user, this, this._userLL);
                 flpUsers.Controls.Add(userControl);
                 userControl.Show();
             }

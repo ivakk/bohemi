@@ -10,7 +10,7 @@ namespace InterfacesLL
     public interface IReportLL
     {
         Report GetReportById(int id);
-        List<Report> GetAllReports(int eventId);
+        List<Report> GetAllReports();
         bool CreateReport(Report report);
         bool DeleteReport(int id);
     }

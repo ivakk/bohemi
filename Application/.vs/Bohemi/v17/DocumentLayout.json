@@ -3,120 +3,232 @@
   "WorkspaceRootPath": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\eventll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\eventll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|c:\\users\\ivk\\desktop\\k\\bohemi\\application\\website\\website.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\website.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|c:\\users\\ivk\\desktop\\k\\bohemi\\application\\website\\pages\\member\\settings.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\member\\settings.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\member\\settings.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\member\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\member\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\alcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\alcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\member\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\member\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\eventsubforms\\addeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\eventsubforms\\addeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\userll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\userll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ialcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ialcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ialcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ialcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\eventsubforms\\addeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\eventsubforms\\addeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\commentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\commentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\softll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\softll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\reservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\reservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\reportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\reportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\isoftll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\isoftll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\isoftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\isoftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ireportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ireportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ireservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ireservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ireportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ireportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\eventsubforms\\addeventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\eventsubforms\\addeventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ieventll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ieventll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ieventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ieventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\eventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\eventform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\icommentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\icommentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\eventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\icommentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\icommentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\iuserll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ibeveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ibeveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\eventll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\eventll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\beverage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\soft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\soft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ireservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ireservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\reservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\reservationll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\isoftll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\isoftll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\events.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\commentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\commentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\beveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\beveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\reportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\reportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\alcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\alcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\unittests\\mockdal\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\mockdal\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\eventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\eventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\reportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\reportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\shared\\_loggedinlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\shared\\_loggedinlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\css\\settings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\settings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\softll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\softll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\softdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,24 +239,91 @@
       "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\reservationdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\reportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\reportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\beveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\beveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\alcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\alcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ireportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ireportll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ireportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ireportdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\eventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\eventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\commentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\commentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\iuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dataaccesslayer\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50A5FDD6-56E2-4F0C-93AD-4B33D6DD3168}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\updateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\softdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\softdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\logiclayer\\alcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0F1D05A-CEF5-4C4C-82A0-0CEB322C623C}|LogicLayer\\LogicLayer.csproj|solutionrelative:logiclayer\\alcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\logindto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\logindto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\icommentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\icommentsll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ivk\\Desktop\\k\\bohemi\\.vs\\VSWorkspaceState.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ialcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ialcoholll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ialcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ialcoholdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\isoftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\isoftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ieventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ieventdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\icommentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\icommentsdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesdal\\ibeveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BB23F1-6274-49BC-8DC8-26E874D215C9}|InterfacesDAL\\InterfacesDAL.csproj|solutionrelative:interfacesdal\\ibeveragedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\softdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\softdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\dtos\\eventdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -163,108 +342,16 @@
       "RelativeMoniker": "D:0:0:{1B281EEB-2F63-417E-9555-FA4AF6C5513E}|DTOs\\DTOs.csproj|solutionrelative:dtos\\alcoholdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\soft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\soft.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FE57573-5F66-4540-8B60-325B4EC360D6}|InterfacesLL\\InterfacesLL.csproj|solutionrelative:interfacesll\\ipasswordhashingll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|solutionrelative:classes\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\unittests\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F9EA1C8-D54F-4B50-AAF5-866FDE5D446A}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\mockuserdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\shared\\_loggedinlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\shared\\_loggedinlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\css\\settings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\settings.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\css\\loginsignup.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\website.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\website.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\privacy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\pages\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\pages\\error.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -291,14 +378,6 @@
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -319,14 +398,6 @@
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\banuserform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\unbanuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\unbanuserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -339,16 +410,8 @@
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\usercontrols\\usersuc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\usersubforms\\adduserform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\desktopapplication\\forms\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE10A5D8-3566-4910-9822-5F6DB9642BE4}|DesktopApplication\\DesktopApplication.csproj|solutionrelative:desktopapplication\\forms\\userform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{48637191-3604-46DE-A90F-9156C1F03306}|Website\\Website.csproj|solutionrelative:website\\wwwroot\\js\\loginsignup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63ACD63E-7DB8-48E4-9713-60C6EB8CA335}|Classes\\Classes.csproj|C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\classes\\alcohol.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -362,138 +425,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\EventLL.cs",
-              "RelativeDocumentMoniker": "LogicLayer\\EventLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\EventLL.cs",
-              "RelativeToolTip": "LogicLayer\\EventLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
+              "DocumentIndex": 7,
+              "Title": "AddEventForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowCYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:48:57.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T00:20:33.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReportLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReportLL.cs",
-              "RelativeDocumentMoniker": "LogicLayer\\ReportLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReportLL.cs",
-              "RelativeToolTip": "LogicLayer\\ReportLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAlAAAA",
+              "DocumentIndex": 8,
+              "Title": "AddUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAkwI4AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:49:05.222Z"
+              "WhenOpened": "2024-04-23T22:00:34.502Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ReservationLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReservationLL.cs",
-              "RelativeDocumentMoniker": "LogicLayer\\ReservationLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReservationLL.cs",
-              "RelativeToolTip": "LogicLayer\\ReservationLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Title": "AddUserForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAIAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:49:25.873Z"
+              "WhenOpened": "2024-04-23T22:01:17.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SoftLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\SoftLL.cs",
-              "RelativeDocumentMoniker": "LogicLayer\\SoftLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\SoftLL.cs",
-              "RelativeToolTip": "LogicLayer\\SoftLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:49:35.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "UserLL.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\UserLL.cs",
               "RelativeDocumentMoniker": "LogicLayer\\UserLL.cs",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\UserLL.cs",
               "RelativeToolTip": "LogicLayer\\UserLL.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAADwv8sAAAAVAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwOsAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T23:03:27.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IAlcoholLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IAlcoholLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\IAlcoholLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IAlcoholLL.cs",
-              "RelativeToolTip": "InterfacesLL\\IAlcoholLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T17:34:24.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IAlcoholDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IAlcoholDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IAlcoholDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IAlcoholDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IAlcoholDAL.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T17:24:54.774Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IUserLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IUserLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\IUserLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IUserLL.cs",
-              "RelativeToolTip": "InterfacesLL\\IUserLL.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBwAAAAyAAAA",
+              "Title": "BanUserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvzMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T23:08:40.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IUserDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IUserDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IUserDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IUserDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IUserDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:51:45.589Z"
+              "WhenOpened": "2024-04-23T22:01:30.289Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\SignUp.cshtml",
+              "RelativeToolTip": "Website\\Pages\\SignUp.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-22T11:05:09.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SignUp.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\SignUp.cshtml.cs",
               "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml.cs",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\SignUp.cshtml.cs",
               "RelativeToolTip": "Website\\Pages\\SignUp.cshtml.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAjwDIAAAAQAAAA",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwD8AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T00:02:33.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Settings.cshtml",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Member\\Settings.cshtml",
               "RelativeDocumentMoniker": "Website\\Pages\\Member\\Settings.cshtml",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Member\\Settings.cshtml",
               "RelativeToolTip": "Website\\Pages\\Member\\Settings.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAA1AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-11T16:10:14.095Z"
             },
@@ -505,362 +531,119 @@
               "RelativeDocumentMoniker": "Website\\Pages\\Member\\Settings.cshtml.cs",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Member\\Settings.cshtml.cs",
               "RelativeToolTip": "Website\\Pages\\Member\\Settings.cshtml.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAAwE4AAABjAAAA",
+              "ViewState": "AQIAAJsAAAAAAAAAAAAkwKMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T16:16:53.148Z",
+              "WhenOpened": "2024-05-11T16:16:53.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:42.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Website.csproj",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Website.csproj",
+              "RelativeDocumentMoniker": "Website\\Website.csproj",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Website.csproj",
+              "RelativeToolTip": "Website\\Website.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-11T16:08:45.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CommentsLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\CommentsLL.cs",
-              "RelativeDocumentMoniker": "LogicLayer\\CommentsLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\CommentsLL.cs",
-              "RelativeToolTip": "LogicLayer\\CommentsLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:48:46.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AlcoholLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\AlcoholLL.cs",
-              "RelativeDocumentMoniker": "LogicLayer\\AlcoholLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\AlcoholLL.cs",
-              "RelativeToolTip": "LogicLayer\\AlcoholLL.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowD8AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T17:33:35.207Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "ISoftLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ISoftLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\ISoftLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ISoftLL.cs",
-              "RelativeToolTip": "InterfacesLL\\ISoftLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
+              "Title": "AddUserForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:52:00.73Z"
+              "WhenOpened": "2024-04-23T23:34:41.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ISoftDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ISoftDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\ISoftDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ISoftDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\ISoftDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "DocumentIndex": 10,
+              "Title": "EventForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\EventForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\EventForm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:46:01.329Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IReportLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReportLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\IReportLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReportLL.cs",
-              "RelativeToolTip": "InterfacesLL\\IReportLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:51:27.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IReservationLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReservationLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\IReservationLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReservationLL.cs",
-              "RelativeToolTip": "InterfacesLL\\IReservationLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:51:45.8Z"
+              "WhenOpened": "2024-05-26T23:52:09.466Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "IReportDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReportDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IReportDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReportDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IReportDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Title": "EventForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\EventForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventForm.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\Forms\\EventForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:45:43.883Z"
+              "WhenOpened": "2024-05-27T00:08:40.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IEventLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IEventLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\IEventLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IEventLL.cs",
-              "RelativeToolTip": "InterfacesLL\\IEventLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAYAAAA",
+              "DocumentIndex": 14,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Event.cs",
+              "RelativeDocumentMoniker": "Classes\\Event.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Event.cs",
+              "RelativeToolTip": "Classes\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:51:03.528Z"
+              "WhenOpened": "2024-05-27T00:14:50.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IEventDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IEventDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IEventDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IEventDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IEventDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "DocumentIndex": 15,
+              "Title": "AddEventForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventSubForms\\AddEventForm.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\EventSubForms\\AddEventForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventSubForms\\AddEventForm.Designer.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\EventSubForms\\AddEventForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:45:08.655Z"
+              "WhenOpened": "2024-05-27T00:22:10.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddEventForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\Forms\\EventSubForms\\AddEventForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T00:24:37.412Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "ICommentsLL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ICommentsLL.cs",
-              "RelativeDocumentMoniker": "InterfacesLL\\ICommentsLL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ICommentsLL.cs",
-              "RelativeToolTip": "InterfacesLL\\ICommentsLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Title": "Beverage.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Beverage.cs",
+              "RelativeDocumentMoniker": "Classes\\Beverage.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Beverage.cs",
+              "RelativeToolTip": "Classes\\Beverage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:50:36.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ICommentsDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ICommentsDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\ICommentsDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ICommentsDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\ICommentsDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:45:31.425Z"
+              "WhenOpened": "2024-05-27T00:14:37.183Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "IBeverageDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IBeverageDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IBeverageDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IBeverageDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IBeverageDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:45:22.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "CommentsDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\CommentsDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\CommentsDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\CommentsDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\CommentsDAL.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAIwK4AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:41:21.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BeverageDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\BeverageDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\BeverageDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\BeverageDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\BeverageDAL.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAwwHcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:40:18.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AlcoholDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\AlcoholDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\AlcoholDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\AlcoholDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\AlcoholDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:42:27.12Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "EventDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\EventDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\EventDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\EventDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\EventDAL.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAcwKAAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:42:10.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ReportDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReportDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\ReportDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReportDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\ReportDAL.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAIwIwAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:41:05.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "SoftDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\SoftDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\SoftDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\SoftDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\SoftDAL.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAIwKcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:43:19.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ReservationDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReservationDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\ReservationDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReservationDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\ReservationDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:43:37.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UserDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\UserDAL.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\UserDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\UserDAL.cs",
-              "RelativeToolTip": "DataAccessLayer\\UserDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:50:01.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\RegisterDTO.cs",
-              "RelativeToolTip": "DTOs\\RegisterDTO.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T00:02:00.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "UpdateUserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\UpdateUserDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\UpdateUserDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\UpdateUserDTO.cs",
-              "RelativeToolTip": "DTOs\\UpdateUserDTO.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAIwA4AAABeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T23:29:32.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "SoftDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\SoftDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\SoftDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\SoftDTO.cs",
-              "RelativeToolTip": "DTOs\\SoftDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:46:52.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\LoginDTO.cs",
-              "RelativeToolTip": "DTOs\\LoginDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T08:08:34.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "EventDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\EventDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\EventDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\EventDTO.cs",
-              "RelativeToolTip": "DTOs\\EventDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T13:54:18.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "IReservationDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReservationDAL.cs",
-              "RelativeDocumentMoniker": "InterfacesDAL\\IReservationDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReservationDAL.cs",
-              "RelativeToolTip": "InterfacesDAL\\IReservationDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:44:54.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "BeverageDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\BeverageDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\BeverageDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\BeverageDTO.cs",
-              "RelativeToolTip": "DTOs\\BeverageDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:46:45.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AlcoholDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\AlcoholDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\AlcoholDTO.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\AlcoholDTO.cs",
-              "RelativeToolTip": "DTOs\\AlcoholDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:46:38.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "UnitTests.csproj",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\UnitTests.csproj",
-              "RelativeDocumentMoniker": "UnitTests\\UnitTests.csproj",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\UnitTests.csproj",
-              "RelativeToolTip": "UnitTests\\UnitTests.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-02T08:40:05.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
               "Title": "Soft.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Soft.cs",
               "RelativeDocumentMoniker": "Classes\\Soft.cs",
@@ -872,43 +655,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 24,
+              "Title": "UserForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserForm.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAswBMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:50:49.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EventLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\EventLL.cs",
+              "RelativeDocumentMoniker": "LogicLayer\\EventLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\EventLL.cs",
+              "RelativeToolTip": "LogicLayer\\EventLL.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAYwFMAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:48:57.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IUserLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IUserLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\IUserLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IUserLL.cs",
+              "RelativeToolTip": "InterfacesLL\\IUserLL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA4AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:08:40.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IEventLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IEventLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\IEventLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IEventLL.cs",
+              "RelativeToolTip": "InterfacesLL\\IEventLL.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:51:03.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EventForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventForm.Designer.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\EventForm.Designer.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\EventForm.Designer.cs",
+              "RelativeToolTip": "DesktopApplication\\Forms\\EventForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T23:59:40.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UsersUC.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
+              "RelativeToolTip": "DesktopApplication\\UserControls\\UsersUC.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvxIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:06:37.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Program.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Program.cs",
+              "RelativeToolTip": "DesktopApplication\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:55:25.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IReservationLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReservationLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\IReservationLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReservationLL.cs",
+              "RelativeToolTip": "InterfacesLL\\IReservationLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:51:45.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Users.cs",
               "RelativeDocumentMoniker": "Classes\\Users.cs",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Users.cs",
               "RelativeToolTip": "Classes\\Users.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA4wCwAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAA0wCYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T00:00:47.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 28,
+              "Title": "ReservationLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReservationLL.cs",
+              "RelativeDocumentMoniker": "LogicLayer\\ReservationLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReservationLL.cs",
+              "RelativeToolTip": "LogicLayer\\ReservationLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:49:25.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ISoftLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ISoftLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\ISoftLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ISoftLL.cs",
+              "RelativeToolTip": "InterfacesLL\\ISoftLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:52:00.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "DTOs\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T13:00:04.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "UserTests.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\UserTests.cs",
               "RelativeDocumentMoniker": "UnitTests\\UserTests.cs",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\UserTests.cs",
               "RelativeToolTip": "UnitTests\\UserTests.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAwwG4AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T08:31:41.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
-              "Title": "Alcohol.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Alcohol.cs",
-              "RelativeDocumentMoniker": "Classes\\Alcohol.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Alcohol.cs",
-              "RelativeToolTip": "Classes\\Alcohol.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T16:22:26.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 31,
               "Title": "IPasswordHashingLL.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IPasswordHashingLL.cs",
               "RelativeDocumentMoniker": "InterfacesLL\\IPasswordHashingLL.cs",
@@ -920,79 +823,247 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Reservation.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Reservation.cs",
-              "RelativeDocumentMoniker": "Classes\\Reservation.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Reservation.cs",
-              "RelativeToolTip": "Classes\\Reservation.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T12:03:41.605Z"
+              "DocumentIndex": 34,
+              "Title": "Events.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Events.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Events.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Events.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Events.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T23:48:51.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AddUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAmwEoAAACIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:00:34.502Z"
+              "DocumentIndex": 35,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Menu.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Menu.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Menu.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Menu.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-26T23:48:20.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "MockUserDAL.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\MockUserDAL.cs",
-              "RelativeDocumentMoniker": "UnitTests\\MockUserDAL.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\MockUserDAL.cs",
-              "RelativeToolTip": "UnitTests\\MockUserDAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAATAAAA",
+              "DocumentIndex": 40,
+              "Title": "ReportLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReportLL.cs",
+              "RelativeDocumentMoniker": "LogicLayer\\ReportLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\ReportLL.cs",
+              "RelativeToolTip": "LogicLayer\\ReportLL.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAuwDoAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T08:40:24.118Z"
+              "WhenOpened": "2024-05-16T12:49:05.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 39,
+              "Title": "CommentsDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\CommentsDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\CommentsDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\CommentsDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\CommentsDAL.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAIwH8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:41:21.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T16:08:42.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Login.cshtml",
               "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml",
               "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Login.cshtml",
               "RelativeToolTip": "Website\\Pages\\Login.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEkAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-22T11:04:50.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Login.cshtml.cs",
-              "RelativeToolTip": "Website\\Pages\\Login.cshtml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDMAAABHAAAA",
+              "DocumentIndex": 32,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Logout.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Logout.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T16:08:42.266Z"
+              "WhenOpened": "2024-05-11T16:08:42.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MockUserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\MockDAL\\MockUserDAL.cs",
+              "RelativeDocumentMoniker": "UnitTests\\MockDAL\\MockUserDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\MockDAL\\MockUserDAL.cs",
+              "RelativeToolTip": "UnitTests\\MockDAL\\MockUserDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T08:40:24.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Index.cshtml",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwCIAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:41.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UpdateUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\UpdateUserDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UpdateUserDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\UpdateUserDTO.cs",
+              "RelativeToolTip": "DTOs\\UpdateUserDTO.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAcwB8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T23:29:32.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "DTOs\\RegisterDTO.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA6wDgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T00:02:00.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Settings.css",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Settings.css",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\Settings.css",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Settings.css",
+              "RelativeToolTip": "Website\\wwwroot\\css\\Settings.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-11T16:19:23.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Index.js",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\Index.js",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\js\\Index.js",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\Index.js",
+              "RelativeToolTip": "Website\\wwwroot\\js\\Index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-26T15:08:14.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_LoggedInLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T07:52:26.074Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 47,
-              "Title": "SignUp.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\SignUp.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\SignUp.cshtml",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\SignUp.cshtml",
-              "RelativeToolTip": "Website\\Pages\\SignUp.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAFIAAAASAAAA",
+              "Title": "Index.css",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Index.css",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\Index.css",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Index.css",
+              "RelativeToolTip": "Website\\wwwroot\\css\\Index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-26T15:02:47.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Website\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-22T11:05:09.911Z"
+              "WhenOpened": "2024-05-26T16:14:59.215Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 51,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Website\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:42.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Website\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Website\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-11T16:08:43.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LoginSignup.css",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\LoginSignup.css",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
+              "RelativeToolTip": "Website\\wwwroot\\css\\LoginSignup.css",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAB4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-22T11:38:12.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Website\\Pages\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Website\\Pages\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-26T16:21:10.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Logout.cshtml",
               "RelativeDocumentMoniker": "Website\\Pages\\Logout.cshtml",
@@ -1005,53 +1076,403 @@
             {
               "$type": "Document",
               "DocumentIndex": 54,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Program.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Program.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Program.cs",
-              "RelativeToolTip": "DesktopApplication\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACMAAAAvAAAA",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Website\\Pages\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "Website\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:55:25.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "_LoggedInLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
-              "RelativeToolTip": "Website\\Pages\\Shared\\_LoggedInLayout.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAABlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T07:52:26.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "Website\\Pages\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml.cs",
-              "RelativeToolTip": "Website\\Pages\\Index.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T16:08:42.068Z"
+              "WhenOpened": "2024-05-11T16:08:42.266Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 55,
-              "Title": "AddUserForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ivoml\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.cs [Design]",
+              "Title": "LoginSignup.js",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
+              "RelativeDocumentMoniker": "Website\\wwwroot\\js\\LoginSignup.js",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
+              "RelativeToolTip": "Website\\wwwroot\\js\\LoginSignup.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-22T11:15:30.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "BeverageDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\BeverageDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\BeverageDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\BeverageDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\BeverageDAL.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAowHcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T23:34:41.494Z"
+              "WhenOpened": "2024-05-16T12:40:18.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 56,
+              "Title": "SoftLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\SoftLL.cs",
+              "RelativeDocumentMoniker": "LogicLayer\\SoftLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\SoftLL.cs",
+              "RelativeToolTip": "LogicLayer\\SoftLL.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:49:35.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "SoftDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\SoftDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\SoftDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\SoftDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\SoftDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:43:19.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ReservationDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReservationDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ReservationDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReservationDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\ReservationDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:43:37.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ReportDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReportDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ReportDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\ReportDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\ReportDAL.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAiwHwAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:41:05.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "AlcoholDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\AlcoholDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\AlcoholDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\AlcoholDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\AlcoholDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:42:27.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IReportLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReportLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\IReportLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IReportLL.cs",
+              "RelativeToolTip": "InterfacesLL\\IReportLL.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:51:27.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "IReportDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReportDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IReportDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReportDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IReportDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:45:43.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "EventDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\EventDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\EventDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\EventDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\EventDAL.cs",
+              "ViewState": "AQIAAK8AAAAAAAAAAAAcwKAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:42:10.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "CommentsLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\CommentsLL.cs",
+              "RelativeDocumentMoniker": "LogicLayer\\CommentsLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\CommentsLL.cs",
+              "RelativeToolTip": "LogicLayer\\CommentsLL.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:48:46.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "UnitTests.csproj",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\UnitTests.csproj",
+              "RelativeDocumentMoniker": "UnitTests\\UnitTests.csproj",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\UnitTests\\UnitTests.csproj",
+              "RelativeToolTip": "UnitTests\\UnitTests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-02T08:40:05.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "IUserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IUserDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IUserDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IUserDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IUserDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:51:45.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "UserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\UserDAL.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\UserDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DataAccessLayer\\UserDAL.cs",
+              "RelativeToolTip": "DataAccessLayer\\UserDAL.cs",
+              "ViewState": "AQIAAOcBAAAAAAAAAAAUwP8BAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:50:01.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Login.cs",
+              "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Login.cs",
+              "RelativeToolTip": "DesktopApplication\\Login.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowDwAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:56:31.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "AlcoholLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\AlcoholLL.cs",
+              "RelativeDocumentMoniker": "LogicLayer\\AlcoholLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\LogicLayer\\AlcoholLL.cs",
+              "RelativeToolTip": "LogicLayer\\AlcoholLL.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwDQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:33:35.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "DTOs\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:08:34.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ICommentsLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ICommentsLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\ICommentsLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\ICommentsLL.cs",
+              "RelativeToolTip": "InterfacesLL\\ICommentsLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:50:36.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "VSWorkspaceState.json",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\.vs\\VSWorkspaceState.json",
+              "RelativeDocumentMoniker": "..\\.vs\\VSWorkspaceState.json",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\.vs\\VSWorkspaceState.json",
+              "RelativeToolTip": "..\\.vs\\VSWorkspaceState.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-26T12:28:33.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "IAlcoholDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IAlcoholDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IAlcoholDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IAlcoholDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IAlcoholDAL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:24:54.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "IAlcoholLL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IAlcoholLL.cs",
+              "RelativeDocumentMoniker": "InterfacesLL\\IAlcoholLL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesLL\\IAlcoholLL.cs",
+              "RelativeToolTip": "InterfacesLL\\IAlcoholLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T17:34:24.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ISoftDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ISoftDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\ISoftDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ISoftDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\ISoftDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:46:01.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "IEventDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IEventDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IEventDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IEventDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IEventDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:45:08.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "ICommentsDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ICommentsDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\ICommentsDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\ICommentsDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\ICommentsDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:45:31.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "IBeverageDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IBeverageDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IBeverageDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IBeverageDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IBeverageDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:45:22.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "SoftDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\SoftDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\SoftDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\SoftDTO.cs",
+              "RelativeToolTip": "DTOs\\SoftDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T10:46:52.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "EventDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\EventDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\EventDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\EventDTO.cs",
+              "RelativeToolTip": "DTOs\\EventDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T13:54:18.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "IReservationDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReservationDAL.cs",
+              "RelativeDocumentMoniker": "InterfacesDAL\\IReservationDAL.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\InterfacesDAL\\IReservationDAL.cs",
+              "RelativeToolTip": "InterfacesDAL\\IReservationDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:44:54.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "BeverageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\BeverageDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\BeverageDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\BeverageDTO.cs",
+              "RelativeToolTip": "DTOs\\BeverageDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T10:46:45.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "AlcoholDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\AlcoholDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\AlcoholDTO.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DTOs\\AlcoholDTO.cs",
+              "RelativeToolTip": "DTOs\\AlcoholDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T10:46:38.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "Alcohol.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Alcohol.cs",
+              "RelativeDocumentMoniker": "Classes\\Alcohol.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Alcohol.cs",
+              "RelativeToolTip": "Classes\\Alcohol.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T16:22:26.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Reservation.cs",
+              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Reservation.cs",
+              "RelativeDocumentMoniker": "Classes\\Reservation.cs",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Classes\\Reservation.cs",
+              "RelativeToolTip": "Classes\\Reservation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T12:03:41.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Menu.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Menu.cs",
@@ -1063,67 +1484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Website\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T16:08:41.954Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "Settings.css",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Settings.css",
-              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\Settings.css",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\Settings.css",
-              "RelativeToolTip": "Website\\wwwroot\\css\\Settings.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-11T16:19:23.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "LoginSignup.css",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
-              "RelativeDocumentMoniker": "Website\\wwwroot\\css\\LoginSignup.css",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\css\\LoginSignup.css",
-              "RelativeToolTip": "Website\\wwwroot\\css\\LoginSignup.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-22T11:38:12.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Privacy.cshtml",
-              "RelativeToolTip": "Website\\Pages\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T16:08:42.669Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Logout.cshtml.cs",
-              "RelativeDocumentMoniker": "Website\\Pages\\Logout.cshtml.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Logout.cshtml.cs",
-              "RelativeToolTip": "Website\\Pages\\Logout.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T16:08:42.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 87,
               "Title": "Privacy.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Privacy.cshtml.cs",
               "RelativeDocumentMoniker": "Website\\Pages\\Privacy.cshtml.cs",
@@ -1135,43 +1496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "Website\\Pages\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T16:08:42.895Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Website\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "Website\\Pages\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T16:08:43.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "Website.csproj",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Website.csproj",
-              "RelativeDocumentMoniker": "Website\\Website.csproj",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Website.csproj",
-              "RelativeToolTip": "Website\\Website.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-11T16:08:45.37Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 88,
               "Title": "Error.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Error.cshtml.cs",
               "RelativeDocumentMoniker": "Website\\Pages\\Error.cshtml.cs",
@@ -1183,7 +1508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 89,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\Pages\\Error.cshtml",
               "RelativeDocumentMoniker": "Website\\Pages\\Error.cshtml",
@@ -1195,7 +1520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 90,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "DesktopApplication\\Properties\\Resources.resx",
@@ -1206,7 +1531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 91,
               "Title": "Desktop.png",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Resources\\Desktop.png",
               "RelativeDocumentMoniker": "DesktopApplication\\Resources\\Desktop.png",
@@ -1217,30 +1542,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "UserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserForm.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAswDQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:50:49.472Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 93,
               "Title": "UserForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T21:53:06.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 94,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Menu.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Menu.cs",
@@ -1251,41 +1564,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Login.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Login.cs",
-              "RelativeToolTip": "DesktopApplication\\Login.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAA9wDsAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T21:56:31.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 92,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Login.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Login.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Login.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T19:16:35.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 95,
               "Title": "UsersUC.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\UserControls\\UsersUC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T22:06:34.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 98,
               "Title": "UnbanUserForm.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
@@ -1297,7 +1598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 97,
               "Title": "UnbanUserForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.cs",
@@ -1308,30 +1609,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 96,
               "Title": "BanUserForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "ToolTip": "C:\\Users\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\ivoml\\Desktop\\l\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
+              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
+              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T22:02:49.154Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "UsersUC.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.cs",
-              "RelativeToolTip": "DesktopApplication\\UserControls\\UsersUC.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAkwCkAAABmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:06:37.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 100,
               "Title": "BanUserForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.Designer.cs",
@@ -1343,19 +1632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "BanUserForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\BanUserForm.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAADwvzMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:01:30.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 99,
               "Title": "UnbanUserForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\UnbanUserForm.Designer.cs",
@@ -1367,7 +1644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 101,
               "Title": "UsersUC.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\UserControls\\UsersUC.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\UserControls\\UsersUC.Designer.cs",
@@ -1379,19 +1656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "AddUserForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
-              "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
-              "RelativeToolTip": "DesktopApplication\\Forms\\UserSubForms\\AddUserForm.Designer.cs",
-              "ViewState": "AQIAAMQAAAAAAAAAAAAowNwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T22:01:17.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 102,
               "Title": "UserForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\DesktopApplication\\Forms\\UserForm.Designer.cs",
               "RelativeDocumentMoniker": "DesktopApplication\\Forms\\UserForm.Designer.cs",
@@ -1400,18 +1665,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T21:52:54.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 86,
-              "Title": "LoginSignup.js",
-              "DocumentMoniker": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
-              "RelativeDocumentMoniker": "Website\\wwwroot\\js\\LoginSignup.js",
-              "ToolTip": "C:\\Users\\ivk\\Desktop\\k\\bohemi\\Application\\Website\\wwwroot\\js\\LoginSignup.js",
-              "RelativeToolTip": "Website\\wwwroot\\js\\LoginSignup.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-22T11:15:30.197Z"
             }
           ]
         }

@@ -10,6 +10,7 @@
         "dependencies": {
           "Classes": "1.0.0",
           "InterfacesDAL": "1.0.0",
+          "LogicLayer": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
           "coverlet.collector": "6.0.0",
           "xunit": "2.5.3",
@@ -1040,6 +1041,26 @@
         "runtime": {
           "InterfacesDAL.dll": {}
         }
+      },
+      "InterfacesLL/1.0.0": {
+        "dependencies": {
+          "Classes": "1.0.0",
+          "DTOs": "1.0.0"
+        },
+        "runtime": {
+          "InterfacesLL.dll": {}
+        }
+      },
+      "LogicLayer/1.0.0": {
+        "dependencies": {
+          "Classes": "1.0.0",
+          "DTOs": "1.0.0",
+          "InterfacesDAL": "1.0.0",
+          "InterfacesLL": "1.0.0"
+        },
+        "runtime": {
+          "LogicLayer.dll": {}
+        }
       }
     }
   },
@@ -1683,6 +1704,16 @@
       "sha512": ""
     },
     "InterfacesDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InterfacesLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LogicLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

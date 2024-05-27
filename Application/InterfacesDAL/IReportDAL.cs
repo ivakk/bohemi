@@ -10,7 +10,7 @@ namespace InterfacesDAL
     public interface IReportDAL
     {
         Report GetReportByIdDAL(int id);
-        List<Report> GetAllReportsDAL(int eventId);
+        List<Report> GetAllReportsDAL();
         bool CreateReportDAL(Report report);
         bool DeleteReportDAL(int id);
     }

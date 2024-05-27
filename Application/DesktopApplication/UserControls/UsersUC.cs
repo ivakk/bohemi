@@ -17,17 +17,15 @@ namespace DesktopApplication.UserControls
     public partial class UsersUC : UserControl
     {
         private readonly IUserLL _userLL;
-        private readonly IPasswordHashingLL _passwordHashingLL;
 
         UserForm userForm;
         public Users user { get; set; }
-        public UsersUC(Users user, UserForm userForm, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
+        public UsersUC(Users user, UserForm userForm, IUserLL userLL)
         {
             InitializeComponent();
             this.user = user;
             this.userForm = userForm;
             this._userLL = userLL;
-            this._passwordHashingLL = passwordHashingLL;
         }
 
         private void UsersUC_Load(object sender, EventArgs e)
@@ -39,7 +37,7 @@ namespace DesktopApplication.UserControls
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            AddUserForm addUserForm = new AddUserForm(userForm, _userLL, _passwordHashingLL, this.user) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None }; ;
+            AddUserForm addUserForm = new AddUserForm(userForm, _userLL, this.user) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None }; ;
             userForm.menu.ChangeShownForm(addUserForm);
         }
 

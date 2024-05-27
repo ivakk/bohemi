@@ -21,7 +21,6 @@ namespace DesktopApplication.Forms.UserSubForms
     {
 
         private readonly IUserLL _userLL;
-        private readonly IPasswordHashingLL _passwordHashingLL;
 
         //In case it is in edit mode
         Users? user { get; set; }
@@ -30,19 +29,17 @@ namespace DesktopApplication.Forms.UserSubForms
 
         UserForm userForm;
 
-        public AddUserForm(UserForm userForm, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
+        public AddUserForm(UserForm userForm, IUserLL userLL)
         {
             this._userLL = userLL;
-            this._passwordHashingLL = passwordHashingLL;
 
             this.userForm = userForm;
             InitializeComponent();
         }
 
-        public AddUserForm(UserForm userForm, IUserLL userLL, IPasswordHashingLL passwordHashingLL, Users user)
+        public AddUserForm(UserForm userForm, IUserLL userLL, Users user)
         {
             this._userLL = userLL;
-            this._passwordHashingLL = passwordHashingLL;
 
             this.userForm = userForm;
             this.user = user;
@@ -88,19 +85,7 @@ namespace DesktopApplication.Forms.UserSubForms
                 }
                 else if (user == null)
                 {
-                    string passwordSalt = _passwordHashingLL.PassSalt(10);
-                    string passwordHash = _passwordHashingLL.PassHash("password", passwordSalt);
-
-
-                    if (_userLL.IsUsernameUsed(tbUsername.Text) == true)
-                    {
-                        MessageBox.Show("The username \"" + tbUsername.Text + "\" is already in use by another user!");
-                    }
-                    else if (_userLL.IsEmailUsed(tbEmail.Text) == true)
-                    {
-                        MessageBox.Show("The email address \"" + tbEmail.Text + "\" is already in use by another user!");
-                    }
-                    else if (_userLL.IsUsernameUsed(tbUsername.Text) == false)
+                    try
                     {
                         RegisterDTO user = new RegisterDTO(0,
                         tbFirstName.Text,
@@ -108,8 +93,7 @@ namespace DesktopApplication.Forms.UserSubForms
                         dtpbirthday.Value,
                         tbUsername.Text,
                         tbEmail.Text,
-                        passwordHash,
-                        passwordSalt,
+                        "password",
                         tbPhoneNumber.Text,
                         "admin");
                         bool success = _userLL.CreateUser(user);
@@ -118,18 +102,18 @@ namespace DesktopApplication.Forms.UserSubForms
                             userForm.menu.ChangeShownForm(userForm);
                         }
                     }
-                }
-                else if (user != null)
-                {
-                    if (_userLL.IsUsernameUsed(tbUsername.Text) == true && tbUsername.Text != user.Username)
+                    catch (ApplicationException)
                     {
                         MessageBox.Show("The username \"" + tbUsername.Text + "\" is already in use by another user!");
                     }
-                    else if (_userLL.IsEmailUsed(tbEmail.Text) == true && tbEmail.Text != user.Email)
+                    catch (ArgumentOutOfRangeException)
                     {
                         MessageBox.Show("The email address \"" + tbEmail.Text + "\" is already in use by another user!");
                     }
-                    else
+                }
+                else if (user != null)
+                {
+                    try
                     {
                         updateUser = _userLL.GetUserForUpdateDTO(user.Id);
                         UpdateUserDTO updatedUser = new UpdateUserDTO(updateUser.Id,
@@ -139,8 +123,7 @@ namespace DesktopApplication.Forms.UserSubForms
                         dtpbirthday.Value,
                         tbUsername.Text,
                         tbEmail.Text,
-                        updateUser.PasswordHash,
-                        updateUser.PasswordSalt,
+                        updateUser.Password,
                         updateUser.PhoneNumber,
                         updateUser.Role);
 
@@ -149,6 +132,14 @@ namespace DesktopApplication.Forms.UserSubForms
                         {
                             userForm.menu.ChangeShownForm(userForm);
                         }
+                    }
+                    catch (ApplicationException)
+                    {
+                        MessageBox.Show("The username \"" + tbUsername.Text + "\" is already in use by another user!");
+                    }
+                    catch (ArgumentOutOfRangeException)
+                    {
+                        MessageBox.Show("The email address \"" + tbEmail.Text + "\" is already in use by another user!");
                     }
                 }
                 userForm.LoadUsers(_userLL.GetAllUsers());

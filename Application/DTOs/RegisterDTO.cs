@@ -47,7 +47,7 @@ namespace DTOs
         public string PhoneNumber { get; set; }
         public string? Role { get; set; }
 
-        public RegisterDTO(int id, string firstName, string lastName, DateTime birthday, string username, string email, string passwordHash, string passwordSalt, string phoneNumber, string role)
+        public RegisterDTO(int id, string firstName, string lastName, DateTime birthday, string username, string email, string password, string phoneNumber, string role)
         {
             Id = id;
             FirstName = firstName;
@@ -55,8 +55,7 @@ namespace DTOs
             Birthday = birthday;
             Username = username;
             Email = email;
-            PasswordHash = passwordHash;
-            PasswordSalt = passwordSalt;
+            Password = password;
             PhoneNumber = phoneNumber;
             Role = role;
         } 

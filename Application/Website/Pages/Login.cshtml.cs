@@ -40,7 +40,7 @@ namespace Website.Pages
             
             try
             {
-                LoginDTO user = _userLL.CheckUser(LoginDTO.Username, LoginDTO.PasswordEntry);
+                UserDTO user = _userLL.CheckUser(LoginDTO.Username, LoginDTO.PasswordEntry);
                 
 
                 var claims = new List<Claim>
