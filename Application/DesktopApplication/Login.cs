@@ -17,12 +17,10 @@ namespace DesktopApplication
     public partial class Login : Form
     {
         private readonly IUserLL _userLL;
-        private readonly IPasswordHashingLL _passwordHashingLL;
-        public Login(IUserLL _userLL, IPasswordHashingLL passwordHashingLL)
+        public Login(IUserLL _userLL)
         {
             InitializeComponent();
             this._userLL = _userLL;
-            _passwordHashingLL = passwordHashingLL;
         }
 
         private void reveal_MouseUp_1(object sender, MouseEventArgs e)
@@ -58,7 +56,7 @@ namespace DesktopApplication
                     if (user.Role == "admin")
                     {
 
-                        Menu menu = new Menu(this, _userLL, _passwordHashingLL);
+                        Menu menu = new Menu(this, _userLL);
                         menu.Show();
                         this.Hide();
                     }

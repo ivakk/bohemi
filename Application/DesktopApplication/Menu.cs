@@ -25,16 +25,14 @@ namespace DesktopApplication
         private UserForm userForm;
 
         private readonly IUserLL _userLL;
-        private readonly IPasswordHashingLL _passwordHashingLL;
 
-        public Menu(Login login, IUserLL userLL, IPasswordHashingLL passwordHashingLL)
+        public Menu(Login login, IUserLL userLL)
         {
             this.login = login;
             //this.loggedInUser = user;
             this._userLL = userLL;
-            this._passwordHashingLL = passwordHashingLL;
 
-            userForm = new UserForm(this, _userLL, _passwordHashingLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            userForm = new UserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             InitializeComponent();
             
             LoadMenuButtons();
