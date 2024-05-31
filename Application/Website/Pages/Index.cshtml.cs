@@ -8,7 +8,7 @@ namespace Website.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
         public bool IsLoggedIn { get; set; }
         private readonly ILogger<IndexModel> _logger;

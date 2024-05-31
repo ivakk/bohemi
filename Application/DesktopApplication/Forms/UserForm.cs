@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DesktopApplication.Forms.UserSubForms;
 using Classes;
+using System.Diagnostics;
 
 namespace DesktopApplication.Forms
 {
@@ -22,16 +23,16 @@ namespace DesktopApplication.Forms
         UnbanUserForm unbanUserForm;
 
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
-        public UserForm(Menu menu, IUserLL userLL)
+        public UserForm(Menu menu, IUserService userService)
         {
             InitializeComponent();
             this.menu = menu;
-            this._userLL = userLL;
-            addUserForm = new AddUserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
-            banUserForm = new BanUserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
-            unbanUserForm = new UnbanUserForm(this, _userLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            this._userService = userService;
+            addUserForm = new AddUserForm(this, _userService) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            banUserForm = new BanUserForm(this, _userService) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            unbanUserForm = new UnbanUserForm(this, _userService) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -43,12 +44,12 @@ namespace DesktopApplication.Forms
 
         private void UsersForm_Load(object sender, EventArgs e)
         {
-            LoadUsers(_userLL.GetAllUsers());
+            LoadUsers(_userService.GetFirst10Users());
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            LoadUsers(_userLL.GetUsersBySearch(tbSearch.Text));
+            LoadUsers(_userService.GetUsersBySearch(tbSearch.Text));
         }
 
         public void LoadUsers(List<Users> users)
@@ -56,7 +57,7 @@ namespace DesktopApplication.Forms
             flpUsers.Controls.Clear();
             foreach (Users user in users)
             {
-                UsersUC userControl = new UsersUC(user, this, this._userLL);
+                UsersUC userControl = new UsersUC(user, this, this._userService);
                 flpUsers.Controls.Add(userControl);
                 userControl.Show();
             }
@@ -69,7 +70,7 @@ namespace DesktopApplication.Forms
 
         private void btnUnbanLoad_Click(object sender, EventArgs e)
         {
-            menu.ChangeShownForm(banUserForm);
+            menu.ChangeShownForm(unbanUserForm);
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)

@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net.Http.Headers;
@@ -20,26 +21,25 @@ namespace DesktopApplication.Forms.UserSubForms
     public partial class AddUserForm : Form
     {
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
         //In case it is in edit mode
         Users? user { get; set; }
-        RegisterDTO newUser { get; set; }
-        UpdateUserDTO updateUser { get; set; }
+        private Image originalImage;
 
         UserForm userForm;
 
-        public AddUserForm(UserForm userForm, IUserLL userLL)
+        public AddUserForm(UserForm userForm, IUserService _userService)
         {
-            this._userLL = userLL;
+            this._userService = _userService;
 
             this.userForm = userForm;
             InitializeComponent();
         }
 
-        public AddUserForm(UserForm userForm, IUserLL userLL, Users user)
+        public AddUserForm(UserForm userForm, IUserService _userService, Users user)
         {
-            this._userLL = userLL;
+            this._userService = _userService;
 
             this.userForm = userForm;
             this.user = user;
@@ -75,11 +75,11 @@ namespace DesktopApplication.Forms.UserSubForms
             }
             else
             {
-                if (!_userLL.IsEmail(tbEmail.Text))
+                if (!_userService.IsEmail(tbEmail.Text))
                 {
                     MessageBox.Show("Enter a valid email address!");
                 }
-                else if (tbPhoneNumber.Text != "" && !_userLL.IsPhoneNumber(tbPhoneNumber.Text))
+                else if (tbPhoneNumber.Text != "" && !_userService.IsPhoneNumber(tbPhoneNumber.Text))
                 {
                     MessageBox.Show("Enter a valid phone number!");
                 }
@@ -96,7 +96,7 @@ namespace DesktopApplication.Forms.UserSubForms
                         "password",
                         tbPhoneNumber.Text,
                         "admin");
-                        bool success = _userLL.CreateUser(user);
+                        bool success = _userService.CreateUser(user);
                         if (success)
                         {
                             userForm.menu.ChangeShownForm(userForm);
@@ -115,19 +115,18 @@ namespace DesktopApplication.Forms.UserSubForms
                 {
                     try
                     {
-                        updateUser = _userLL.GetUserForUpdateDTO(user.Id);
-                        UpdateUserDTO updatedUser = new UpdateUserDTO(updateUser.Id,
+                        UpdateUserDTO updatedUser = new UpdateUserDTO(user.Id,
                         ImageToByteArray(pbPfp),
                         tbFirstName.Text,
                         tbLastName.Text,
                         dtpbirthday.Value,
                         tbUsername.Text,
                         tbEmail.Text,
-                        updateUser.Password,
-                        updateUser.PhoneNumber,
-                        updateUser.Role);
+                        "oaijsnfoiahnofsafgnasaosnfoaiosabfnaofsn",
+                        tbPhoneNumber.Text,
+                        user.Role);
 
-                        bool success = _userLL.UpdateUser(updatedUser);
+                        bool success = _userService.UpdateUser(updatedUser);
                         if (success)
                         {
                             userForm.menu.ChangeShownForm(userForm);
@@ -142,7 +141,7 @@ namespace DesktopApplication.Forms.UserSubForms
                         MessageBox.Show("The email address \"" + tbEmail.Text + "\" is already in use by another user!");
                     }
                 }
-                userForm.LoadUsers(_userLL.GetAllUsers());
+                userForm.LoadUsers(_userService.GetFirst10Users());
             }
         }
 
@@ -152,7 +151,9 @@ namespace DesktopApplication.Forms.UserSubForms
             openFileDialog.Filter = "Images files (*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg;*.jpeg;*.gif;*.bmp;*.png";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                pbPfp.Image = new Bitmap(openFileDialog.FileName);
+                originalImage = Image.FromFile(openFileDialog.FileName);
+                pbPfp.Image = new Bitmap(originalImage);
+                pbPfp.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 
@@ -160,9 +161,9 @@ namespace DesktopApplication.Forms.UserSubForms
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                Bitmap bmpImage = new Bitmap(picBox.Image);
-                bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-                return ms.ToArray();
+                originalImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] imageBytes = ms.ToArray();
+                return imageBytes;
             }
         }
 
@@ -179,7 +180,7 @@ namespace DesktopApplication.Forms.UserSubForms
             catch (ArgumentException ex)
             {
                 MessageBox.Show("Failed to convert byte array to image: " + ex.Message);
-                return null;
+                return Properties.Resources.defaultPfp;
             }
         }
 

@@ -31,12 +31,19 @@ namespace DesktopApplication
             return Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) => {
                     services.AddTransient<IUserDAL, UserDAL>();
-                    services.AddTransient<IUserLL, UserLL>();
-                    services.AddTransient<IEventLL, EventLL>();
-                    services.AddTransient<ISoftLL, SoftLL>();
-                    services.AddTransient<IAlcoholLL, AlcoholLL>();
-                    services.AddTransient<IReportLL, ReportLL>();
-                    services.AddTransient<IReservationLL, ReservationLL>();
+                    services.AddTransient<IUserService, UserService>();
+                    services.AddTransient<IEventService, EventService>();
+                    services.AddTransient<IEventDAL, EventDAL>();
+                    services.AddTransient<ISoftService, SoftService>();
+                    services.AddTransient<ISoftDAL, SoftDAL>();
+                    services.AddTransient<IAlcoholService, AlcoholService>();
+                    services.AddTransient<IAlcoholDAL, AlcoholDAL>();
+                    services.AddTransient<IReportService, ReportService>();
+                    services.AddTransient<IReportDAL, ReportDAL>();
+                    services.AddTransient<IReservationService, ReservationService>();
+                    services.AddTransient<IReservationDAL, ReservationDAL>();
+                    services.AddTransient<ICommentsService, CommentsService>();
+                    services.AddTransient<ICommentsDAL, CommentsDAL>();
                     services.AddTransient<Login>();
                 });
         }

@@ -1,5 +1,6 @@
 ﻿using Classes;
 using InterfacesLL;
+using LogicLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,16 +17,16 @@ namespace DesktopApplication.Forms.UserSubForms
     public partial class BanUserForm : Form
     {
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
         //In case it is in edit mode
         Users? user { get; set; }
 
         UserForm userForm;
 
-        public BanUserForm(UserForm userForm, IUserLL userLL)
+        public BanUserForm(UserForm userForm, IUserService _userService)
         {
-            this._userLL = userLL;
+            this._userService = _userService;
             this.userForm = userForm;
 
             InitializeComponent();
@@ -38,18 +39,18 @@ namespace DesktopApplication.Forms.UserSubForms
                 MessageBox.Show("All fields are mandatory!");
             }
 
-            if (_userLL.GetUserByUsername(tbUsername.Text) == null)
+            if (_userService.GetUserByUsername(tbUsername.Text) == null)
             {
                 MessageBox.Show("No user exists with username \"" + tbUsername.Text + "\"!");
             }
-            else if (_userLL.IsUserBanned(_userLL.GetUserByUsername(tbUsername.Text)) == false)
+            else if (_userService.IsUserBanned(_userService.GetUserByUsername(tbUsername.Text)) == false)
             {
-                _userLL.BanUser(_userLL.GetUserByUsername(tbUsername.Text), tbReason.Text);
+                _userService.BanUser(_userService.GetUserByUsername(tbUsername.Text), tbReason.Text);
                 MessageBox.Show("User \"" + tbUsername.Text + "\" has been banned successfully!");
                 userForm.menu.ChangeShownForm(userForm);
-                userForm.LoadUsers(_userLL.GetAllUsers());
+                userForm.LoadUsers(_userService.GetAllUsers());
             }
-            else if (_userLL.IsUserBanned(_userLL.GetUserByUsername(tbUsername.Text)) == true)
+            else if (_userService.IsUserBanned(_userService.GetUserByUsername(tbUsername.Text)) == true)
             {
                 MessageBox.Show("User \"" + tbUsername.Text + "\" is already banned!");
             }

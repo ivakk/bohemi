@@ -19,19 +19,19 @@ namespace DesktopApplication.Forms.EventSubForms
 {
     public partial class AddEventForm : Form
     {
-        private readonly IEventLL _eventLL;
+        private readonly IEventService _eventService;
         EventForm eventForm;
 
         private int eventId;
-        public AddEventForm(EventForm eventForm, IEventLL eventLL)
+        public AddEventForm(EventForm eventForm, IEventService _eventService)
         {
             InitializeComponent();
             this.eventForm = eventForm;
-            _eventLL = eventLL;
+            this._eventService = _eventService;
         }
 
 
-        public void SetMovieId(int id)
+        public void SetEventId(int id)
         {
             if (id == 0)
             {
@@ -43,7 +43,7 @@ namespace DesktopApplication.Forms.EventSubForms
             }
             else
             {
-                Event curEvent = _eventLL.GetEventById(id);
+                Event curEvent = _eventService.GetEventById(id);
                 eventId = curEvent.Id;
                 tbTitle.Text = curEvent.Title;
                 tbDescription.Text = curEvent.Description;
@@ -63,22 +63,22 @@ namespace DesktopApplication.Forms.EventSubForms
                     dtpDate.Value, ImageToByteArray(pbPicture));
                 if (eventId == 0)
                 {
-                    bool success = _eventLL.CreateEvent(events);
+                    bool success = _eventService.CreateEvent(events);
                     if (success)
                     {
                         eventForm.menu.ChangeShownForm(eventForm);
                         this.Hide();
-                        eventForm.dgvEvents.DataSource = _eventLL.GetEventsBySearch("");
+                        eventForm.dgvEvents.DataSource = _eventService.GetEventsBySearch("");
                     }
                 }
                 else
                 {
-                    bool success = _eventLL.UpdateEvent(events);
+                    bool success = _eventService.UpdateEvent(events);
                     if (success)
                     {
                         eventForm.menu.ChangeShownForm(eventForm);
                         this.Hide();
-                        eventForm.dgvEvents.DataSource = _eventLL.GetEventsBySearch("");
+                        eventForm.dgvEvents.DataSource = _eventService.GetEventsBySearch("");
                     }
                 }
             }

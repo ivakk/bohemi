@@ -114,6 +114,7 @@
             pbPfp.Location = new Point(202, 283);
             pbPfp.Name = "pbPfp";
             pbPfp.Size = new Size(200, 200);
+            pbPfp.SizeMode = PictureBoxSizeMode.Zoom;
             pbPfp.TabIndex = 38;
             pbPfp.TabStop = false;
             // 

@@ -16,11 +16,11 @@ namespace Website.Pages
         [BindProperty]
         public LoginDTO? LoginDTO { get; set; }
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
-        public LoginModel(IUserLL _userLL)
+        public LoginModel(IUserService _userService)
         {
-            this._userLL = _userLL;
+            this._userService = _userService;
         }
         public void OnGet()
         {
@@ -40,7 +40,7 @@ namespace Website.Pages
             
             try
             {
-                UserDTO user = _userLL.CheckUser(LoginDTO.Username, LoginDTO.PasswordEntry);
+                UserDTO user = _userService.CheckUser(LoginDTO.Username, LoginDTO.PasswordEntry);
                 
 
                 var claims = new List<Claim>
@@ -53,6 +53,11 @@ namespace Website.Pages
                 
 
                 return RedirectToPage("/Index");
+            }
+            catch (ApplicationException)
+            {
+                ViewData["Error"] = "You are currently banned!";
+                return Page();
             }
             catch (Exception)
             {

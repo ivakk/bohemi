@@ -21,5 +21,10 @@ namespace Classes
         {
             
         }
+
+        public string GetObjectString()
+        {
+            return Id.ToString() + Name + Size + Price + Percentage + Age;
+        }
     }
 }

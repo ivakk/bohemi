@@ -26,9 +26,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.AccessDeniedPath = "/Index";
     });
 
-builder.Services.AddTransient<IUserLL, UserLL>();
+builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUserDAL, UserDAL>();
-builder.Services.AddTransient<IPasswordHashingLL, PasswordHashingLL>();
+builder.Services.AddTransient<IPasswordHashingService, PasswordHashingService>();
 
 var app = builder.Build();
 

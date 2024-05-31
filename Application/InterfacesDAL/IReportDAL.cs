@@ -1,4 +1,5 @@
 ﻿using Classes;
+using DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace InterfacesDAL
     {
         Report GetReportByIdDAL(int id);
         List<Report> GetAllReportsDAL();
-        bool CreateReportDAL(Report report);
+        bool CreateReportDAL(ReportDTO report);
         bool DeleteReportDAL(int id);
     }
 }

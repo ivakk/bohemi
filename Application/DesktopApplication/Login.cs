@@ -16,11 +16,25 @@ namespace DesktopApplication
 {
     public partial class Login : Form
     {
-        private readonly IUserLL _userLL;
-        public Login(IUserLL _userLL)
+        private readonly IUserService _userService;
+        private readonly IAlcoholService _alcoholService;
+        private readonly ICommentsService _commentsService;
+        private readonly IEventService _eventService;
+        private readonly IReportService _reportService;
+        private readonly IReservationService _reservationService;
+        private readonly ISoftService _softService;
+
+        public Login(IUserService _userService, IAlcoholService _alcoholService, ICommentsService _commentsService, IEventService eventService, IReportService reportService, 
+                     IReservationService reservationService, ISoftService softService)
         {
             InitializeComponent();
-            this._userLL = _userLL;
+            this._userService = _userService;
+            this._alcoholService = _alcoholService;
+            this._commentsService = _commentsService;
+            this._eventService = eventService;
+            this._reportService = reportService;
+            this._reservationService = reservationService;
+            this._softService = softService;
         }
 
         private void reveal_MouseUp_1(object sender, MouseEventArgs e)
@@ -51,12 +65,12 @@ namespace DesktopApplication
             {
                 try
                 {
-                    UserDTO user = _userLL.CheckUser(usernameEntry.Text, passwordEntry.Text);
+                    UserDTO user = _userService.CheckUser(usernameEntry.Text, passwordEntry.Text);
 
                     if (user.Role == "admin")
                     {
 
-                        Menu menu = new Menu(this, _userLL);
+                        Menu menu = new Menu(this, _userService, _alcoholService, _commentsService, _eventService, _reportService, _reservationService, _softService);
                         menu.Show();
                         this.Hide();
                     }
@@ -64,6 +78,10 @@ namespace DesktopApplication
                     {
                         MessageBox.Show("You do not have access!");
                     }
+                }
+                catch (ApplicationException)
+                {
+                    MessageBox.Show("You are currently banned!");
                 }
                 catch (Exception)
                 {

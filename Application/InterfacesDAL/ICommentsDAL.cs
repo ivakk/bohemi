@@ -1,4 +1,5 @@
 ﻿using Classes;
+using DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace InterfacesDAL
     {
         Comments GetCommentByIdDAL(int id);
         List<Comments> GetAllCommentsDAL(int eventId);
-        bool CreateCommentDAL(Comments comment);
+        bool CreateCommentDAL(CommentsDTO comment);
         bool DeleteCommentDAL(int id);
         string GetCommentUserDAL(int id);
     }

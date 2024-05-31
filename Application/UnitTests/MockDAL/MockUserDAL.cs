@@ -36,9 +36,16 @@ namespace UnitTests.MockDAL
 
         public bool DeleteUserDAL(int id)
         {
-            var user = GetUserByIdDAL(id);
-            users.Remove(user);
-            return true;
+            try
+            {
+                var user = GetUserByIdDAL(id);
+                users.Remove(user);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public bool IsUsernameUsedDAL(string username)
