@@ -127,7 +127,7 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new Users((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"],
+                    user = new Users((int)reader["id"], reader["profilePicture"] != DBNull.Value ? (byte[]?)reader["profilePicture"] : null, (string)reader["firstName"], (string)reader["lastName"],
                         (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["phoneNumber"], (string)reader["role"]);
                 }
             }
@@ -381,7 +381,7 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    user = new Users((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"],
+                    user = new Users((int)reader["id"], reader["profilePicture"] != DBNull.Value ? (byte[]?)reader["profilePicture"] : null, (string)reader["firstName"], (string)reader["lastName"],
                         (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["phoneNumber"], (string)reader["role"]);
                 }
             }
@@ -417,7 +417,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    users.Add(new Users((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"], 
+                    users.Add(new Users((int)reader["id"], reader["profilePicture"] != DBNull.Value ? (byte[]?)reader["profilePicture"] : null, (string)reader["firstName"], (string)reader["lastName"], 
                         (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], 
                         !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, (string)reader["role"]));
                 }

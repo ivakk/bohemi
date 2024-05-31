@@ -16,11 +16,11 @@ namespace DesktopApplication.Forms.UserSubForms
     public partial class UnbanUserForm : Form
     {
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userLL;
 
         UserForm userForm;
 
-        public UnbanUserForm(UserForm userForm, IUserLL userLL)
+        public UnbanUserForm(UserForm userForm, IUserService userLL)
         {
             InitializeComponent();
             this._userLL = userLL;

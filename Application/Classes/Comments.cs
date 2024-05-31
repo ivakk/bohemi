@@ -8,7 +8,7 @@ namespace Classes
 {
     public class Comments
     {
-        public int Id { get; }
+        public int Id { get; private set; }
         public int UserId { get; private set; }
         public int EventId { get; private set; }
         public DateTime CommentDate { get; private set; }

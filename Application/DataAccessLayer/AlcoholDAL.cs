@@ -74,7 +74,7 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    newAlcohol = new Alcohol((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (double)reader["price"],
+                    newAlcohol = new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], (double)reader["price"],
                         (int)reader["percentage"], (int)reader["age"]);
                 }
             }
@@ -146,7 +146,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    alcohols.Add(new Alcohol((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (double)reader["price"],
+                    alcohols.Add(new Alcohol((int)reader["id"], reader["profilePicture"] != DBNull.Value ? (byte[]?)reader["profilePicture"] : null, (string)reader["name"], (int)reader["size"], (double)reader["price"],
                         (int)reader["percentage"], (int)reader["age"]));
                 }
                 reader.Close();

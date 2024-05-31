@@ -4,6 +4,7 @@ using InterfacesLL;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Website.Pages.Member
@@ -27,11 +28,11 @@ namespace Website.Pages.Member
         private string updatedPassword;
 
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
-        public SettingsModel(IUserLL userLL)
+        public SettingsModel(IUserService userService)
         {
-            _userLL = userLL;
+            _userService = userService;
         }
         public void OnGet(int id)
         {
@@ -39,7 +40,7 @@ namespace Website.Pages.Member
             if (User.FindFirst("id") != null)
             {
                 IsLoggedIn = true;
-                LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
+                LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
             }
         }
         public IActionResult OnPostUploadPicture()
@@ -62,9 +63,9 @@ namespace Website.Pages.Member
                     pictureBytes = memoryStream.ToArray();
                 }
 
-                LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
-                UpdateUserDTO updateUser = _userLL.GetUserForUpdateDTO(LoggedInUser.Id);
-                _userLL.UpdateUser(new UpdateUserDTO(LoggedInUser.Id, pictureBytes, LoggedInUser.FirstName, LoggedInUser.LastName, LoggedInUser.Birthday, LoggedInUser.Username,
+                LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
+                UpdateUserDTO updateUser = _userService.GetUserForUpdateDTO(LoggedInUser.Id);
+                _userService.UpdateUser(new UpdateUserDTO(LoggedInUser.Id, pictureBytes, LoggedInUser.FirstName, LoggedInUser.LastName, LoggedInUser.Birthday, LoggedInUser.Username,
                     LoggedInUser.Email, updateUser.Password, LoggedInUser.PhoneNumber, LoggedInUser.Role));
                 Message = "File uploaded and processed successfully.";
 
@@ -84,7 +85,8 @@ namespace Website.Pages.Member
                 }
                 else
                 {
-                    LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
+                    LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
+                    Debug.WriteLine("2");
 
                     if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8)
                     {
@@ -92,7 +94,7 @@ namespace Website.Pages.Member
                     }
                     else
                     {
-                        updatedPassword = "";
+                        updatedPassword = "oaijsnfoiahnofsafgnasaosnfoaiosabfnaofsn";
                     }
 
                     if (UpdateUserDTO.FirstName != null && UpdateUserDTO.FirstName.Length > 0)
@@ -140,7 +142,9 @@ namespace Website.Pages.Member
                         updatedPhoneNumber = LoggedInUser.PhoneNumber;
                     }
 
-                    UpdateUserDTO userUpdate = _userLL.GetUserForUpdateDTO(LoggedInUser.Id);
+
+                    Debug.WriteLine("3");
+                    Debug.WriteLine("4");
                     UpdateUserDTO updateUser = new UpdateUserDTO(LoggedInUser.Id,
                                             LoggedInUser.ProfilePicture,
                                             updatedFirstName,
@@ -148,11 +152,11 @@ namespace Website.Pages.Member
                                             LoggedInUser.Birthday,
                                             updatedUsername,
                                             updatedEmail,
-                                            userUpdate.Password,
+                                            updatedPassword,
                                             updatedPhoneNumber,
                                             LoggedInUser.Role);
                     
-                    bool success = _userLL.UpdateUser(updateUser);
+                    bool success = _userService.UpdateUser(updateUser);
 
                     if (success)
                     {
@@ -167,11 +171,13 @@ namespace Website.Pages.Member
             catch (ApplicationException)
             {
                 ViewData["Error"] = "Username is already in use!";
+                System.Diagnostics.Debug.WriteLine("ne tuk");
                 return Page();
             }
             catch (ArgumentOutOfRangeException)
             {
                 ViewData["Error"] = "Email address is already in use!";
+                System.Diagnostics.Debug.WriteLine("tuk");
                 return Page();
             }
             catch (Exception)
@@ -186,7 +192,7 @@ namespace Website.Pages.Member
             if (User.FindFirst("id") != null)
             {
                 IsLoggedIn = true;
-                LoggedInUser = _userLL.GetUserById(int.Parse(User.FindFirst("id").Value));
+                LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
             }
             if (LoggedInUser.ProfilePicture != null && LoggedInUser.ProfilePicture.Length > 0)
             {

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using InterfacesDAL;
+using DTOs;
 
 namespace DataAccessLayer
 {
@@ -98,7 +99,7 @@ namespace DataAccessLayer
             return new List<Comments>();
         }
 
-        public bool CreateCommentDAL(Comments comment)
+        public bool CreateCommentDAL(CommentsDTO comment)
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +

@@ -13,11 +13,11 @@ namespace Website.Pages
         [BindProperty]
         public RegisterDTO RegisterDTO { get; set; }
 
-        private readonly IUserLL _userLL;
+        private readonly IUserService _userService;
 
-        public SignUpModel(IUserLL _userLL)
+        public SignUpModel(IUserService _userService)
         {
-            this._userLL = _userLL;
+            this._userService = _userService;
         }
 
         public void OnGet()
@@ -59,7 +59,7 @@ namespace Website.Pages
                                             RegisterDTO.PhoneNumber,
                                             RegisterDTO.Role);
 
-                    bool success = _userLL.CreateUser(regUser);
+                    bool success = _userService.CreateUser(regUser);
 
                     if(success)
                     {

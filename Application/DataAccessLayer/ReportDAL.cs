@@ -95,7 +95,7 @@ namespace DataAccessLayer
             return new List<Report>();
         }
 
-        public bool CreateReportDAL(Report report)
+        public bool CreateReportDAL(ReportDTO report)
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +

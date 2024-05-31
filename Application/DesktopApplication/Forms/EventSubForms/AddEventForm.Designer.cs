@@ -134,6 +134,7 @@
             pbPicture.Location = new Point(119, 361);
             pbPicture.Name = "pbPicture";
             pbPicture.Size = new Size(200, 200);
+            pbPicture.SizeMode = PictureBoxSizeMode.Zoom;
             pbPicture.TabIndex = 53;
             pbPicture.TabStop = false;
             // 

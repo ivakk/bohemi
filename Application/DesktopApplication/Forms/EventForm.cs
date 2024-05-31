@@ -21,10 +21,10 @@ namespace DesktopApplication.Forms
         public Menu menu;
         AddEventForm addEventForm;
 
-        private readonly IEventLL _eventLL;
+        private readonly IEventService _eventLL;
 
 
-        public EventForm(Menu menu, IEventLL eventLL)
+        public EventForm(Menu menu, IEventService eventLL)
         {
             InitializeComponent();
             _eventLL = eventLL;
@@ -46,7 +46,7 @@ namespace DesktopApplication.Forms
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Event events = (Event)dgvEvents.CurrentRow.DataBoundItem;
-            addEventForm.SetMovieId(events.Id);
+            addEventForm.SetEventId(events.Id);
             menu.pnlMain.Controls.Clear();
             this.menu.pnlMain.Controls.Add(addEventForm);
             addEventForm.Show();
@@ -61,7 +61,7 @@ namespace DesktopApplication.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            addEventForm.SetMovieId(0);
+            addEventForm.SetEventId(0);
             menu.pnlMain.Controls.Clear();
             this.menu.pnlMain.Controls.Add(addEventForm);
             addEventForm.Show();

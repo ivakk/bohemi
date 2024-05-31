@@ -7,9 +7,6 @@ namespace UnitTests
 {
     public class UserTests
     {
-        public MockUserDAL _mockUserDAL = new MockUserDAL();
-        public UserLL _userLL = new UserLL(new MockUserDAL());
-
         [Fact] 
         public void CreateUser_ShouldAddUser_WhenNewUserIsProvided()
         {
@@ -26,12 +23,14 @@ namespace UnitTests
                 Role = "admin"
             };
 
-            // Act
-            var result = _userLL.CreateUser(newUser);
+            UserService _userService = new UserService(new MockUserDAL());
+
+			// Act
+			var result = _userService.CreateUser(newUser);
 
             // Assert
             Assert.True(result);
-            Assert.True(_userLL.IsEmailUsed("testuser@test.com"));
+            Assert.True(_userService.IsEmailUsed("testuser@test.com"));
         }
 
         [Fact]
@@ -60,12 +59,15 @@ namespace UnitTests
                 Birthday = DateTime.Now,
                 Role = "user"
             };
-            _userLL.CreateUser(user1);
+
+			UserService _userService = new UserService(new MockUserDAL());
+
+			_userService.CreateUser(user1);
 
             try
             {
                 // Act
-                var result = _userLL.CreateUser(user2);
+                var result = _userService.CreateUser(user2);
                 //// Assert
                 //Assert.IsType<ArgumentOutOfRangeException>("");
 
@@ -93,11 +95,15 @@ namespace UnitTests
                 Birthday = DateTime.Now,
                 Role = "customer"
             };
-            _userLL.CreateUser(newUser);
+
+            MockUserDAL _mockUserDAL = new MockUserDAL();
+			UserService _userService = new UserService(_mockUserDAL);
+
+			_userService.CreateUser(newUser);
             int userId = _mockUserDAL.users.Last().Id;  // Get the ID of the newly added user
 
             // Act
-            var user = _userLL.GetUserById(userId);
+            var user = _userService.GetUserById(userId);
 
             // Assert
             Assert.NotNull(user);
@@ -119,12 +125,16 @@ namespace UnitTests
                 Birthday = DateTime.Now,
                 Role = "customer"
             };
-            _userLL.CreateUser(newUser);
+
+            MockUserDAL _mockUserDAL = new MockUserDAL();
+			UserService _userService = new UserService(_mockUserDAL);
+
+			_userService.CreateUser(newUser);
             int userId = _mockUserDAL.users.Last().Id;  // Get the ID of the newly added user
 
             // Act
-            _userLL.DeleteUser(userId);
-            var user = _userLL.GetUserById(userId);
+            _userService.DeleteUser(userId);
+            var user = _userService.GetUserById(userId);
 
             // Assert
             Assert.Null(user);
@@ -145,7 +155,11 @@ namespace UnitTests
                 Birthday = DateTime.Now,
                 Role = "customer"
             };
-            _userLL.CreateUser(newUser);
+
+            MockUserDAL _mockUserDAL = new MockUserDAL();
+			UserService _userService = new UserService(_mockUserDAL);
+
+			_userService.CreateUser(newUser);
             int userId = _mockUserDAL.users.Last().Id;
 
             var updateUser = new UpdateUserDTO
@@ -163,8 +177,8 @@ namespace UnitTests
             };
 
             // Act
-            var result = _userLL.UpdateUser(updateUser);
-            var updatedUser = _userLL.GetUserById(userId);
+            var result = _userService.UpdateUser(updateUser);
+            var updatedUser = _userService.GetUserById(userId);
 
             // Assert
             Assert.True(result);
