@@ -15,5 +15,8 @@ namespace InterfacesDAL
         bool DeleteEventDAL(int id);
         List<Event> GetAllEventsDAL();
         bool UpdateEventDAL(EventDTO updateEvent);
+        bool LikeEventDAL(LikedEvent likedEvent);
+        bool RemoveFromLikedEventsDAL(LikedEvent likedEvent);
+        bool IsEventLikedDAL(LikedEvent likedEvent);
     }
 }

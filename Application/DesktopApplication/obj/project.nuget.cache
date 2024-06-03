@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AKeAyjao7DbDl2lq5sxlB4FrClzrdQNXVUWeOOfrZtntA7dp9bWTENj9dFhIWT8jG8+9mxOMlW5/kgmgxP3XhQ==",
+  "dgSpecHash": "+qK/JVMg8dBPJIDIhnO9g9UGymEZFG0MVYcPbYXQrWmTxxQ3ZF527SP2grs1RPccOKDUL18HHge1YyQbTO8ucQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DesktopApplication\\DesktopApplication.csproj",
+  "projectFilePath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DesktopApplication\\DesktopApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivk\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\ivk\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

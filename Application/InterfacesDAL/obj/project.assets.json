@@ -48,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
       "projectName": "InterfacesDAL",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,11 +69,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj"
+            "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj"
+            "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj"
             }
           }
         }

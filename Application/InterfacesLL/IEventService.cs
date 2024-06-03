@@ -16,5 +16,8 @@ namespace InterfacesLL
         List<Event> GetAllEvents();
         bool UpdateEvent(EventDTO updateEvent);
         List<Event> GetEventsBySearch(string search);
+        bool LikeEvent(LikedEvent likedEvent);
+        bool RemoveFromLikedEvents(LikedEvent likedEvent);
+        bool IsEventLiked(LikedEvent likedEvent);
     }
 }
