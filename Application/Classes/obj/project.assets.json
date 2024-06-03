@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj",
       "projectName": "Classes",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

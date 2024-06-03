@@ -58,34 +58,31 @@ namespace DataAccessLayer
             Event newEvent = null;
             string query = $"SELECT * FROM {tableName} WHERE id = @id";
 
-            try
+            using (var connection = new SqlConnection("Server=mssqlstud.fhict.local;Database=dbi503708_dbbohemi;User Id=dbi503708_dbbohemi;Password=db123;"))
             {
-                // Open the connection
-                connection.Open();
-
-                SqlCommand command = new SqlCommand(query, connection);
-
-                // Add the parameters
-                command.Parameters.AddWithValue("@id", id);
-
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
+                using (var command = new SqlCommand(query, connection))
                 {
-                    newEvent = new Event((int)reader["id"], (string)reader["title"], (string)reader["description"], (DateTime)reader["day"], (byte[]?)reader["picture"]);
+                    command.Parameters.AddWithValue("@id", id);
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read()) // Use if instead of while since only one record is expected
+                        {
+                            newEvent = new Event(
+                                (int)reader["id"],
+                                (string)reader["title"],
+                                (string)reader["description"],
+                                (DateTime)reader["day"],
+                                (byte[]?)reader["picture"]);
+                        }
+                    }
                 }
             }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
+
             return newEvent;
         }
+
         public bool DeleteEventDAL(int id)
         {
             // Set up the query
@@ -122,40 +119,30 @@ namespace DataAccessLayer
         }
         public List<Event> GetAllEventsDAL()
         {
-            string query = $"SELECT * FROM {tableName}";
             List<Event> events = new List<Event>();
+            string query = $"SELECT * FROM {tableName}";
 
-            try
+            using (var connection = new SqlConnection("Server=mssqlstud.fhict.local;Database=dbi503708_dbbohemi;User Id=dbi503708_dbbohemi;Password=db123;"))
             {
-                // Open the connection
-                connection.Open();
-
-                // Creating Command string to combine the query and the connection String
-                SqlCommand command = new SqlCommand(query, Connection.connection);
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
-                
-
-                while (reader.Read())
+                using (var command = new SqlCommand(query, connection))
                 {
-                    events.Add(new Event((int)reader["id"], (string)reader["title"], (string)reader["description"], (DateTime)reader["day"], (byte[]?)reader["picture"]));
+                    connection.Open();
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            events.Add(new Event(
+                                (int)reader["id"], 
+                                (string)reader["title"], 
+                                (string)reader["description"], 
+                                (DateTime)reader["day"], 
+                                (byte[]?)reader["picture"]));
+                        }
+                    }
                 }
-                reader.Close();
-                return events;
             }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
+
             return events;
         }
         public bool UpdateEventDAL(EventDTO updateEvent)
@@ -199,6 +186,109 @@ namespace DataAccessLayer
             {
                 connection.Close();
             }
+        }
+        public bool LikeEventDAL(LikedEvent likedEvent)
+        {
+            string query = $"INSERT INTO LikedEvents " +
+                           $"(userId, eventId) " +
+                           $"VALUES (@userId, @eventId)";
+            try
+            {
+                // Open the connection
+                connection.Open();
+
+                // Creating Command string to combine the query and the connection String
+                SqlCommand command = new SqlCommand(query, Connection.connection);
+
+                // Add the parameters
+                command.Parameters.AddWithValue("@userId", likedEvent.UserId);
+                command.Parameters.AddWithValue("@eventId", likedEvent.EventId);
+
+                // Execute the query and get the data
+                using SqlDataReader reader = command.ExecuteReader();
+                return true;
+            }
+            catch (SqlException e)
+            {
+                // Handle any errors that may have occurred.
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        public bool RemoveFromLikedEventsDAL(LikedEvent likedEvent)
+        {
+            string query = $"DELETE FROM LikedEvents " +
+                $"WHERE eventId = @eventId AND userId = @userId";
+
+            try
+            {
+                // Open the connection
+                connection.Open();
+
+                // Creating Command string to combine the query and the connection String
+                SqlCommand command = new SqlCommand(query, Connection.connection);
+
+                // Add the parameters
+                command.Parameters.AddWithValue("@eventId", likedEvent.EventId);
+                command.Parameters.AddWithValue("@userId", likedEvent.UserId);
+                // Execute the query and get the data
+                using SqlDataReader reader = command.ExecuteReader();
+
+                return true;
+            }
+            catch (SqlException e)
+            {
+                // Handle any errors that may have occurred.
+                System.Diagnostics.Debug.WriteLine(e.Message);
+                return false;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        public bool IsEventLikedDAL(LikedEvent likedEvent)
+        {
+            string query = $"SELECT * FROM LikedEvents " +
+                $"WHERE userId = @userId AND eventId = @eventId";
+
+            try
+            {
+                // Open the connection
+                connection.Open();
+
+                // Creating Command string to combine the query and the connection String
+                SqlCommand command = new SqlCommand(query, Connection.connection);
+
+                command.Parameters.AddWithValue("@eventId", likedEvent.EventId);
+                command.Parameters.AddWithValue("@userId", likedEvent.UserId);
+                // Execute the query and get the data
+                using SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    return true;
+                }
+            }
+            catch (SqlException e)
+            {
+                // Handle any errors that may have occurred.
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return false;
         }
     }
 }

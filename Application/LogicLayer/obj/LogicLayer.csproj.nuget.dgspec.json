@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivk\\Desktop\\b\\Application\\LogicLayer\\LogicLayer.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj": {
+    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj",
         "projectName": "Classes",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -124,14 +124,14 @@
         }
       }
     },
-    "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
         "projectName": "InterfacesDAL",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -148,11 +148,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj"
               },
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj"
               }
             }
           }
@@ -191,14 +191,14 @@
         }
       }
     },
-    "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesLL\\InterfacesLL.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj",
         "projectName": "InterfacesLL",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesLL\\InterfacesLL.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesLL\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -215,11 +215,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj"
               },
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj"
               }
             }
           }
@@ -258,14 +258,14 @@
         }
       }
     },
-    "C:\\Users\\ivk\\Desktop\\b\\Application\\LogicLayer\\LogicLayer.csproj": {
+    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\b\\Application\\LogicLayer\\LogicLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
         "projectName": "LogicLayer",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\LogicLayer\\LogicLayer.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\LogicLayer\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -282,17 +282,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\Classes\\Classes.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj"
               },
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\DTOs\\DTOs.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj"
               },
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
               },
-              "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesLL\\InterfacesLL.csproj": {
-                "projectPath": "C:\\Users\\ivk\\Desktop\\b\\Application\\InterfacesLL\\InterfacesLL.csproj"
+              "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+                "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
               }
             }
           }

@@ -23,6 +23,10 @@ namespace Classes
             Day = day;
             Picture = picture;
         }
+        public Event()
+        {
+
+        }
         public string GetObjectString()
         {
             return Id.ToString() + Title + Day.ToString();

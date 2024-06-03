@@ -28,7 +28,18 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<IUserDAL, UserDAL>();
-builder.Services.AddTransient<IPasswordHashingService, PasswordHashingService>();
+builder.Services.AddTransient<IEventService, EventService>();
+builder.Services.AddTransient<IEventDAL, EventDAL>();
+builder.Services.AddTransient<IAlcoholService, AlcoholService>();
+builder.Services.AddTransient<IAlcoholDAL, AlcoholDAL>();
+builder.Services.AddTransient<ICommentsService, CommentsService>();
+builder.Services.AddTransient<ICommentsDAL, CommentsDAL>();
+builder.Services.AddTransient<IReportService, ReportService>();
+builder.Services.AddTransient<IReportDAL, ReportDAL>();
+builder.Services.AddTransient<IReservationService, ReservationService>();
+builder.Services.AddTransient<IReservationDAL, ReservationDAL>();
+builder.Services.AddTransient<ISoftService, SoftService>();
+builder.Services.AddTransient<ISoftDAL, SoftDAL>();
 
 var app = builder.Build();
 

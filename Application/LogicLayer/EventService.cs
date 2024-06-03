@@ -93,5 +93,41 @@ namespace LogicLayer
             }
             return result;
         }
+
+        public bool LikeEvent(LikedEvent likedEvent)
+        {
+            if (likedEvent == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _eventDAL.LikeEventDAL(likedEvent);
+            }
+        }
+
+        public bool RemoveFromLikedEvents(LikedEvent likedEvent)
+        {
+            if (likedEvent == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _eventDAL.RemoveFromLikedEventsDAL(likedEvent);
+            }
+        }
+
+        public bool IsEventLiked(LikedEvent likedEvent)
+        {
+            if (likedEvent == null)
+            {
+                return false;
+            }
+            else
+            {
+                return _eventDAL.IsEventLikedDAL(likedEvent);
+            }
+        }
     }
 }
