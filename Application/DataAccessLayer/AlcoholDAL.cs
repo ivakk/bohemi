@@ -3,6 +3,7 @@ using DTOs;
 using InterfacesDAL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -17,48 +18,53 @@ namespace DataAccessLayer
 
         public bool CreateAlcoholDAL(AlcoholDTO newAlcohol)
         {
+            // First, create a base beverage entry
             base.CreateBeverageDAL(newAlcohol);
-            
-            // Set up the query
-            string query = $"INSERT INTO {tableName} JOIN Drinks " +
-                           $"(id, percentage, age) " +
+
+            // Set up the query for alcohol-specific details
+            string query = $"INSERT INTO {tableName} (id, percentage, age) " +
                            $"VALUES (@id, @percentage, @age)";
 
-            try
+            // Using block for managing the connection
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                // Open the connection
-                connection.Open();
-                // Creating Command string to combine the query and the connection String
-                SqlCommand command = new SqlCommand(query, Connection.connection);
-                command.Parameters.AddWithValue("@id", GetNextId());
-                command.Parameters.AddWithValue("@percentage", newAlcohol.Percentage);
-                command.Parameters.AddWithValue("@age", newAlcohol.Age);
+                try
+                {
+                    connection.Open();
 
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
+                    // Create SqlCommand inside a using block
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Use Add instead of AddWithValue to specify the type explicitly
+                        command.Parameters.Add("@id", SqlDbType.Int).Value = GetNextId(); // Assuming GetNextId returns an int
+                        command.Parameters.Add("@percentage", SqlDbType.Decimal).Value = newAlcohol.Percentage;
+                        command.Parameters.Add("@age", SqlDbType.Int).Value = newAlcohol.Age;
 
-                return true;
-            }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-                return false;
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-                return false;
-            }
-            finally
-            {
-                connection.Close();
+                        // Execute the command
+                        command.ExecuteNonQuery();
+
+                        return true;
+                    }
+                }
+                catch (SqlException e)
+                {
+                    // Handle SQL-specific errors
+                    System.Diagnostics.Debug.WriteLine(e.Message);
+                    return false;
+                }
+                catch (Exception ex)
+                {
+                    // Handle general errors
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                    return false;
+                }
             }
         }
+
         public Alcohol GetAlcoholByIdDAL(int id)
         {
             Alcohol newAlcohol = null;
-            string query = $"SELECT Alcohol.id, picture, name, size, price, percentage, age FROM {tableName} JOIN Drinks ON Alcohol.id = Drinks.id WHERE id = @id";
+            string query = $"SELECT Alcohol.id, picture, name, size, price, percentage, age FROM {tableName} JOIN Drinks ON Alcohol.id = Drinks.id WHERE Alcohol.id = @id";
 
             try
             {
@@ -74,7 +80,7 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    newAlcohol = new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], (double)reader["price"],
+                    newAlcohol = new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
                         (int)reader["percentage"], (int)reader["age"]);
                 }
             }
@@ -146,7 +152,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    alcohols.Add(new Alcohol((int)reader["id"], reader["profilePicture"] != DBNull.Value ? (byte[]?)reader["profilePicture"] : null, (string)reader["name"], (int)reader["size"], (double)reader["price"],
+                    alcohols.Add(new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
                         (int)reader["percentage"], (int)reader["age"]));
                 }
                 reader.Close();

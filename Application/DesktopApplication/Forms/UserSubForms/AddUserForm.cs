@@ -141,7 +141,7 @@ namespace DesktopApplication.Forms.UserSubForms
                         MessageBox.Show("The email address \"" + tbEmail.Text + "\" is already in use by another user!");
                     }
                 }
-                userForm.LoadUsers(_userService.GetFirst10Users());
+                userForm.LoadUsers(_userService.GetFirstUsers(10));
             }
         }
 

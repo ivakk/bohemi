@@ -12,6 +12,16 @@
           "bin/placeholder/Classes.dll": {}
         }
       },
+      "CustomExceptions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CustomExceptions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CustomExceptions.dll": {}
+        }
+      },
       "DTOs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -58,6 +68,11 @@
       "path": "../Classes/Classes.csproj",
       "msbuildProject": "../Classes/Classes.csproj"
     },
+    "CustomExceptions/1.0.0": {
+      "type": "project",
+      "path": "../CustomExceptions/CustomExceptions.csproj",
+      "msbuildProject": "../CustomExceptions/CustomExceptions.csproj"
+    },
     "DTOs/1.0.0": {
       "type": "project",
       "path": "../DTOs/DTOs.csproj",
@@ -77,6 +92,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Classes >= 1.0.0",
+      "CustomExceptions >= 1.0.0",
       "DTOs >= 1.0.0",
       "InterfacesDAL >= 1.0.0",
       "InterfacesLL >= 1.0.0"
@@ -88,11 +104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
       "projectName": "LogicLayer",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\LogicLayer\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\LogicLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,17 +125,20 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\Classes\\Classes.csproj"
+            "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\Classes.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj"
+            "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+            "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\DTOs.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
+            "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+            },
+            "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
             }
           }
         }

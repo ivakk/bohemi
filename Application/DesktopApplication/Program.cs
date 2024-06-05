@@ -44,6 +44,7 @@ namespace DesktopApplication
                     services.AddTransient<IReservationDAL, ReservationDAL>();
                     services.AddTransient<ICommentsService, CommentsService>();
                     services.AddTransient<ICommentsDAL, CommentsDAL>();
+                    services.AddTransient<IBeverageDAL, BeverageDAL>();
                     services.AddTransient<Login>();
                 });
         }

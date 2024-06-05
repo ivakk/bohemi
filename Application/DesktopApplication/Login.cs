@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using CustomExceptions;
 
 namespace DesktopApplication
 {
@@ -79,7 +80,7 @@ namespace DesktopApplication
                         MessageBox.Show("You do not have access!");
                     }
                 }
-                catch (ApplicationException)
+                catch (BannedException)
                 {
                     MessageBox.Show("You are currently banned!");
                 }

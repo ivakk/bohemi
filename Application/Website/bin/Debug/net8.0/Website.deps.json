@@ -9,6 +9,7 @@
       "Website/1.0.0": {
         "dependencies": {
           "Classes": "1.0.0",
+          "CustomExceptions": "1.0.0",
           "DTOs": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "InterfacesDAL": "1.0.0",
@@ -99,6 +100,11 @@
           "Classes.dll": {}
         }
       },
+      "CustomExceptions/1.0.0": {
+        "runtime": {
+          "CustomExceptions.dll": {}
+        }
+      },
       "DataAccessLayer/1.0.0": {
         "dependencies": {
           "Classes": "1.0.0",
@@ -136,6 +142,7 @@
       "LogicLayer/1.0.0": {
         "dependencies": {
           "Classes": "1.0.0",
+          "CustomExceptions": "1.0.0",
           "DTOs": "1.0.0",
           "InterfacesDAL": "1.0.0",
           "InterfacesLL": "1.0.0"
@@ -216,6 +223,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "Classes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomExceptions/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

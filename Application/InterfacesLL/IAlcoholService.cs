@@ -16,5 +16,6 @@ namespace InterfacesLL
         List<Alcohol> GetAllAlcohols();
         bool UpdateAlcohol(AlcoholDTO newAlcohol);
         List<Alcohol> GetAlcoholsBySearch(string search);
+        List<Alcohol> GetFirstAlcohols(int count);
     }
 }

@@ -12,9 +12,9 @@ namespace Classes
         public byte[] Picture { get; private set; }
         public string Name { get; private set; }
         public int Size { get; private set; }
-        public double Price { get; private set; }
+        public decimal Price { get; private set; }
 
-        public Beverage(int id, byte[] picture, string name, int size, double price)
+        public Beverage(int id, byte[] picture, string name, int size, decimal price)
         {
             Id = id;
             Picture = picture;

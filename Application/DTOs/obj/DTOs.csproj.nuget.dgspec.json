@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\DTOs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\DTOs.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\DTOs.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\i\\bohemi\\Application\\DTOs\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

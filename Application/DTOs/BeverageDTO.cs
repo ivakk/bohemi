@@ -12,9 +12,9 @@ namespace DTOs
         public byte[] Picture { get; set; }
         public string Name { get; set; }
         public int Size { get; set; }
-        public double Price { get; set; }
+        public decimal Price { get; set; }
 
-        public BeverageDTO(int id, byte[] picture, string name, int size, double price)
+        public BeverageDTO(int id, byte[] picture, string name, int size, decimal price)
         {
             Id = id;
             Picture = picture;

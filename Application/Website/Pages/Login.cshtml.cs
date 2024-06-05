@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using DTOs;
+using CustomExceptions;
 
 namespace Website.Pages
 {
@@ -54,7 +55,7 @@ namespace Website.Pages
 
                 return RedirectToPage("/Index");
             }
-            catch (ApplicationException)
+            catch (BannedException)
             {
                 ViewData["Error"] = "You are currently banned!";
                 return Page();

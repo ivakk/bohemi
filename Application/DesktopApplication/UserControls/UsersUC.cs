@@ -46,7 +46,7 @@ namespace DesktopApplication.UserControls
             if (user != null)
             {
                 _userService.DeleteUser(user.Id);
-                userForm.LoadUsers(_userService.GetFirst10Users());
+                userForm.LoadUsers(_userService.GetFirstUsers(10));
                 userForm.menu.ChangeShownForm(userForm);
             }
         }
