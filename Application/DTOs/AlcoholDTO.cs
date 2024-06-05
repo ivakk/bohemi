@@ -11,7 +11,7 @@ namespace DTOs
         public double Percentage { get; set; }
         public int Age { get; set; }
         
-        public AlcoholDTO(int id, byte[] picture, string name, int size, double price, double percentage, int age) : base(id, picture, name, size, price)
+        public AlcoholDTO(int id, byte[] picture, string name, int size, decimal price, int percentage, int age) : base(id, picture, name, size, price)
         {
             Percentage = percentage;
             Age = age;

@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Classes;
+using CustomExceptions;
 using DTOs;
 using InterfacesDAL;
 using InterfacesLL;
@@ -37,11 +38,11 @@ namespace LogicLayer
             }
             else if (IsUsernameUsed(newUser.Username) == true)
             {
-                throw new ApplicationException();
+                throw new UsernameUsedException();
             }
             else if (IsEmailUsed(newUser.Email) == true)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new EmailUsedException();
             }
             else
             {
@@ -86,7 +87,7 @@ namespace LogicLayer
             }
             else if (IsUserBanned(GetUserByUsername(username)))
             {
-                throw new ApplicationException();
+                throw new BannedException();
             }
             else
             {
@@ -259,15 +260,15 @@ namespace LogicLayer
                 return _userDAL.GetUserForUpdateDTODAL(id);
             }
         }
-        public List<Users> GetFirst10Users()
+        public List<Users> GetFirstUsers(int count)
         {
-            List<Users> tenUsers = new List<Users>();
+            List<Users> users = new List<Users>();
             int i = 0;
             foreach (Users user in GetAllUsers())
             {
-                if (i < 10)
+                if (i < count)
                 {
-                    tenUsers.Add(user);
+                    users.Add(user);
                     i++;
                 }
                 else
@@ -275,7 +276,7 @@ namespace LogicLayer
                     break;
                 }
             }
-            return tenUsers;
+            return users;
         }
     }
 }

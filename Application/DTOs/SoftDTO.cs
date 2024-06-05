@@ -10,7 +10,7 @@ namespace DTOs
     {
         public string Carbonated { get; set; }
 
-        public SoftDTO(int id, byte[] picture, string name, int size, double price, string carbonated) : base(id, picture, name, size, price) 
+        public SoftDTO(int id, byte[] picture, string name, int size, decimal price, string carbonated) : base(id, picture, name, size, price) 
         {
             Carbonated = carbonated;
         }

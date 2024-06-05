@@ -1,4 +1,5 @@
 using Classes;
+using CustomExceptions;
 using DTOs;
 using InterfacesLL;
 using Microsoft.AspNetCore.Identity;
@@ -71,12 +72,12 @@ namespace Website.Pages
                     }
                 }
             }
-            catch (ApplicationException)
+            catch (UsernameUsedException)
             {
                 ViewData["Error"] = "Username is already in use!";
                 return Page();
             }
-            catch (ArgumentOutOfRangeException)
+            catch (EmailUsedException)
             {
                 ViewData["Error"] = "Email address is already in use!";
                 return Page();

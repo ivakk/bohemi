@@ -19,5 +19,8 @@ namespace InterfacesLL
         bool LikeEvent(LikedEvent likedEvent);
         bool RemoveFromLikedEvents(LikedEvent likedEvent);
         bool IsEventLiked(LikedEvent likedEvent);
+        Task<List<Event>> GetPaginationEventsAsync(int pageNumber, int pageSize, string? searchTerm);
+        Task<int> GetTotalEventsCountAsync(string? searchTerm);
+        List<Event> GetFirstEvents(int count);
     }
 }

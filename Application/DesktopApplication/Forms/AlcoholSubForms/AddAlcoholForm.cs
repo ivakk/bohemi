@@ -36,53 +36,63 @@ namespace DesktopApplication.Forms.AlcoholSubForms
             if (id == 0)
             {
                 alcoholId = 0;
-                tbTitle.Text = "";
-                tbDescription.Text = "";
-                dtpDate.Value = DateTime.Now;
+                tbName.Text = "";
+                nudAge.Text = "";
+                nudPercentage.Text = "";
+                nudPrice.Text = "";
+                nudSize.Text = "";
                 pbPicture.Image = Properties.Resources.defaultPfp;
             }
             else
             {
                 Alcohol curAlcohol = _alcoholService.GetAlcoholById(id);
-                //eventId = curEvent.Id;
-                //tbTitle.Text = curEvent.Title;
-                //tbDescription.Text = curEvent.Description;
-                //dtpDate.Value = curEvent.Day;
-                //pbPicture.Image = ByteArrayToImage(curEvent.Picture);
+                tbName.Text = curAlcohol.Name;
+                nudAge.Text = curAlcohol.Age.ToString();
+                nudPercentage.Text = curAlcohol.Percentage.ToString();
+                nudPrice.Text = curAlcohol.Price.ToString();
+                nudSize.Text = curAlcohol.Size.ToString();
+                pbPicture.Image = ByteArrayToImage(curAlcohol.Picture);
             }
         }
-        //private void btnAdd_Click(object sender, EventArgs e)
-        //{
-        //    if (tbTitle.Text == "" || tbDescription.Text == "" || dtpDate.Text == "" || pbPicture == null)
-        //    {
-        //        MessageBox.Show("All fields are required!");
-        //    }
-        //    else
-        //    {
-        //        EventDTO events = new EventDTO(eventId, tbTitle.Text, tbDescription.Text,
-        //            dtpDate.Value, ImageToByteArray(pbPicture));
-        //        if (eventId == 0)
-        //        {
-        //            bool success = _eventLL.CreateEvent(events);
-        //            if (success)
-        //            {
-        //                eventForm.menu.ChangeShownForm(eventForm);
-        //                this.Hide();
-        //                eventForm.dgvEvents.DataSource = _eventLL.GetEventsBySearch("");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            bool success = _alcoholService.UpdateAlcohol(events);
-        //            if (success)
-        //            {
-        //                alcoholForm.menu.ChangeShownForm(alcoholForm);
-        //                this.Hide();
-        //                alcoholForm.dgvAlcohols.DataSource = _alcoholService.GetAlcoholsBySearch("");
-        //            }
-        //        }
-        //    }
-        //}
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (tbName.Text == "" || nudAge.Text == "" || nudPercentage.Text == "" || nudPrice.Text == "" || nudSize.Text == "" || pbPicture == null)
+            {
+                MessageBox.Show("All fields are required!");
+            }
+            else
+            {
+                AlcoholDTO alcohol = new AlcoholDTO(alcoholId, ImageToByteArray(pbPicture), tbName.Text, Convert.ToInt32(nudSize.Value),
+                    Convert.ToDecimal(nudPrice.Value), Convert.ToInt32(nudPercentage.Value), Convert.ToInt32(nudAge.Value));
+                if (alcoholId == 0)
+                {
+                    bool success = _alcoholService.CreateAlcohol(alcohol);
+                    try
+                    {
+                        if (success)
+                        {
+                            alcoholForm.menu.ChangeShownForm(alcoholForm);
+                            this.Hide();
+                            alcoholForm.dgvAlcohols.DataSource = _alcoholService.GetAlcoholsBySearch("");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex.Message);
+                    }
+                }
+                else
+                {
+                    bool success = _alcoholService.UpdateAlcohol(alcohol);
+                    if (success)
+                    {
+                        alcoholForm.menu.ChangeShownForm(alcoholForm);
+                        this.Hide();
+                        alcoholForm.dgvAlcohols.DataSource = _alcoholService.GetAlcoholsBySearch("");
+                    }
+                }
+            }
+        }
 
         private byte[] ImageToByteArray(PictureBox picBox)
         {

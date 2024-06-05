@@ -27,6 +27,6 @@ namespace InterfacesLL
         bool UpdateUser(UpdateUserDTO updateUser);
         List<Users> GetUsersBySearch(string search);
         UpdateUserDTO GetUserForUpdateDTO(int id);
-        List<Users> GetFirst10Users();
+        List<Users> GetFirstUsers(int count);
     }
 }

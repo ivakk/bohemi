@@ -21,26 +21,26 @@ namespace DesktopApplication.Forms
         public Menu menu;
         AddEventForm addEventForm;
 
-        private readonly IEventService _eventLL;
+        private readonly IEventService _eventService;
 
 
-        public EventForm(Menu menu, IEventService eventLL)
+        public EventForm(Menu menu, IEventService eventService)
         {
             InitializeComponent();
-            _eventLL = eventLL;
+            _eventService = eventService;
 
-            addEventForm = new EventSubForms.AddEventForm(this, _eventLL) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
+            addEventForm = new EventSubForms.AddEventForm(this, _eventService) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             this.menu = menu;
         }
 
-        private void MovieForm_Load(object sender, EventArgs e)
+        private void EventForm_Load(object sender, EventArgs e)
         {
-            dgvEvents.DataSource = _eventLL.GetAllEvents();
+            dgvEvents.DataSource = _eventService.GetFirstEvents(10);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dgvEvents.DataSource = _eventLL.GetEventsBySearch(tbSearch.Text);
+            dgvEvents.DataSource = _eventService.GetEventsBySearch(tbSearch.Text);
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -55,8 +55,8 @@ namespace DesktopApplication.Forms
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Event events = (Event)dgvEvents.CurrentRow.DataBoundItem;
-            _eventLL.DeleteEvent(events.Id);
-            dgvEvents.DataSource = _eventLL.GetAllEvents();
+            _eventService.DeleteEvent(events.Id);
+            dgvEvents.DataSource = _eventService.GetFirstEvents(10);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace DesktopApplication.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dgvEvents.DataSource = _eventLL.GetEventsBySearch("");
+            dgvEvents.DataSource = _eventService.GetFirstEvents(10);
         }
     }
 }

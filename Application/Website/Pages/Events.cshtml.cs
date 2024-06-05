@@ -9,8 +9,17 @@ namespace Website.Pages
 {
     public class EventsModel : PageModel
     {
-        [BindProperty]
+        [BindProperty(SupportsGet = true)]
         public List<Event> EventList { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public int CurrentPage { get; set; } = 1;
+        public int TotalPages { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public int PageSize { get; set; } = 5;
+        [BindProperty(SupportsGet = true)]
+        public string SearchTerm { get; set; }
+        public string PreviousSearchTerm { get; set; }
+
         public bool IsLoggedIn { get; set; }
 
         private readonly IEventService _eventService;
@@ -19,13 +28,24 @@ namespace Website.Pages
         {
             this._eventService = _eventService;
         }
-        public void OnGet()
+        public async Task OnGetAsync()
         {
-            EventList = _eventService.GetAllEvents();
             if (User.FindFirst("id") != null)
             {
                 IsLoggedIn = true;
             }
+
+            if (!string.IsNullOrWhiteSpace(PreviousSearchTerm) && !PreviousSearchTerm.Equals(SearchTerm))
+            {
+                CurrentPage = 1; 
+            }
+
+            var totalItemCount = await _eventService.GetTotalEventsCountAsync(SearchTerm);
+            TotalPages = (int)Math.Ceiling(totalItemCount / (double)PageSize);
+
+            EventList = await _eventService.GetPaginationEventsAsync(CurrentPage, PageSize, SearchTerm);
+
+            PreviousSearchTerm = SearchTerm;
         }
         public IActionResult OnGetImage(int id)
         {
@@ -35,6 +55,16 @@ namespace Website.Pages
                 return File(e.Picture, "image/jpeg");
             }
             return NotFound();
+        }
+        public async Task<IActionResult> OnPost(int currentPage = 1)
+        {
+            CurrentPage = currentPage;
+            var totalItemCount = await _eventService.GetTotalEventsCountAsync(SearchTerm);
+            TotalPages = (int)Math.Ceiling(totalItemCount / (double)PageSize);
+
+            EventList = await _eventService.GetPaginationEventsAsync(CurrentPage, PageSize, SearchTerm);
+
+            return Page();
         }
     }
 }

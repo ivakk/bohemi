@@ -10,7 +10,7 @@ namespace Classes
     {
         public string Carbonated { get; private set; }
 
-        public Soft(int id, byte[] picture, string name, int size, double price, string carbonated) : base(id, picture, name, size, price) 
+        public Soft(int id, byte[] picture, string name, int size, decimal price, string carbonated) : base(id, picture, name, size, price) 
         {
             Carbonated = carbonated;
         }

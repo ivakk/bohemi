@@ -5,6 +5,7 @@ using InterfacesLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -127,6 +128,40 @@ namespace LogicLayer
             else
             {
                 return _eventDAL.IsEventLikedDAL(likedEvent);
+            }
+        }
+        public async Task<List<Event>> GetPaginationEventsAsync(int pageNumber, int pageSize, string? searchTerm)
+        {
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                return await _eventDAL.GetPaginationEventsDALAsync(pageNumber, pageSize, searchTerm);
+            }
+            else
+            {
+                return await _eventDAL.GetPaginationEventsDALAsync(pageNumber, pageSize, "");
+            }
+        }
+        public async Task<int> GetTotalEventsCountAsync(string? searchTerm)
+        {
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                return await _eventDAL.GetTotalEventsCountDALAsync(searchTerm);
+            }
+            else
+            {
+                return await _eventDAL.GetTotalEventsCountDALAsync("");
+            }
+        }
+
+        public List<Event> GetFirstEvents(int count)
+        {
+            if (count > 0)
+            {
+                return _eventDAL.GetFirstEventsDAL(count);
+            }
+            else
+            {
+                throw new ArgumentNullException();
             }
         }
     }

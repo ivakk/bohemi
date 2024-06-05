@@ -72,7 +72,7 @@ namespace DataAccessLayer
                 using SqlDataReader reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    newSoft = new Soft((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (double)reader["price"],
+                    newSoft = new Soft((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
                         (string)reader["carbonated"]);
                 }
             }
@@ -144,7 +144,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    softs.Add(new Soft((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (double)reader["price"],
+                    softs.Add(new Soft((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
                         (string)reader["carbonated"]));
                 }
                 reader.Close();

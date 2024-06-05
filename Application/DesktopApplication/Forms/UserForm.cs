@@ -44,7 +44,7 @@ namespace DesktopApplication.Forms
 
         private void UsersForm_Load(object sender, EventArgs e)
         {
-            LoadUsers(_userService.GetFirst10Users());
+            LoadUsers(_userService.GetFirstUsers(9));
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

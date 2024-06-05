@@ -78,3 +78,38 @@
 .event-row {
     animation: fadeIn 0.5s ease-out;
 }
+
+.input-group {
+    max-width: 600px; /* Limiting the width for aesthetic purposes */
+    width: 100%; /* Full width on smaller screens */
+}
+
+    .input-group .form-control {
+        border-radius: 0.375rem 0 0 0.375rem; /* Rounded corners on the left side of the input */
+    }
+
+    .input-group .btn {
+        border-radius: 0 0.375rem 0.375rem 0; /* Rounded corners on the right side of the button */
+        border: 1px solid #0d6efd; /* Matching border color to Bootstrap primary */
+    }
+
+/* Styles for the search icon inside the button */
+.bi-search {
+    margin-right: 5px; /* Space between icon and text */
+}
+.pagination {
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+}
+
+.footer {
+    clear: both; 
+    position: relative;
+    padding-top: 20px; 
+    background-color: #f8f9fa;
+    width: 100%; 
+}
+
+.botpad {
+    padding-bottom: 60px;
+}

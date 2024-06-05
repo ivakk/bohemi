@@ -174,8 +174,8 @@
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EventForm";
-            Text = "MovieForm";
-            Load += MovieForm_Load;
+            Text = "EventForm";
+            Load += EventForm_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvEvents).EndInit();

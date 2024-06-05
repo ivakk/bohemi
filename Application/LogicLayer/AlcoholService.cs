@@ -93,5 +93,23 @@ namespace LogicLayer
             }
             return result;
         }
+        public List<Alcohol> GetFirstAlcohols(int count)
+        {
+            List<Alcohol> alcohols = new List<Alcohol>();
+            int i = 0;
+            foreach (Alcohol alcohol in GetAllAlcohols())
+            {
+                if (i < count)
+                {
+                    alcohols.Add(alcohol);
+                    i++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            return alcohols;
+        }
     }
 }

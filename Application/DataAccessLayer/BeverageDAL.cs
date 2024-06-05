@@ -55,31 +55,42 @@ namespace DataAccessLayer
                            $"(picture, name, size, price) " +
                            $"VALUES (@picture, @name, @size, @price)";
 
-            try
+            // Using block for handling the connection
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                // Open the connection
-                connection.Open();
-                // Creating Command string to combine the query and the connection String
-                SqlCommand command = new SqlCommand(query, Connection.connection);
-                command.Parameters.AddWithValue("@picture", newBeverage.Picture);
-                command.Parameters.AddWithValue("@name", newBeverage.Name);
-                command.Parameters.AddWithValue("@size", newBeverage.Size);
-                command.Parameters.AddWithValue("@price", newBeverage.Price);
+                try
+                {
+                    // Open the connection
+                    connection.Open();
 
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
+                    // Create a SqlCommand object to execute the query
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        // Adding parameters to prevent SQL injection
+                        command.Parameters.AddWithValue("@picture", newBeverage.Picture);
+                        command.Parameters.AddWithValue("@name", newBeverage.Name);
+                        command.Parameters.AddWithValue("@size", newBeverage.Size);
+                        command.Parameters.AddWithValue("@price", newBeverage.Price);
 
-                return true;
-            }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-                return false;
-            }
-            finally
-            {
-                connection.Close();
+                        // Execute the command
+                        command.ExecuteNonQuery();
+
+                        // If execution reaches this point, insertion was successful
+                        return true;
+                    }
+                }
+                catch (SqlException e)
+                {
+                    // Handle SQL-specific errors
+                    System.Diagnostics.Debug.WriteLine(e.Message);
+                    return false;
+                }
+                catch (Exception ex)
+                {
+                    // Handle general errors
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                    return false;
+                }
             }
         }
         public bool DeleteBeverageDAL(int id)
