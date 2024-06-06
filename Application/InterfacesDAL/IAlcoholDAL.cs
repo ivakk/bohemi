@@ -15,5 +15,11 @@ namespace InterfacesDAL
         bool DeleteAlcoholDAL(int id);
         List<Alcohol> GetAllAlcoholsDAL();
         bool UpdateAlcoholDAL(AlcoholDTO newAlcohol);
+        Task<int> GetTotalAlcoholsCountDALAsync();
+        Task<List<Alcohol>> GetPaginationAlcoholsDALAsync(int pageNumber, int pageSize);
+        bool LikeAlcoholDAL(LikedBeverage likedDrink);
+        bool RemoveFromLikedAlcoholsDAL(LikedBeverage likedDrink);
+        bool IsAlcoholLikedDAL(LikedBeverage likedDrink);
+        List<LikedBeverage> GetLikedBeveragesDAL();
     }
 }

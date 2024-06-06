@@ -111,5 +111,54 @@ namespace LogicLayer
             }
             return alcohols;
         }
+        public async Task<List<Alcohol>> GetPaginationAlcoholsAsync(int pageNumber, int pageSize)
+        {
+            return await _alcoholDAL.GetPaginationAlcoholsDALAsync(pageNumber, pageSize);
+        }
+        public async Task<int> GetTotalAlcoholsCountAsync()
+        {
+            return await _alcoholDAL.GetTotalAlcoholsCountDALAsync();
+        }
+
+        public bool LikeAlcohol(LikedBeverage likedDrink)
+        {
+            if (likedDrink != null)
+            {
+                return _alcoholDAL.LikeAlcoholDAL(likedDrink);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+        }
+
+        public bool RemoveFromLikedAlcohols(LikedBeverage likedDrink)
+        {
+            if (likedDrink != null)
+            {
+                return _alcoholDAL.RemoveFromLikedAlcoholsDAL(likedDrink);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+        }
+
+        public bool IsAlcoholLiked(LikedBeverage likedDrink)
+        {
+            if (likedDrink != null)
+            {
+                return _alcoholDAL.IsAlcoholLikedDAL(likedDrink);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+        }
+
+        public List<LikedBeverage> GetLikedBeverages()
+        {
+            return _alcoholDAL.GetLikedBeveragesDAL();
+        }
     }
 }

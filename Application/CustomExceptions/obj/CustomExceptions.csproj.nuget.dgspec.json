@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\z\\Application\\CustomExceptions\\CustomExceptions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj": {
+    "C:\\Users\\ivk\\Desktop\\z\\Application\\CustomExceptions\\CustomExceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\z\\Application\\CustomExceptions\\CustomExceptions.csproj",
         "projectName": "CustomExceptions",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\z\\Application\\CustomExceptions\\CustomExceptions.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\CustomExceptions\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\z\\Application\\CustomExceptions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

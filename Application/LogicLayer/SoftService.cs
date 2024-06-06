@@ -79,5 +79,48 @@ namespace LogicLayer
                 return _softDAL.UpdateSoftDAL(updateSoft);
             }
         }
+        public async Task<List<Soft>> GetPaginationSoftsAsync(int pageNumber, int pageSize)
+        {
+            return await _softDAL.GetPaginationSoftsDALAsync(pageNumber, pageSize);
+        }
+        public async Task<int> GetTotalSoftsCountAsync()
+        {
+            return await _softDAL.GetTotalSoftsCountDALAsync();
+        }
+        public bool LikeSoft(LikedBeverage likedDrink)
+        {
+            if (likedDrink != null)
+            {
+                return _softDAL.LikeSoftDAL(likedDrink);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+        }
+
+        public bool RemoveFromLikedSofts(LikedBeverage likedDrink)
+        {
+            if (likedDrink != null)
+            {
+                return _softDAL.RemoveFromLikedSoftsDAL(likedDrink);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+        }
+
+        public bool IsSoftLiked(LikedBeverage likedDrink)
+        {
+            if (likedDrink != null)
+            {
+                return _softDAL.IsSoftLikedDAL(likedDrink);
+            }
+            else
+            {
+                throw new ArgumentNullException();
+            }
+        }
     }
 }

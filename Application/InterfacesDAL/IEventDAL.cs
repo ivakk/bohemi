@@ -21,5 +21,6 @@ namespace InterfacesDAL
         Task<List<Event>> GetPaginationEventsDALAsync(int pageNumber, int pageSize, string? searchTerm);
         Task<int> GetTotalEventsCountDALAsync(string? searchTerm);
         List<Event> GetFirstEventsDAL(int count);
+        List<LikedEvent> GetAllLikedEventsDAL();
     }
 }

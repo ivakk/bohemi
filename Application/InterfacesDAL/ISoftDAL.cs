@@ -15,5 +15,10 @@ namespace InterfacesDAL
         bool DeleteSoftDAL(int id);
         List<Soft> GetAllSoftDAL();
         bool UpdateSoftDAL(SoftDTO updateSoft);
+        Task<List<Soft>> GetPaginationSoftsDALAsync(int pageNumber, int pageSize);
+        Task<int> GetTotalSoftsCountDALAsync();
+        bool LikeSoftDAL(LikedBeverage likedDrink);
+        bool RemoveFromLikedSoftsDAL(LikedBeverage likedDrink);
+        bool IsSoftLikedDAL(LikedBeverage likedDrink);
     }
 }

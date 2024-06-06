@@ -366,5 +366,27 @@ namespace DataAccessLayer
             }
             return events;
         }
+        public List<LikedEvent> GetAllLikedEventsDAL()
+        {
+            string query = $"SELECT * FROM LikedEvents";
+            List<LikedEvent> events = new List<LikedEvent>();
+
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            events.Add(new LikedEvent((int)reader["userId"], (int)reader["eventId"]));
+                        }
+                    }
+                }
+            }
+            return events;
+        }
     }
 }
