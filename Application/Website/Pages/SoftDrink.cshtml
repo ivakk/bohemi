@@ -1,0 +1,35 @@
+﻿@page
+@model Website.Pages.SoftDrinkModel
+@{
+}
+
+@section Styles {
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Event.css">
+}
+@if (Model.Soft != null)
+{
+    <div class="hero" style="background-image: url('@Url.Page("SoftDrink", "Image", new { id = Model.Soft.Id })');">
+        <div class="overlay">
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="details">
+            <h2>About the Event</h2>
+            <h3 class="display-4">@Model.Soft.Name</h3>
+            <p>Size: @Model.Soft.Size ml</p>
+            <p>Carbonated: @Model.Soft.Carbonated.</p>
+            <p class="lead">Price: €@Model.Soft.Price</p>
+            <form method="post" asp-page-handler="ToggleLiked" asp-route-softId="@Model.Soft.Id">
+                <input type="hidden" value="@Model.Soft.Id" />
+                <button type="submit" class="button like-btn">
+                    @Model.LikedButtonText
+                </button>
+            </form>
+        </div>
+    </div>
+}
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+}

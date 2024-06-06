@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InterfacesDAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c408c36cd54031b7fd09b99ba1f925df6d3dee4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd8dfdc33a6df94ba764f045ceab05017647d043")]
 [assembly: System.Reflection.AssemblyProductAttribute("InterfacesDAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InterfacesDAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

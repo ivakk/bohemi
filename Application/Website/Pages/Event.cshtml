@@ -33,7 +33,7 @@
             <p class="lead">@Model.Event.Day.ToString("dddd, MMMM dd, yyyy  ")</p>
             <form method="post" asp-page-handler="ToggleLiked" asp-route-eventId="@Model.Event.Id">
                 <input type="hidden" value="@Model.Event.Id" />
-                <button type="submit" class="button watchlist-button">
+                <button type="submit" class="button like-btn">
                     @Model.LikedButtonText
                 </button>
             </form>

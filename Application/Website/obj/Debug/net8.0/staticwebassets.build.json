@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HeF2xRkBW9eaDKxsfCQol0c48EEzHVuOMm45zThEs5Y=",
+  "Hash": "1BUXAy4as4hlOhHGCWcxOzhLLozNUkxl9cvm357C+IQ=",
   "Source": "Website",
   "BasePath": "_content/Website",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\LoginSignup.css"
+    },
+    {
+      "Identity": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Website\\wwwroot\\css\\Menu.css",
+      "SourceId": "Website",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Website\\wwwroot\\",
+      "BasePath": "_content/Website",
+      "RelativePath": "css/Menu.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Menu.css"
     },
     {
       "Identity": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Website\\wwwroot\\css\\Settings.css",

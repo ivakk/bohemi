@@ -15,5 +15,10 @@ namespace InterfacesLL
         bool DeleteSoft(int id);
         List<Soft> GetAllSoft();
         bool UpdateSoft(SoftDTO updateSoft);
+        Task<List<Soft>> GetPaginationSoftsAsync(int pageNumber, int pageSize);
+        Task<int> GetTotalSoftsCountAsync();
+        bool LikeSoft(LikedBeverage likedDrink);
+        bool RemoveFromLikedSofts(LikedBeverage likedDrink);
+        bool IsSoftLiked(LikedBeverage likedDrink);
     }
 }

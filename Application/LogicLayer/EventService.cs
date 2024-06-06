@@ -164,5 +164,10 @@ namespace LogicLayer
                 throw new ArgumentNullException();
             }
         }
+
+        public List<LikedEvent> GetLikedEvents()
+        {
+            return _eventDAL.GetAllLikedEventsDAL();
+        }
     }
 }

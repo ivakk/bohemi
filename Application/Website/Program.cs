@@ -4,6 +4,7 @@ using InterfacesLL;
 using InterfacesDAL;
 using LogicLayer;
 using DataAccessLayer;
+using LogicLayer.RecommendationStrategy;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,6 +41,9 @@ builder.Services.AddTransient<IReservationService, ReservationService>();
 builder.Services.AddTransient<IReservationDAL, ReservationDAL>();
 builder.Services.AddTransient<ISoftService, SoftService>();
 builder.Services.AddTransient<ISoftDAL, SoftDAL>();
+builder.Services.AddTransient<IRecommendationStrategy, RecommendationStrategy>();
+builder.Services.AddScoped<UserRecommender>();
+
 
 var app = builder.Build();
 

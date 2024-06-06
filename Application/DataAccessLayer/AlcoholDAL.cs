@@ -66,39 +66,33 @@ namespace DataAccessLayer
             Alcohol newAlcohol = null;
             string query = $"SELECT Alcohol.id, picture, name, size, price, percentage, age FROM {tableName} JOIN Drinks ON Alcohol.id = Drinks.id WHERE Alcohol.id = @id";
 
-            try
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                // Open the connection
                 connection.Open();
 
-                SqlCommand command = new SqlCommand(query, connection);
-
-                // Add the parameters
-                command.Parameters.AddWithValue("@id", id);
-
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    newAlcohol = new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
-                        (int)reader["percentage"], (int)reader["age"]);
+                    command.Parameters.AddWithValue("@id", id);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            newAlcohol = new Alcohol(
+                                (int)reader["id"],
+                                reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null,
+                                (string)reader["name"],
+                                (int)reader["size"],
+                                (decimal)reader["price"],
+                                (int)reader["percentage"],
+                                (int)reader["age"]);
+                        }
+                    }
                 }
-            }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
             }
             return newAlcohol;
         }
+
         public bool DeleteAlcoholDAL(int id)
         {
             base.DeleteBeverageDAL(id);
@@ -139,40 +133,31 @@ namespace DataAccessLayer
             string query = $"SELECT Alcohol.id, picture, name, size, price, percentage, age FROM {tableName} JOIN Drinks ON Alcohol.id = Drinks.id";
             List<Alcohol> alcohols = new List<Alcohol>();
 
-            try
+            using (SqlConnection connection = new SqlConnection(ConnectionString))
             {
-                // Open the connection
                 connection.Open();
 
-                // Creating Command string to combine the query and the connection String
-                SqlCommand command = new SqlCommand(query, Connection.connection);
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
-
-
-                while (reader.Read())
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    alcohols.Add(new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
-                        (int)reader["percentage"], (int)reader["age"]));
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            alcohols.Add(new Alcohol(
+                                (int)reader["id"],
+                                reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null,
+                                (string)reader["name"],
+                                (int)reader["size"],
+                                (decimal)reader["price"],
+                                (int)reader["percentage"],
+                                (int)reader["age"]));
+                        }
+                    }
                 }
-                reader.Close();
-                return alcohols;
-            }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
             }
             return alcohols;
         }
+
         public bool UpdateAlcoholDAL(AlcoholDTO updateAlcohol)
         {
             base.UpdateBeverageDAL(updateAlcohol);
@@ -214,6 +199,66 @@ namespace DataAccessLayer
             {
                 connection.Close();
             }
+        }
+        public async Task<List<Alcohol>> GetPaginationAlcoholsDALAsync(int pageNumber, int pageSize)
+        {
+            List<Alcohol> alcohols = new List<Alcohol>();
+            string query = $@"
+                SELECT Alcohol.id, picture, name, size, price, percentage, age 
+                FROM {tableName} JOIN Drinks ON Alcohol.id = Drinks.id
+                ORDER BY Alcohol.id
+                OFFSET @Offset ROWS 
+                FETCH NEXT @PageSize ROWS ONLY;";
+
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
+                    command.Parameters.AddWithValue("@PageSize", pageSize);
+
+                    await connection.OpenAsync();
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            alcohols.Add(new Alcohol((int)reader["id"], reader["picture"] != DBNull.Value ? (byte[]?)reader["picture"] : null, (string)reader["name"], (int)reader["size"], 
+                                (decimal)reader["price"], (int)reader["percentage"], (int)reader["age"]));
+                        }
+                    }
+                }
+            }
+            return alcohols;
+        }
+        public async Task<int> GetTotalAlcoholsCountDALAsync()
+        {
+            string query = $"SELECT COUNT(*) FROM {tableName}";
+
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                await connection.OpenAsync();
+                using (var command = new SqlCommand(query, connection))
+                {
+                    int count = (int)await command.ExecuteScalarAsync();
+                    return count;
+                }
+            }
+        }
+        public bool LikeAlcoholDAL(LikedBeverage likedDrink)
+        {
+            return base.LikeBeverageDAL(likedDrink);
+        }
+        public bool RemoveFromLikedAlcoholsDAL(LikedBeverage likedDrink)
+        {
+            return base.RemoveFromLikedBeveragesDAL(likedDrink);
+        }
+        public bool IsAlcoholLikedDAL(LikedBeverage likedDrink)
+        {
+            return base.IsBeverageLikedDAL(likedDrink);
+        }
+        public List<LikedBeverage> GetLikedBeveragesDAL()
+        {
+            return base.GetAllLikedBeveragesDAL();
         }
     }
 }

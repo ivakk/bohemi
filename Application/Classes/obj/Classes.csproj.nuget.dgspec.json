@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\Classes.csproj": {}
+    "C:\\Users\\ivk\\Desktop\\z\\Application\\Classes\\Classes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\Classes.csproj": {
+    "C:\\Users\\ivk\\Desktop\\z\\Application\\Classes\\Classes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\Classes.csproj",
+        "projectUniqueName": "C:\\Users\\ivk\\Desktop\\z\\Application\\Classes\\Classes.csproj",
         "projectName": "Classes",
-        "projectPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\Classes.csproj",
+        "projectPath": "C:\\Users\\ivk\\Desktop\\z\\Application\\Classes\\Classes.csproj",
         "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ivk\\Desktop\\z\\bohemi\\Application\\Classes\\obj\\",
+        "outputPath": "C:\\Users\\ivk\\Desktop\\z\\Application\\Classes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

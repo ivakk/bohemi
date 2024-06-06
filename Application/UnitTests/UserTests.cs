@@ -3,6 +3,9 @@ using UnitTests.MockDAL;
 using LogicLayer;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
+using System.ComponentModel.DataAnnotations;
+using CustomExceptions;
+using InterfacesLL;
 
 namespace UnitTests
 {
@@ -65,20 +68,11 @@ namespace UnitTests
 
 			_userService.CreateUser(user1);
 
-            try
-            {
-                // Act
-                var result = _userService.CreateUser(user2);
-                //// Assert
-                //Assert.IsType<ArgumentOutOfRangeException>("");
+            // Act
+            //bool result = _userService.CreateUser(user2);
 
-            }
-            //Assert
-            catch (ArgumentOutOfRangeException)
-            {
-                
-            }
-            
+            //Act & Assert
+            Assert.Throws<EmailUsedException>(() => _userService.CreateUser(user2));
         }
 
         [Fact]

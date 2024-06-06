@@ -22,5 +22,6 @@ namespace InterfacesLL
         Task<List<Event>> GetPaginationEventsAsync(int pageNumber, int pageSize, string? searchTerm);
         Task<int> GetTotalEventsCountAsync(string? searchTerm);
         List<Event> GetFirstEvents(int count);
+        List<LikedEvent> GetLikedEvents();
     }
 }
