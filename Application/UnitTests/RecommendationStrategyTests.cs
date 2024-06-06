@@ -33,7 +33,7 @@ namespace UnitTests
             // Arrange
             MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
             RecommendationStrategy strategy = new RecommendationStrategy();
-            Users currentUser = new Users(1, null, "Test", "User1", new DateTime(1991, 01, 01), "testuser1", "testuser1@mail.com", "1234567890", "customer");
+            Users currentUser = new Users(3, null, "Test", "User3", new DateTime(2000, 07, 20), "testuser3", "testuser3@mail.com", "2134567890", "customer");
 
             // Act
             List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, mockStrategyDAL.GetAllUsers(), mockStrategyDAL.GetAllEvents(), mockStrategyDAL.GetAllBeverages());
