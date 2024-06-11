@@ -15,5 +15,6 @@ namespace InterfacesLL
         bool CreateComment(CommentsDTO comment);
         bool DeleteComment(int id);
         string GetCommentUser(int id);
+        bool CanUserDeleteComment(int userId, string userRole, int commenterId);
     }
 }

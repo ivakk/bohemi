@@ -51,6 +51,21 @@ namespace UnitTests.MockDAL
             throw new NotImplementedException();
         }
 
+        public Task<int> GetUserLikedEventsCountDALAsync(int userId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<LikedEvent> GetUserLikedEventsDAL(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<Event>> GetUserLikedEventsDALAsync(int pageNumber, int pageSize, int userId)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool IsEventLikedDAL(LikedEvent likedEvent)
         {
             throw new NotImplementedException();

@@ -18,7 +18,6 @@ namespace Website.Pages
         public int PageSize { get; set; } = 5;
         [BindProperty(SupportsGet = true)]
         public string SearchTerm { get; set; }
-        public string PreviousSearchTerm { get; set; }
 
         public bool IsLoggedIn { get; set; }
 
@@ -35,17 +34,10 @@ namespace Website.Pages
                 IsLoggedIn = true;
             }
 
-            if (!string.IsNullOrWhiteSpace(PreviousSearchTerm) && !PreviousSearchTerm.Equals(SearchTerm))
-            {
-                CurrentPage = 1; 
-            }
-
             var totalItemCount = await _eventService.GetTotalEventsCountAsync(SearchTerm);
             TotalPages = (int)Math.Ceiling(totalItemCount / (double)PageSize);
 
             EventList = await _eventService.GetPaginationEventsAsync(CurrentPage, PageSize, SearchTerm);
-
-            PreviousSearchTerm = SearchTerm;
         }
         public IActionResult OnGetImage(int id)
         {
@@ -56,12 +48,13 @@ namespace Website.Pages
             }
             return NotFound();
         }
-        public async Task<IActionResult> OnPost(int currentPage = 1)
+        public async Task<IActionResult> OnPost()
         {
-            CurrentPage = currentPage;
+            
             var totalItemCount = await _eventService.GetTotalEventsCountAsync(SearchTerm);
             TotalPages = (int)Math.Ceiling(totalItemCount / (double)PageSize);
 
+            CurrentPage = 1;
             EventList = await _eventService.GetPaginationEventsAsync(CurrentPage, PageSize, SearchTerm);
 
             return Page();

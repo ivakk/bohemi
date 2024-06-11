@@ -35,7 +35,7 @@ namespace DataAccessLayer
                 // Execute the query and get the data
                 while (reader.Read())
                 {
-                    report = new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"], (string)reader["reader"]);
+                    report = new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"]);
                 }
             }
             catch (SqlException e)
@@ -75,7 +75,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    reports.Add(new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"], (string)reader["information"]));
+                    reports.Add(new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"]));
                 }
                 return reports;
             }
@@ -99,8 +99,8 @@ namespace DataAccessLayer
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +
-                           $"(id, commentId, reporterId, information) " +
-                           $"VALUES (@id, @commentId, @reporterId, @information)";
+                           $"(id, commentId, reporterId) " +
+                           $"VALUES (@id, @commentId, @reporterId)";
 
             try
             {
@@ -112,7 +112,6 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@id", report.Id);
                 command.Parameters.AddWithValue("@commentId", report.CommentId);
                 command.Parameters.AddWithValue("@reporterId", report.ReporterId);
-                command.Parameters.AddWithValue("@information", report.Information);
 
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();

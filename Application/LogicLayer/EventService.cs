@@ -169,5 +169,29 @@ namespace LogicLayer
         {
             return _eventDAL.GetAllLikedEventsDAL();
         }
+
+        public Task<List<Event>> GetUserLikedEventsAsync(int pageNumber, int pageSize, int userId)
+        {
+            if (pageNumber < 0 || pageSize < 0 || userId < 0)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return _eventDAL.GetUserLikedEventsDALAsync(pageNumber, pageSize, userId);
+            }
+        }
+
+        public async Task<int> GetUserLikedEventsCountAsync(int userId)
+        {
+            if (userId < 0)
+            {
+                throw new ArgumentNullException();
+            }
+            else
+            {
+                return await _eventDAL.GetUserLikedEventsCountDALAsync(userId);
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace LogicLayer
 {
@@ -80,6 +81,22 @@ namespace LogicLayer
             else
             {
                 return _commentsDAL.GetCommentUserDAL(id);
+            }
+        }
+        public bool CanUserDeleteComment(int userId, string userRole, int commenterId)
+        {
+            if (userId < 0 || string.IsNullOrWhiteSpace(userRole) || commenterId < 0)
+            {
+                throw new ArgumentNullException();
+            }
+
+            if (userId == commenterId || userRole == "admin")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

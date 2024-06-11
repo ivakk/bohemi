@@ -25,8 +25,7 @@ namespace LogicLayer
             {
                 return false;
             }
-            else if (report.Id == null || string.IsNullOrEmpty(report.CommentId.ToString()) || string.IsNullOrEmpty(report.ReporterId.ToString())
-                 || string.IsNullOrEmpty(report.Information))
+            else if (report.Id == null || string.IsNullOrEmpty(report.CommentId.ToString()) || string.IsNullOrEmpty(report.ReporterId.ToString()))
             {
                 return false;
             }

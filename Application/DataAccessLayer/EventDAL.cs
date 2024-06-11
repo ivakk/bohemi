@@ -388,5 +388,57 @@ namespace DataAccessLayer
             }
             return events;
         }
+        public async Task<List<Event>> GetUserLikedEventsDALAsync(int pageNumber, int pageSize, int userId)
+        {
+            List<Event> events = new List<Event>();
+            string query = $@"
+                SELECT Events.id, Events.title, Events.description, Events.day, Events.picture 
+                FROM {tableName} JOIN LikedEvents ON Events.id = LikedEvents.eventId
+                WHERE LikedEvents.userId = @userId
+                ORDER BY day DESC
+                OFFSET @Offset ROWS 
+                FETCH NEXT @PageSize ROWS ONLY;";
+
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
+                    command.Parameters.AddWithValue("@PageSize", pageSize);
+                    command.Parameters.AddWithValue("@userId", userId);
+
+                    await connection.OpenAsync();
+                    using (var reader = await command.ExecuteReaderAsync())
+                    {
+                        while (await reader.ReadAsync())
+                        {
+                            events.Add(new Event(
+                                (int)reader["id"],
+                                (string)reader["title"],
+                                (string)reader["description"],
+                                (DateTime)reader["day"],
+                                (byte[]?)reader["picture"]));
+                        }
+                    }
+                }
+            }
+            return events;
+        }
+
+        public async Task<int> GetUserLikedEventsCountDALAsync(int userId)
+        {
+            string query = $"SELECT COUNT(*) FROM LikedEvents WHERE userId = @userId";
+
+            using (var connection = new SqlConnection(ConnectionString))
+            {
+                await connection.OpenAsync();
+                using (var command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+                    int count = (int)await command.ExecuteScalarAsync();
+                    return count;
+                }
+            }
+        }
     }
 }

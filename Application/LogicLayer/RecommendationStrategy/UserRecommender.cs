@@ -10,30 +10,45 @@ namespace LogicLayer.RecommendationStrategy
 {
     public class UserRecommender
     {
-        private IRecommendationStrategy _recommendationStrategy;
+        private IRecommendationStrategy _strategy;
+        private readonly IRecommendationStrategy _ageEventBeverageStrategy;
+        private readonly IRecommendationStrategy _birthdayClosenessStrategy;
 
-        /// <summary>
-        /// Initializes the recommender with a specific strategy.
-        /// </summary>
-        public UserRecommender(IRecommendationStrategy recommendationStrategy)
+        public UserRecommender(IRecommendationStrategy ageEventBeverageStrategy, IRecommendationStrategy birthdayClosenessStrategy)
         {
-            _recommendationStrategy = recommendationStrategy;
+            _ageEventBeverageStrategy = ageEventBeverageStrategy;
+            _birthdayClosenessStrategy = birthdayClosenessStrategy;
+            _strategy = ageEventBeverageStrategy;  // Default strategy
         }
 
-        /// <summary>
-        /// Sets or switches the recommendation strategy.
-        /// </summary>
-        public void SetStrategy(IRecommendationStrategy recommendationStrategy)
+        public List<Users> RecommendUsers(Users currentUser, List<Users> allUsers, List<LikedEvent> allEvents, List<LikedBeverage> allBeverages)
         {
-            _recommendationStrategy = recommendationStrategy;
+            // Check if current user has sufficient data
+            bool hasSufficientData = allEvents.Count(e => e.UserId == currentUser.Id) >= 3 &&
+                                     allBeverages.Count(d => d.UserId == currentUser.Id) >= 1;
+
+            // Decide which strategy to use based on the data availability
+            if (hasSufficientData)
+            {
+                _strategy = _ageEventBeverageStrategy;
+                if (_strategy.RecommendUsers(currentUser, allUsers, allEvents, allBeverages).Count() <= 1)
+                {
+                    _strategy = _birthdayClosenessStrategy;
+                }
+            }
+            else
+            {
+                _strategy = _birthdayClosenessStrategy;
+            }
+
+            // Execute the recommendation strategy
+            return _strategy.RecommendUsers(currentUser, allUsers, allEvents, allBeverages);
         }
 
-        /// <summary>
-        /// Generates recommendations for a user using the current strategy.
-        /// </summary>
-        public List<Users> RecommendUsers(Users user, List<Users> allUsers, List<LikedEvent> allEvents, List<LikedBeverage> allBeverages)
+        // Optionally expose a method to manually set the strategy if needed
+        public void SetStrategy(IRecommendationStrategy strategy)
         {
-            return _recommendationStrategy.RecommendUsers(user, allUsers, allEvents, allBeverages);
+            _strategy = strategy;
         }
     }
 }

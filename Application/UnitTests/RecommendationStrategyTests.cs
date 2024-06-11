@@ -16,11 +16,14 @@ namespace UnitTests
         {
             // Arrange
             MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
-            RecommendationStrategy strategy = new RecommendationStrategy();
-            Users currentUser = new Users(1, null, "Test", "User1", new DateTime(1990, 01, 01), "testuser1", "testuser1@mail.com", "1234567890", "customer");
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            List<LikedEvent> events = mockStrategyDAL.GetAllEvents();
+            List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages();
+            AgeEventBeverageRecommendationStrategy strategy = new AgeEventBeverageRecommendationStrategy();
+            Users currentUser = new Users(1, null, "Test", "User1", new DateTime(1995, 01, 01), "testuser1", "testuser1@mail.com", "1234567890", "customer");
 
             // Act
-            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, mockStrategyDAL.GetAllUsers(), mockStrategyDAL.GetAllEvents(), mockStrategyDAL.GetAllBeverages());
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users, events, beverages);
 
             // Assert
             Assert.Contains(recommendedUsers, u => u.Id == 2); // User 2 should match
@@ -32,7 +35,7 @@ namespace UnitTests
         {
             // Arrange
             MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
-            RecommendationStrategy strategy = new RecommendationStrategy();
+            AgeEventBeverageRecommendationStrategy strategy = new AgeEventBeverageRecommendationStrategy();
             Users currentUser = new Users(3, null, "Test", "User3", new DateTime(2000, 07, 20), "testuser3", "testuser3@mail.com", "2134567890", "customer");
 
             // Act
@@ -40,6 +43,146 @@ namespace UnitTests
 
             // Assert
             Assert.Empty(recommendedUsers); // No users should be recommended
+        }
+        [Fact]
+        public void AgeEventBeverageRecommendation_HappyFlow_ReturnsCorrectUsers()
+        {
+            // Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            List<LikedEvent> events = mockStrategyDAL.GetAllEvents();
+            List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages();
+            AgeEventBeverageRecommendationStrategy strategy = new AgeEventBeverageRecommendationStrategy();
+            Users currentUser = users[0]; // User 1
+
+            // Act
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            Assert.Contains(recommendedUsers, u => u.Id == 2); // User 2 matches criteria
+            Assert.DoesNotContain(recommendedUsers, u => u.Id == 3); // User 3 does not match age range
+            Assert.DoesNotContain(recommendedUsers, u => u.Id == 4); // User 4 does not have enough common events/drinks
+        }
+
+        [Fact]
+        public void AgeEventBeverageRecommendation_UnhappyFlow_NoCommonInterests_ReturnsNoUsers()
+        {
+            //Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            List<LikedEvent> events = mockStrategyDAL.GetAllEvents(); // Assume no events for User 2
+            List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages(); // Assume no drinks for User 2
+            AgeEventBeverageRecommendationStrategy strategy = new AgeEventBeverageRecommendationStrategy();
+            Users currentUser = users[0]; // User 1
+
+            // Manipulate data to remove commonalities
+            events.RemoveAll(e => e.UserId == 2);
+            beverages.RemoveAll(d => d.UserId == 2);
+
+            // Act
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            Assert.DoesNotContain(recommendedUsers, u => u.Id == 2); // User 2 has no common interests
+        }
+        [Fact]
+        public void BirthdayClosenessRecommendation_HappyFlow_ReturnsCorrectOrder()
+        {
+            //Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            BirthdayClosenessRecommendationStrategy strategy = new BirthdayClosenessRecommendationStrategy();
+            Users currentUser = users[0]; // User 1
+
+            // Act
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users);
+
+            // Assert
+            var orderedUsers = recommendedUsers.Select(u => u.Id).ToList();
+            Assert.Equal(new List<int> { 4, 2 }, orderedUsers); // Expected order based on birthday closeness
+        }
+
+        [Fact]
+        public void BirthdayClosenessRecommendation_UnhappyFlow_OutOfAgeRange()
+        {
+            //Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            BirthdayClosenessRecommendationStrategy strategy = new BirthdayClosenessRecommendationStrategy();
+            Users currentUser = users[0]; // User 1
+
+            // Act
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users);
+
+            // Assert
+            Assert.DoesNotContain(recommendedUsers, u => u.Id == 3); // User 3 is out of the 5-year age range
+        }
+        [Fact]
+        public void AgeEventBeverageRecommendation_InsufficientData_NoRecommendations()
+        {
+            //Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            List<LikedEvent> events = mockStrategyDAL.GetAllEvents();
+            List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages();
+            AgeEventBeverageRecommendationStrategy strategy = new AgeEventBeverageRecommendationStrategy();
+            Users currentUser = users[0]; // User 1
+
+            // Manipulate data to reflect insufficient data for the current user
+            events.RemoveAll(e => e.UserId == 1); // Remove all events liked by User 1
+            events.Add(new LikedEvent(1, 1)); // Add only one event for User 1
+            events.Add(new LikedEvent(1,2)); // Add second event, still below threshold
+            beverages.RemoveAll(d => d.UserId == 1); // Remove all drinks liked by User 1
+
+            // Act
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            Assert.Empty(recommendedUsers); // Expect no recommendations due to insufficient data
+        }
+        [Fact]
+        public void AgeEventBeverageRecommendation_CurrentUserLacksEventsAndBeverages_NoRecommendations()
+        {
+            //Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            List<LikedEvent> events = mockStrategyDAL.GetAllEvents();
+            List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages();
+            AgeEventBeverageRecommendationStrategy strategy = new AgeEventBeverageRecommendationStrategy();
+            Users currentUser = new Users(5, null, "Test", "User5", new DateTime(1994, 05, 15), "testuser5", "testuser5@mail.com", "2534567890", "customer"); // New user who lacks sufficient data
+
+            // Act
+            List<Users> recommendedUsers = strategy.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            Assert.Empty(recommendedUsers); // No recommendations should be made as the current user lacks the data
+        }
+        [Fact]
+        public void Recommender_SwitchesStrategy_WhenInsufficientData()
+        {
+            //Arrange
+            MockStrategyDAL mockStrategyDAL = new MockStrategyDAL();
+            List<Users> users = mockStrategyDAL.GetAllUsers();
+            List<LikedEvent> events = mockStrategyDAL.GetAllEvents();
+            List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages();
+            AgeEventBeverageRecommendationStrategy ageEventBeverageStrategy = new AgeEventBeverageRecommendationStrategy();
+            BirthdayClosenessRecommendationStrategy birthdayClosenessStrategy = new BirthdayClosenessRecommendationStrategy();
+            UserRecommender recommender = new UserRecommender(ageEventBeverageStrategy, birthdayClosenessStrategy);
+            Users currentUser = users[0]; // Assuming User 1
+
+            // Remove sufficient event and drink data for the current user
+            events.RemoveAll(e => e.UserId == currentUser.Id);
+            beverages.RemoveAll(d => d.UserId == currentUser.Id);
+
+            // Act
+            List<Users> recommendedUsers = recommender.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            // Since the AgeEventDrink strategy requires 3 events and 1 drink, and we've removed these, the recommender should switch to the BirthdayCloseness strategy.
+            // Thus, we expect the results to be based on birthday closeness rather than shared events/drinks.
+            Assert.True(recommendedUsers.All(u => u.Id != currentUser.Id)); // Ensure no self-recommendation
+            Assert.True(recommendedUsers.SequenceEqual(users.Where(u => u.Id != currentUser.Id && Math.Abs(u.Birthday.Year - currentUser.Birthday.Year) <= 5)
+                                                            .OrderBy(u => Math.Abs((u.Birthday - currentUser.Birthday).Days))));
         }
     }
 }

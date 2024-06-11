@@ -23,5 +23,7 @@ namespace InterfacesLL
         Task<int> GetTotalEventsCountAsync(string? searchTerm);
         List<Event> GetFirstEvents(int count);
         List<LikedEvent> GetLikedEvents();
+        Task<List<Event>> GetUserLikedEventsAsync(int pageNumber, int pageSize, int userId);
+        Task<int> GetUserLikedEventsCountAsync(int userId);
     }
 }

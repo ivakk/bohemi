@@ -11,14 +11,12 @@ namespace DTOs
         public int Id { get; set; }
         public int CommentId { get; set; }
         public int ReporterId { get; set; }
-        public string Information { get; set; }
 
-        public ReportDTO(int id, int commentId, int reporterId, string information)
+        public ReportDTO(int id, int commentId, int reporterId)
         {
             Id = id;
             CommentId = commentId;
             ReporterId = reporterId;
-            Information = information;
         }
     }
 }
