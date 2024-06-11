@@ -10,21 +10,20 @@ namespace Website.Pages
     [Authorize]
     public class PeopleYouMayLikeModel : PageModel
     {
+        [BindProperty]
+        public List<Users> RecommendedUsers { get; set; }
+
         private readonly UserRecommender _userRecommender;
         private readonly IUserService _userService;
         private readonly IEventService _eventService;
-        private readonly ISoftService _softService;
         private readonly IAlcoholService _alcoholService;
 
-        public List<Users> RecommendedUsers { get; private set; }
-
         // Constructor injection of the UserRecommender
-        public PeopleYouMayLikeModel(UserRecommender userRecommender, IUserService userService, IEventService eventService, ISoftService softService, IAlcoholService alcoholService)
+        public PeopleYouMayLikeModel(UserRecommender userRecommender, IUserService userService, IEventService eventService, IAlcoholService alcoholService)
         {
             _userRecommender = userRecommender;
             _userService = userService;
             _eventService = eventService;
-            _softService = softService;
             _alcoholService = alcoholService;
         }
 
@@ -37,6 +36,15 @@ namespace Website.Pages
 
             // Use the recommender to find users that the current user may like.
             RecommendedUsers = _userRecommender.RecommendUsers(currentUser, allUsers, allEvents, allBeverages);
+        }
+        public IActionResult OnGetImage(int id)
+        {
+            var e = _userService.GetUserById(id);
+            if (e != null && e.ProfilePicture != null)
+            {
+                return File(e.ProfilePicture, "image/jpeg");
+            }
+            return NotFound();
         }
     }
 }

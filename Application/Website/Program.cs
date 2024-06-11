@@ -41,7 +41,8 @@ builder.Services.AddTransient<IReservationService, ReservationService>();
 builder.Services.AddTransient<IReservationDAL, ReservationDAL>();
 builder.Services.AddTransient<ISoftService, SoftService>();
 builder.Services.AddTransient<ISoftDAL, SoftDAL>();
-builder.Services.AddTransient<IRecommendationStrategy, RecommendationStrategy>();
+builder.Services.AddTransient<IRecommendationStrategy, AgeEventBeverageRecommendationStrategy>();
+builder.Services.AddTransient<IRecommendationStrategy, BirthdayClosenessRecommendationStrategy>();
 builder.Services.AddScoped<UserRecommender>();
 
 

@@ -15,13 +15,14 @@ namespace Classes
         public string Information { get; private set; }
         public string Username { get; private set; }
 
-        public Comments(int id, int userId, int eventId, DateTime commentDate, string information)
+        public Comments(int id, int userId, int eventId, DateTime commentDate, string information, string username)
         {
             Id = id;
             UserId = userId;
             EventId = eventId;
             CommentDate = commentDate;
             Information = information;
+            Username = username;
         }
 
         public Comments()

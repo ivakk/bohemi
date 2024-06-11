@@ -35,7 +35,7 @@ namespace DataAccessLayer
                 // Execute the query and get the data
                 while (reader.Read())
                 {
-                    comment = new Comments((int)reader["id"], (int)reader["userId"], (int)reader["eventId"], (DateTime)reader["comDate"], (string)reader["information"]);
+                    comment = new Comments((int)reader["id"], (int)reader["userId"], (int)reader["eventId"], (DateTime)reader["comDate"], (string)reader["information"], (string)reader["username"]);
                 }
             }
             catch (SqlException e)
@@ -59,7 +59,7 @@ namespace DataAccessLayer
         */
         public List<Comments> GetAllCommentsDAL(int eventId)
         {
-            string query = $"SELECT {tableName}.id, userId, eventId, comDate, information FROM {tableName} " +
+            string query = $"SELECT {tableName}.id, userId, eventId, comDate, information, username FROM {tableName} " +
                 $"JOIN Events ON Events.id = {tableName}.eventId " +
                 $"WHERE Comments.eventId = @id";
 
@@ -79,7 +79,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    comments.Add(new Comments((int)reader["id"], (int)reader["userId"], (int)reader["eventId"], (DateTime)reader["comDate"], (string)reader["information"]));
+                    comments.Add(new Comments((int)reader["id"], (int)reader["userId"], (int)reader["eventId"], (DateTime)reader["comDate"], (string)reader["information"], (string)reader["username"]));
                 }
                 return comments;
             }
@@ -103,8 +103,8 @@ namespace DataAccessLayer
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +
-                           $"(userId, eventId, information, comDate) " +
-                           $"VALUES (@userId, @eventId, @information, @comDate)";
+                           $"(userId, eventId, information, comDate, username) " +
+                           $"VALUES (@userId, @eventId, @information, @comDate, @username)";
 
             try
             {
@@ -114,9 +114,10 @@ namespace DataAccessLayer
                 SqlCommand command = new SqlCommand(query, Connection.connection);
 
                 command.Parameters.AddWithValue("@userId", comment.UserId);
-                command.Parameters.AddWithValue("@mediaId", comment.EventId);
+                command.Parameters.AddWithValue("@eventId", comment.EventId);
                 command.Parameters.AddWithValue("@information", comment.Information);
                 command.Parameters.AddWithValue("@comDate", comment.CommentDate);
+                command.Parameters.AddWithValue("@username", comment.Username);
 
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();

@@ -29,7 +29,7 @@ namespace UnitTests.MockDAL
             try
             {
                 newReport.Id = nextId++;  // Assign an ID to the new report
-                reports.Add(new Report(newReport.Id, newReport.CommentId, newReport.ReporterId, newReport.Information));
+                reports.Add(new Report(newReport.Id, newReport.CommentId, newReport.ReporterId));
                 return true;
             }
             catch 

@@ -2,3 +2,20 @@
 @model Website.Pages.PeopleYouMayLikeModel
 @{
 }
+
+<h1 class="text-center mb-4">People You May Like</h1>
+
+<div class="container-fluid">
+    <div class="d-flex flex-row flex-nowrap overflow-auto">
+        @foreach (var user in Model.RecommendedUsers)
+        {
+            <div class="card card-block mx-2" style="min-width: 300px;">
+                <img src="@Url.Page("PeopleYouMayLike", "Image", new { id = user.Id })" alt="@user.FirstName @user.LastName" class="img-fluid event-image">
+                <div class="card-body">
+                    <h5 class="card-title">@user.FirstName @user.LastName</h5>
+                    <p class="card-title">@user.Username<small class="text-muted">@user.Birthday.ToString("MMMM dd, yyyy")</small></p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

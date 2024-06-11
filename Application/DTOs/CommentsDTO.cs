@@ -15,13 +15,14 @@ namespace DTOs
         public string Information { get; set; }
         public string Username { get; set; }
 
-        public CommentsDTO(int id, int userId, int eventId, DateTime commentDate, string information)
+        public CommentsDTO(int id, int userId, int eventId, DateTime commentDate, string information, string username)
         {
             Id = id;
             UserId = userId;
             EventId = eventId;
             CommentDate = commentDate;
             Information = information;
+            Username = username;
         }
 
         public CommentsDTO()

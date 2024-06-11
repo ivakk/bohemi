@@ -16,7 +16,7 @@ namespace UnitTests
         public void CreateCommentDAL_AddsComment_ReturnsTrue()
         {
             // Arrange
-            var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is a test comment");
+            var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is a test comment", "testuser");
 
             MockCommentsDAL _mockCommentsDAL = new MockCommentsDAL();
             CommentsService _commentsLL = new CommentsService(_mockCommentsDAL);
@@ -33,7 +33,7 @@ namespace UnitTests
         public void GetCommentById_ReturnsComment_WhenIdIsValid()
         {
             // Arrange
-            var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is another test comment");
+            var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is another test comment", "testuser");
 
             MockCommentsDAL _mockCommentsDAL = new MockCommentsDAL();
             CommentsService _commentsLL = new CommentsService(_mockCommentsDAL);
@@ -53,7 +53,7 @@ namespace UnitTests
         public void DeleteComment_RemovesComment_WhenIdIsValid()
         {
             // Arrange
-            var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is yet another test comment");
+            var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is yet another test comment", "testuser");
 
             MockCommentsDAL _mockCommentsDAL = new MockCommentsDAL();
             CommentsService _commentsLL = new CommentsService(_mockCommentsDAL);
@@ -73,8 +73,8 @@ namespace UnitTests
         public void GetAllComments_ReturnsAllCommentsForEvent()
         {
             // Arrange
-            var newComment1 = new CommentsDTO(0, 1, 1, DateTime.Now, "Comment one for event");
-            var newComment2 = new CommentsDTO(0, 2, 1, DateTime.Now, "Comment two for event");
+            var newComment1 = new CommentsDTO(0, 1, 1, DateTime.Now, "Comment one for event", "testuser");
+            var newComment2 = new CommentsDTO(0, 2, 1, DateTime.Now, "Comment two for event", "testuser");
 
             MockCommentsDAL _mockCommentsDAL = new MockCommentsDAL();
             CommentsService _commentsLL = new CommentsService(_mockCommentsDAL);
