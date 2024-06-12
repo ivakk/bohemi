@@ -607,11 +607,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\Website\\Website.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\Website.csproj",
       "projectName": "Website",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\Website\\Website.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\Website.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\Website\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -628,26 +628,26 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\Classes\\Classes.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\Classes\\Classes.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Classes\\Classes.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\CustomExceptions\\CustomExceptions.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\CustomExceptions.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\CustomExceptions.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\DTOs\\DTOs.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\DTOs.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\InterfacesLL\\InterfacesLL.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesLL\\InterfacesLL.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\LogicLayer\\LogicLayer.csproj"
+            "C:\\Users\\ivk\\Desktop\\y\\Application\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\LogicLayer\\LogicLayer.csproj"
             }
           }
         }

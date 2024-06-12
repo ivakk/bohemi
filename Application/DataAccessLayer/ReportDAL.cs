@@ -35,7 +35,7 @@ namespace DataAccessLayer
                 // Execute the query and get the data
                 while (reader.Read())
                 {
-                    report = new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"]);
+                    report = new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"], reader.GetBoolean("handled"));
                 }
             }
             catch (SqlException e)
@@ -75,7 +75,7 @@ namespace DataAccessLayer
 
                 while (reader.Read())
                 {
-                    reports.Add(new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"]));
+                    reports.Add(new Report((int)reader["id"], (int)reader["commentId"], (int)reader["reporterId"], reader.GetBoolean("handled")));
                 }
                 return reports;
             }
@@ -99,8 +99,8 @@ namespace DataAccessLayer
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +
-                           $"(id, commentId, reporterId) " +
-                           $"VALUES (@id, @commentId, @reporterId)";
+                           $"(id, commentId, reporterId, handled) " +
+                           $"VALUES (@id, @commentId, @reporterId, @handled)";
 
             try
             {
@@ -112,6 +112,7 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@id", report.Id);
                 command.Parameters.AddWithValue("@commentId", report.CommentId);
                 command.Parameters.AddWithValue("@reporterId", report.ReporterId);
+                command.Parameters.AddWithValue("@handled", report.Handled);
 
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
@@ -150,6 +151,45 @@ namespace DataAccessLayer
                 command.Parameters.AddWithValue("@id", id);
                 // Execute the query and get the data
                 using SqlDataReader reader = command.ExecuteReader();
+            }
+            catch (SqlException e)
+            {
+                // Handle any errors that may have occurred.
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return false;
+        }
+
+        public bool UpdateReportDAL(ReportDTO report)
+        {
+            // Set up the query
+            string query =
+                $"UPDATE {tableName} " +
+                $"SET handled = @handled " +
+                $"WHERE id = @id";
+
+            try
+            {
+                // Open the connection
+                connection.Open();
+                // Creating Command string to combine the query and the connection String
+                SqlCommand command = new SqlCommand(query, Connection.connection);
+
+                command.Parameters.AddWithValue("@id", report.Id);
+                command.Parameters.AddWithValue("@handled", report.Handled);
+
+                // Execute the query and get the data
+                using SqlDataReader reader = command.ExecuteReader();
+
+                return true;
             }
             catch (SqlException e)
             {

@@ -29,7 +29,7 @@ namespace UnitTests.MockDAL
             try
             {
                 newComment.Id = nextId++;
-                comments.Add(new Comments(newComment.Id, newComment.UserId, newComment.EventId, newComment.CommentDate, newComment.Information));
+                comments.Add(new Comments(newComment.Id, newComment.UserId, newComment.EventId, newComment.CommentDate, newComment.Information, "test"));
                 return true;
             }
             catch

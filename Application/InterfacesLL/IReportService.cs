@@ -14,5 +14,6 @@ namespace InterfacesLL
         List<Report> GetAllReports();
         bool CreateReport(ReportDTO report);
         bool DeleteReport(int id);
+        bool UpdateReport(ReportDTO report);
     }
 }

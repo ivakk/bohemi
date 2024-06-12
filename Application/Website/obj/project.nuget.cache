@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oe3VhhoXAbgDq2kLtTdW+M+dxtkyVWKgi/dV/maPE8GX7WNCwkDKi2V0KOUGnWHF03sLaf2AMV+h6ckkkOHQNQ==",
+  "dgSpecHash": "lkQEqhn4ggMQIb8R1cADxjC1/WMq9EQB/1SOkqLMqd9YYFdYPp1WojOQqpiEaXqOf2yFO6we6HFbOf0RiLjffw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ivk\\Desktop\\t\\bohemi\\Application\\Website\\Website.csproj",
+  "projectFilePath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\Website.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ivk\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ivk\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

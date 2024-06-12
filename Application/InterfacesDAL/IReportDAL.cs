@@ -14,5 +14,6 @@ namespace InterfacesDAL
         List<Report> GetAllReportsDAL();
         bool CreateReportDAL(ReportDTO report);
         bool DeleteReportDAL(int id);
+        bool UpdateReportDAL(ReportDTO report);
     }
 }

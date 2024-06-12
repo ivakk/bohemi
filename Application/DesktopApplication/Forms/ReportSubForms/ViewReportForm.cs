@@ -25,6 +25,7 @@ namespace DesktopApplication.Forms.ReportSubForms
         ReportForm reportForm;
 
         private int reportId;
+        Report curReport;
         public ViewReportForm(ReportForm reportForm, IReportService _reportService, ICommentsService _commentsService, IUserService _userService)
         {
             InitializeComponent();
@@ -35,56 +36,23 @@ namespace DesktopApplication.Forms.ReportSubForms
         }
 
 
-        public void SetMovieId(int id)
+        public void SetReportId(int id)
         {
-            if (id == 0)
+            curReport = _reportService.GetReportById(id);
+            reportId = curReport.Id;
+            tbReported.Text = _commentsService.GetCommentById(curReport.CommentId).Username;
+            tbComment.Text = _commentsService.GetCommentById(curReport.CommentId).Information;
+            tbReporter.Text = _userService.GetUserById(curReport.ReporterId).Username;
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            bool success = _reportService.UpdateReport(new ReportDTO(reportId, curReport.CommentId, curReport.ReporterId, true));
+            if (success)
             {
-                reportId = 0;
-                tbTitle.Text = "";
-                tbDescription.Text = "";
-                dtpDate.Value = DateTime.Now;
-                pbPicture.Image = Properties.Resources.defaultPfp;
-            }
-            else
-            {
-                Report curReport = _reportService.GetReportById(id);
-                //eventId = curEvent.Id;
-                //tbTitle.Text = curEvent.Title;
-                //tbDescription.Text = curEvent.Description;
-                //dtpDate.Value = curEvent.Day;
+                reportForm.menu.ChangeShownForm(reportForm);
+                this.Hide();
+                reportForm.dgvReports.DataSource = _reportService.GetAllReports();
             }
         }
-        //private void btnAdd_Click(object sender, EventArgs e)
-        //{
-        //    if (tbTitle.Text == "" || tbDescription.Text == "" || dtpDate.Text == "" || pbPicture == null)
-        //    {
-        //        MessageBox.Show("All fields are required!");
-        //    }
-        //    else
-        //    {
-        //        EventDTO events = new EventDTO(eventId, tbTitle.Text, tbDescription.Text,
-        //            dtpDate.Value, ImageToByteArray(pbPicture));
-        //        if (eventId == 0)
-        //        {
-        //            bool success = _eventLL.CreateEvent(events);
-        //            if (success)
-        //            {
-        //                eventForm.menu.ChangeShownForm(eventForm);
-        //                this.Hide();
-        //                eventForm.dgvEvents.DataSource = _eventLL.GetEventsBySearch("");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            bool success = _eventLL.UpdateEvent(events);
-        //            if (success)
-        //            {
-        //                eventForm.menu.ChangeShownForm(eventForm);
-        //                this.Hide();
-        //                eventForm.dgvEvents.DataSource = _eventLL.GetEventsBySearch("");
-        //            }
-        //        }
-        //    }
-        //}
     }
 }

@@ -178,8 +178,8 @@ namespace UnitTests
             List<Users> recommendedUsers = recommender.RecommendUsers(currentUser, users, events, beverages);
 
             // Assert
-            // Since the AgeEventDrink strategy requires 3 events and 1 drink, and we've removed these, the recommender should switch to the BirthdayCloseness strategy.
-            // Thus, we expect the results to be based on birthday closeness rather than shared events/drinks.
+            // Since AgeEventBeverage strategy requires 3 events and 1 drink and we've removed these, the recommender should switch to BirthdayCloseness strategy.
+            // Hence, we expect the results to be based on birthday closeness rather than shared events/drinks.
             Assert.True(recommendedUsers.All(u => u.Id != currentUser.Id)); // Ensure no self-recommendation
             Assert.True(recommendedUsers.SequenceEqual(users.Where(u => u.Id != currentUser.Id && Math.Abs(u.Birthday.Year - currentUser.Birthday.Year) <= 5)
                                                             .OrderBy(u => Math.Abs((u.Birthday - currentUser.Birthday).Days))));

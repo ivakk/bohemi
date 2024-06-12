@@ -26,12 +26,12 @@ namespace DesktopApplication.Forms
         private readonly IUserService _userService;
 
 
-        public ReportForm(Menu menu, IReportService _reportService, ICommentsService _commentsService, IUserService _userService)
+        public ReportForm(Menu menu, IReportService reportService, ICommentsService commentsService, IUserService userService)
         {
             InitializeComponent();
-            this._reportService = _reportService;
-            this._commentsService = _commentsService;
-            this._userService = _userService;
+            this._reportService = reportService;
+            this._commentsService = commentsService;
+            this._userService = userService;
 
             viewReportForm = new ReportSubForms.ViewReportForm(this, _reportService, _commentsService, _userService) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
             this.menu = menu;
@@ -45,7 +45,7 @@ namespace DesktopApplication.Forms
         private void btnEdit_Click(object sender, EventArgs e)
         {
             Report report = (Report)dgvReports.CurrentRow.DataBoundItem;
-            //viewReportForm.SetMovieId(events.Id);
+            viewReportForm.SetReportId(report.Id);
             menu.pnlMain.Controls.Clear();
             this.menu.pnlMain.Controls.Add(viewReportForm);
             viewReportForm.Show();
@@ -53,17 +53,9 @@ namespace DesktopApplication.Forms
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Event events = (Event)dgvReports.CurrentRow.DataBoundItem;
-            _reportService.DeleteReport(events.Id);
+            Report report = (Report)dgvReports.CurrentRow.DataBoundItem;
+            _reportService.DeleteReport(report.Id);
             dgvReports.DataSource = _reportService.GetAllReports();
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            //viewReportForm.SetMovieId(0);
-            menu.pnlMain.Controls.Clear();
-            this.menu.pnlMain.Controls.Add(viewReportForm);
-            viewReportForm.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

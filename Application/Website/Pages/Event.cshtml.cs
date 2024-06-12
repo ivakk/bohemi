@@ -114,7 +114,7 @@ namespace Website.Pages
             }
             else
             {
-                return RedirectToPage("/Account/Login");
+                return RedirectToPage("/Login");
             }
         }
         public bool CanDeleteComment(int id)
@@ -170,31 +170,39 @@ namespace Website.Pages
         }
         public IActionResult OnPostReportComment(int id, int commentId)
         {
-            try
+            //Checks whether anyone is logged inm
+            if (User.FindFirst("id") != null)
             {
-                var comment = _commentsService.GetCommentById(commentId);
-                if (comment != null)
+                try
                 {
-                    _reportService.CreateReport(new ReportDTO(0, commentId, int.Parse(User.FindFirst("id").Value)));
+                    var comment = _commentsService.GetCommentById(commentId);
+                    if (comment != null)
+                    {
+                        _reportService.CreateReport(new ReportDTO(0, commentId, int.Parse(User.FindFirst("id").Value), false));
 
-                    // Re-fetch event data and other necessary data
+                        // Re-fetch event data and other necessary data
+                        Event = _eventService.GetEventById(id);
+                        Comments = _commentsService.GetAllComments(id);
+
+                        return RedirectToPage(new { id = id });
+                    }
+
                     Event = _eventService.GetEventById(id);
                     Comments = _commentsService.GetAllComments(id);
 
                     return RedirectToPage(new { id = id });
                 }
-
-                Event = _eventService.GetEventById(id);
-                Comments = _commentsService.GetAllComments(id);
-
-                return RedirectToPage(new { id = id });
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex.Message);
+                    Event = _eventService.GetEventById(id);
+                    Comments = _commentsService.GetAllComments(id);
+                    return RedirectToPage(new { id = id });
+                }
             }
-            catch (Exception ex)
+            else
             {
-                Debug.WriteLine(ex.Message);
-                Event = _eventService.GetEventById(id);
-                Comments = _commentsService.GetAllComments(id);
-                return RedirectToPage(new { id = id });
+                return RedirectToPage("/Login");
             }
         }
     }

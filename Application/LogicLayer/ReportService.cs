@@ -63,5 +63,21 @@ namespace LogicLayer
                 return _reportDAL.GetReportByIdDAL(id);
             }
         }
+
+        public bool UpdateReport(ReportDTO report)
+        {
+            if (report == null)
+            {
+                return false;
+            }
+            else if (report.Id == null || string.IsNullOrEmpty(report.CommentId.ToString()) || string.IsNullOrEmpty(report.ReporterId.ToString()))
+            {
+                return false;
+            }
+            else
+            {
+                return _reportDAL.UpdateReportDAL(report);
+            }
+        }
     }
 }
