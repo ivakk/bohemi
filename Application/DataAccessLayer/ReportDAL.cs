@@ -99,8 +99,8 @@ namespace DataAccessLayer
         {
             // Set up the query
             string query = $"INSERT INTO {tableName} " +
-                           $"(id, commentId, reporterId, handled) " +
-                           $"VALUES (@id, @commentId, @reporterId, @handled)";
+                           $"(commentId, reporterId, handled) " +
+                           $"VALUES (@commentId, @reporterId, @handled)";
 
             try
             {
@@ -109,7 +109,6 @@ namespace DataAccessLayer
                 // Creating Command string to combine the query and the connection String
                 SqlCommand command = new SqlCommand(query, Connection.connection);
 
-                command.Parameters.AddWithValue("@id", report.Id);
                 command.Parameters.AddWithValue("@commentId", report.CommentId);
                 command.Parameters.AddWithValue("@reporterId", report.ReporterId);
                 command.Parameters.AddWithValue("@handled", report.Handled);

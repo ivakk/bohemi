@@ -20,9 +20,8 @@ namespace InterfacesDAL
         bool IsEmailUsedDAL(string email);
         bool DeleteUserDAL(int id);
         Users GetUserByUsernameDAL(string username);
-        public List<Users> GetAllUsersDAL();
+        List<Users> GetAllUsersDAL();
         bool UpdateUserDAL(UpdateUserDTO updateUser);
-        UpdateUserDTO GetUserForUpdateDTODAL(int id);
         Tuple<string, string> hashSaltDAL(string username);
     }
 }

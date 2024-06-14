@@ -172,42 +172,5 @@ namespace DataAccessLayer
             }
             return false;
         }
-
-        public string GetCommentUserDAL(int id)
-        {
-            string query = $"SELECT Users.username FROM {tableName} JOIN Users ON Users.id = {tableName}.userId WHERE {tableName}.id = @id";
-            string commenter = null;
-
-            try
-            {
-                connection.Open();
-                
-
-                SqlCommand command = new SqlCommand(query, Connection.connection);
-                command.Parameters.AddWithValue("@id", id);
-
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    commenter = new string((string)reader["username"]);
-                }
-            }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-            return commenter;
-        }
     }
 }

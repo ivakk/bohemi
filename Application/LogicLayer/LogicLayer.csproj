@@ -10,6 +10,7 @@
     <ProjectReference Include="..\Classes\Classes.csproj" />
     <ProjectReference Include="..\CustomExceptions\CustomExceptions.csproj" />
     <ProjectReference Include="..\DTOs\DTOs.csproj" />
+    <ProjectReference Include="..\Enums\Enums.csproj" />
     <ProjectReference Include="..\InterfacesDAL\InterfacesDAL.csproj" />
     <ProjectReference Include="..\InterfacesLL\InterfacesLL.csproj" />
   </ItemGroup>

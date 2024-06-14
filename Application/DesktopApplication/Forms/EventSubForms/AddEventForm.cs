@@ -68,7 +68,7 @@ namespace DesktopApplication.Forms.EventSubForms
                     {
                         eventForm.menu.ChangeShownForm(eventForm);
                         this.Hide();
-                        eventForm.dgvEvents.DataSource = _eventService.GetPaginationEventsAsync(1, 20, "");
+                        eventForm.dgvEvents.DataSource = _eventService.GetFirstEvents(10);
                     }
                 }
                 else
@@ -78,7 +78,7 @@ namespace DesktopApplication.Forms.EventSubForms
                     {
                         eventForm.menu.ChangeShownForm(eventForm);
                         this.Hide();
-                        eventForm.dgvEvents.DataSource = _eventService.GetPaginationEventsAsync(1, 20, "");
+                        eventForm.dgvEvents.DataSource = _eventService.GetFirstEvents(10);
                     }
                 }
             }

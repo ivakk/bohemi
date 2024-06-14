@@ -8,7 +8,7 @@ using InterfacesLL;
 
 namespace LogicLayer
 {
-    public class PasswordHashingService : IPasswordHashingService
+    internal class PasswordHashingService : IPasswordHashingService
     {
         public PasswordHashingService()
         {

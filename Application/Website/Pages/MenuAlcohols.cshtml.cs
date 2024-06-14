@@ -9,7 +9,7 @@ namespace Website.Pages
 {
     public class MenuAlcoholsModel : PageModel
     {
-        public List<Alcohol> AlcoholList { get; set; }
+        public List<Alcohol>? AlcoholList { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public int CurrentPage { get; set; } = 1;
@@ -21,10 +21,12 @@ namespace Website.Pages
         public bool IsLoggedIn { get; set; }
 
         private readonly IAlcoholService _alcoholService;
+        private readonly IUserService _userService;
 
-        public MenuAlcoholsModel(IAlcoholService alcoholService)
+        public MenuAlcoholsModel(IAlcoholService alcoholService, IUserService _userService)
         {
             _alcoholService = alcoholService;
+            this._userService = _userService;
         }
 
         public async Task OnGetAsync()
@@ -32,6 +34,10 @@ namespace Website.Pages
             if (User.FindFirst("id") != null)
             {
                 IsLoggedIn = true;
+                if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+                {
+                    RedirectToPage("/Logout");
+                }
             }
 
             var totalItemCount = await _alcoholService.GetTotalAlcoholsCountAsync();

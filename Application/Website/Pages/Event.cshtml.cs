@@ -11,9 +11,9 @@ namespace Website.Pages
     public class EventModel : PageModel
     {
         public Event? Event { get; set; }
-        public List<Comments> Comments { get; set; }
+        public List<Comments>? Comments { get; set; }
         [BindProperty]
-        public string CommentLeft { get; set; }
+        public string? CommentLeft { get; set; }
         public string LikedButtonText => IsEventLiked ? "Liked ❤" : "Like 🤍";
         public bool IsEventLiked { get; private set; }
         public bool IsLoggedIn { get; set; }
@@ -39,8 +39,19 @@ namespace Website.Pages
                     IsEventLiked = _eventService.IsEventLiked(new LikedEvent(int.Parse(User.FindFirst("id").Value), id));
                     IsLoggedIn = true;
                 }
+
+                if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+                {
+                    RedirectToPage("/Logout");
+                }
+
                 Event = _eventService.GetEventById(id);
                 Comments = _commentsService.GetAllComments(id);
+
+                if (Event == null)
+                {
+                    Response.Redirect("/404");
+                }
             }
             catch (ArgumentNullException)
             {
@@ -48,7 +59,7 @@ namespace Website.Pages
             }
             catch (Exception)
             {
-
+                Response.Redirect("/404");
             }
         }
         public IActionResult OnGetImage(int id)
@@ -91,6 +102,12 @@ namespace Website.Pages
         }
         public IActionResult OnPostComment(int id)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewData["Error"] = "Something went wrong!";
+                return Page();
+            }
+
             //Checks whether anyone is logged inm
             if (User.FindFirst("id") != null)
             {
@@ -136,6 +153,12 @@ namespace Website.Pages
         }
         public IActionResult OnPostDeleteComment(int id, int commentId)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewData["Error"] = "Something went wrong!";
+                return Page();
+            }
+
             try
             {
                 // Authorization check: Ensure the user is allowed to delete the comment
@@ -170,6 +193,12 @@ namespace Website.Pages
         }
         public IActionResult OnPostReportComment(int id, int commentId)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewData["Error"] = "Something went wrong!";
+                return Page();
+            }
+
             //Checks whether anyone is logged inm
             if (User.FindFirst("id") != null)
             {

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\DTOs.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DTOs\\DTOs.csproj",
       "projectName": "DTOs",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\DTOs.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DTOs\\DTOs.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DTOs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

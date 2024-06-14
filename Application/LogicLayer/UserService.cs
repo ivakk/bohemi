@@ -17,12 +17,12 @@ namespace LogicLayer
     public class UserService : IUserService
     {
         private readonly IUserDAL _userDAL;
-        PasswordHashingService passwordHashingLL;
+        PasswordHashingService passwordHashingService;
 
         public UserService(IUserDAL _userDAL)
         {
             this._userDAL = _userDAL;
-            passwordHashingLL = new PasswordHashingService();
+            passwordHashingService = new PasswordHashingService();
         }
 
         public bool CreateUser(RegisterDTO newUser)
@@ -46,8 +46,8 @@ namespace LogicLayer
             }
             else
             {
-                newUser.PasswordSalt = passwordHashingLL.PassSalt(10);
-                newUser.PasswordHash = passwordHashingLL.PassHash(newUser.Password, newUser.PasswordSalt);
+                newUser.PasswordSalt = passwordHashingService.PassSalt(10);
+                newUser.PasswordHash = passwordHashingService.PassHash(newUser.Password, newUser.PasswordSalt);
                 return _userDAL.CreateUserDAL(newUser);
             }
         }
@@ -64,7 +64,7 @@ namespace LogicLayer
                 return false;
             }
 
-            string hashedPasswordToCheck = passwordHashingLL.PassHash(password, hashSalt.Item2);
+            string hashedPasswordToCheck = passwordHashingService.PassHash(password, hashSalt.Item2);
 
             if (hashSalt.Item1 == hashedPasswordToCheck)
             {
@@ -83,7 +83,7 @@ namespace LogicLayer
             }
             else if (!IsPasswordCorrect(username, password))
             {
-                throw new Exception();
+                throw new InvalidDataException();
             }
             else if (IsUserBanned(GetUserByUsername(username)))
             {
@@ -98,7 +98,7 @@ namespace LogicLayer
         {
             if (id < 0)
             {
-                throw new ArgumentNullException("id");
+                throw new ArgumentNullException();
             }
             else
             {
@@ -204,8 +204,8 @@ namespace LogicLayer
             
             if (updateUser == null)
             {
-                
-                return false;
+
+                throw new ArgumentNullException();
             }
             else if (string.IsNullOrEmpty(updateUser.FirstName) || string.IsNullOrEmpty(updateUser.LastName) || updateUser.Birthday == null || string.IsNullOrEmpty(updateUser.Username) 
                  || string.IsNullOrEmpty(updateUser.Email) || string.IsNullOrEmpty(updateUser.Password) || string.IsNullOrEmpty(updateUser.PhoneNumber) 
@@ -215,11 +215,11 @@ namespace LogicLayer
             }
             else if (updateUser.Username != curDetails.Username && IsUsernameUsed(updateUser.Username) == true)
             {
-                throw new ApplicationException();
+                throw new UsernameUsedException();
             }
             else if (updateUser.Email != curDetails.Email && IsEmailUsed(updateUser.Email) == true)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new EmailUsedException();
             }
             else
             {
@@ -231,8 +231,8 @@ namespace LogicLayer
                 }
                 else
                 {
-                    updateUser.PasswordSalt = passwordHashingLL.PassSalt(10);
-                    updateUser.PasswordHash = passwordHashingLL.PassHash(updateUser.Password, updateUser.PasswordSalt);
+                    updateUser.PasswordSalt = passwordHashingService.PassSalt(10);
+                    updateUser.PasswordHash = passwordHashingService.PassHash(updateUser.Password, updateUser.PasswordSalt);
                 }
                 return _userDAL.UpdateUserDAL(updateUser);
             }
@@ -248,17 +248,6 @@ namespace LogicLayer
                 }
             }
             return result;
-        }
-        public UpdateUserDTO GetUserForUpdateDTO(int id)
-        {
-            if (id < 0)
-            {
-                throw new ArgumentNullException();
-            }
-            else
-            {
-                return _userDAL.GetUserForUpdateDTODAL(id);
-            }
         }
         public List<Users> GetFirstUsers(int count)
         {

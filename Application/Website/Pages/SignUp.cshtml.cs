@@ -2,6 +2,7 @@ using Classes;
 using CustomExceptions;
 using DTOs;
 using InterfacesLL;
+using Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -32,7 +33,7 @@ namespace Website.Pages
         public IActionResult OnPost()
         {
             RegisterDTO.Id = 0;
-            RegisterDTO.Role = "customer";
+            RegisterDTO.Role = Roles.customer.ToString();
 
             if (!ModelState.IsValid)
             {

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -230,39 +231,63 @@ namespace DataAccessLayer
                 OFFSET @Offset ROWS 
                 FETCH NEXT @PageSize ROWS ONLY;";
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
-                    command.Parameters.AddWithValue("@PageSize", pageSize);
-
-                    await connection.OpenAsync();
-                    using (var reader = await command.ExecuteReaderAsync())
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        while (await reader.ReadAsync())
+                        command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
+                        command.Parameters.AddWithValue("@PageSize", pageSize);
+
+                        await connection.OpenAsync();
+                        using (var reader = await command.ExecuteReaderAsync())
                         {
-                            softs.Add(new Soft((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
-                                    (string)reader["carbonated"]));
+                            while (await reader.ReadAsync())
+                            {
+                                softs.Add(new Soft((int)reader["id"], (byte[]?)reader["picture"], (string)reader["name"], (int)reader["size"], (decimal)reader["price"],
+                                        (string)reader["carbonated"]));
+                            }
                         }
                     }
                 }
             }
+            catch(SqlException e)
+            {
+                System.Diagnostics.Debug.WriteLine(e.Message);
+            }
+            catch(Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+            
             return softs;
         }
         public async Task<int> GetTotalSoftsCountDALAsync()
         {
             string query = $"SELECT COUNT(*) FROM {tableName}";
+            int count = 0;
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    int count = (int)await command.ExecuteScalarAsync();
-                    return count;
+                    await connection.OpenAsync();
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        count = (int)await command.ExecuteScalarAsync();
+                    }
                 }
             }
+            catch(SqlException e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            return count;
         }
         public bool LikeSoftDAL(LikedBeverage likedDrink)
         {

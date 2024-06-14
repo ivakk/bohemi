@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\Unit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomExceptions", "CustomExceptions\CustomExceptions.csproj", "{BAAAFA00-FAE4-4D98-8446-BA3AA66CFCD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{7786CE63-9809-4CEC-84DC-572D165012EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{BAAAFA00-FAE4-4D98-8446-BA3AA66CFCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAAAFA00-FAE4-4D98-8446-BA3AA66CFCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAAAFA00-FAE4-4D98-8446-BA3AA66CFCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7786CE63-9809-4CEC-84DC-572D165012EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7786CE63-9809-4CEC-84DC-572D165012EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7786CE63-9809-4CEC-84DC-572D165012EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7786CE63-9809-4CEC-84DC-572D165012EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

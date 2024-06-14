@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using InterfacesDAL;
 using Classes;
 using DTOs;
+using System.Diagnostics;
 
 namespace DataAccessLayer
 {
@@ -278,21 +279,33 @@ namespace DataAccessLayer
             string query = $"SELECT * FROM LikedDrinks";
             List<LikedBeverage> beverages = new List<LikedBeverage>();
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            try
             {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        while (reader.Read())
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            beverages.Add(new LikedBeverage((int)reader["userId"], (int)reader["drinkId"]));
+                            while (reader.Read())
+                            {
+                                beverages.Add(new LikedBeverage((int)reader["userId"], (int)reader["drinkId"]));
+                            }
                         }
                     }
                 }
             }
+            catch(SqlException e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine (e.Message);
+            }
+            
             return beverages;
         }
     }

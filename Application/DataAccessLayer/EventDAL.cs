@@ -59,27 +59,39 @@ namespace DataAccessLayer
             Event newEvent = null;
             string query = $"SELECT * FROM {tableName} WHERE id = @id";
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    command.Parameters.AddWithValue("@id", id);
-                    connection.Open();
-
-                    using (var reader = command.ExecuteReader())
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        if (reader.Read()) 
+                        command.Parameters.AddWithValue("@id", id);
+                        connection.Open();
+
+                        using (var reader = command.ExecuteReader())
                         {
-                            newEvent = new Event(
-                                (int)reader["id"],
-                                (string)reader["title"],
-                                (string)reader["description"],
-                                (DateTime)reader["day"],
-                                (byte[]?)reader["picture"]);
+                            if (reader.Read())
+                            {
+                                newEvent = new Event(
+                                    (int)reader["id"],
+                                    (string)reader["title"],
+                                    (string)reader["description"],
+                                    (DateTime)reader["day"],
+                                    (byte[]?)reader["picture"]);
+                            }
                         }
                     }
                 }
             }
+            catch (SqlException e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine (ex.Message);
+            }
+            
             return newEvent;
         }
 
@@ -121,27 +133,38 @@ namespace DataAccessLayer
         {
             List<Event> events = new List<Event>();
             string query = $"SELECT * FROM {tableName}";
-
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    connection.Open();
-
-                    using (var reader = command.ExecuteReader())
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        while (reader.Read())
+                        connection.Open();
+
+                        using (var reader = command.ExecuteReader())
                         {
-                            events.Add(new Event(
-                                (int)reader["id"], 
-                                (string)reader["title"], 
-                                (string)reader["description"], 
-                                (DateTime)reader["day"], 
-                                (byte[]?)reader["picture"]));
+                            while (reader.Read())
+                            {
+                                events.Add(new Event(
+                                    (int)reader["id"],
+                                    (string)reader["title"],
+                                    (string)reader["description"],
+                                    (DateTime)reader["day"],
+                                    (byte[]?)reader["picture"]));
+                            }
                         }
                     }
                 }
             }
+            catch (SqlException e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            catch (Exception ex) 
+            {
+                Debug.WriteLine (ex.Message);
+            }
+            
             return events;
         }
         public bool UpdateEventDAL(EventDTO updateEvent)
@@ -299,71 +322,106 @@ namespace DataAccessLayer
                 OFFSET @Offset ROWS 
                 FETCH NEXT @PageSize ROWS ONLY;";
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
-                    command.Parameters.AddWithValue("@PageSize", pageSize);
-                    command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
-
-                    await connection.OpenAsync();
-                    using (var reader = await command.ExecuteReaderAsync())
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        while (await reader.ReadAsync())
+                        command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
+                        command.Parameters.AddWithValue("@PageSize", pageSize);
+                        command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
+
+                        await connection.OpenAsync();
+                        using (var reader = await command.ExecuteReaderAsync())
                         {
-                            events.Add(new Event(
-                                (int)reader["id"],
-                                (string)reader["title"],
-                                (string)reader["description"],
-                                (DateTime)reader["day"],
-                                (byte[]?)reader["picture"]));
+                            while (await reader.ReadAsync())
+                            {
+                                events.Add(new Event(
+                                    (int)reader["id"],
+                                    (string)reader["title"],
+                                    (string)reader["description"],
+                                    (DateTime)reader["day"],
+                                    (byte[]?)reader["picture"]));
+                            }
                         }
                     }
                 }
             }
+            catch (SqlException e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            catch (Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
+            
             return events;
         }
         public async Task<int> GetTotalEventsCountDALAsync(string? searchTerm)
         {
             string query = $"SELECT COUNT(*) FROM {tableName} WHERE Events.title LIKE @searchTerm";
-
-            using (var connection = new SqlConnection(ConnectionString))
+            int count = 0;
+            try
             {
-                await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
-                    int count = (int)await command.ExecuteScalarAsync();
-                    return count;
+                    await connection.OpenAsync();
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@searchTerm", "%" + searchTerm + "%");
+                        count = (int)await command.ExecuteScalarAsync();
+                    }
                 }
             }
+            catch (SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            return count;
         }
         public List<Event> GetFirstEventsDAL(int count)
         {
             List<Event> events = new List<Event>();
             string query = $"SELECT TOP {count} * FROM {tableName} ORDER BY day DESC";
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    connection.Open();
-
-                    using (var reader = command.ExecuteReader())
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        while (reader.Read())
+                        connection.Open();
+
+                        using (var reader = command.ExecuteReader())
                         {
-                            events.Add(new Event(
-                                (int)reader["id"],
-                                (string)reader["title"],
-                                (string)reader["description"],
-                                (DateTime)reader["day"],
-                                (byte[]?)reader["picture"]));
+                            while (reader.Read())
+                            {
+                                events.Add(new Event(
+                                    (int)reader["id"],
+                                    (string)reader["title"],
+                                    (string)reader["description"],
+                                    (DateTime)reader["day"],
+                                    (byte[]?)reader["picture"]));
+                            }
                         }
                     }
                 }
             }
+            catch (SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            
             return events;
         }
         public List<LikedEvent> GetAllLikedEventsDAL()
@@ -371,21 +429,33 @@ namespace DataAccessLayer
             string query = $"SELECT * FROM LikedEvents";
             List<LikedEvent> events = new List<LikedEvent>();
 
-            using (SqlConnection connection = new SqlConnection(ConnectionString))
+            try
             {
-                connection.Open();
-
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlConnection connection = new SqlConnection(ConnectionString))
                 {
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        while (reader.Read())
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            events.Add(new LikedEvent((int)reader["userId"], (int)reader["eventId"]));
+                            while (reader.Read())
+                            {
+                                events.Add(new LikedEvent((int)reader["userId"], (int)reader["eventId"]));
+                            }
                         }
                     }
                 }
             }
+            catch(SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            
             return events;
         }
         public async Task<List<Event>> GetUserLikedEventsDALAsync(int pageNumber, int pageSize, int userId)
@@ -399,46 +469,70 @@ namespace DataAccessLayer
                 OFFSET @Offset ROWS 
                 FETCH NEXT @PageSize ROWS ONLY;";
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
-                    command.Parameters.AddWithValue("@PageSize", pageSize);
-                    command.Parameters.AddWithValue("@userId", userId);
-
-                    await connection.OpenAsync();
-                    using (var reader = await command.ExecuteReaderAsync())
+                    using (var command = new SqlCommand(query, connection))
                     {
-                        while (await reader.ReadAsync())
+                        command.Parameters.AddWithValue("@Offset", (pageNumber - 1) * pageSize);
+                        command.Parameters.AddWithValue("@PageSize", pageSize);
+                        command.Parameters.AddWithValue("@userId", userId);
+
+                        await connection.OpenAsync();
+                        using (var reader = await command.ExecuteReaderAsync())
                         {
-                            events.Add(new Event(
-                                (int)reader["id"],
-                                (string)reader["title"],
-                                (string)reader["description"],
-                                (DateTime)reader["day"],
-                                (byte[]?)reader["picture"]));
+                            while (await reader.ReadAsync())
+                            {
+                                events.Add(new Event(
+                                    (int)reader["id"],
+                                    (string)reader["title"],
+                                    (string)reader["description"],
+                                    (DateTime)reader["day"],
+                                    (byte[]?)reader["picture"]));
+                            }
                         }
                     }
                 }
             }
+            catch(SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            
             return events;
         }
 
         public async Task<int> GetUserLikedEventsCountDALAsync(int userId)
         {
             string query = $"SELECT COUNT(*) FROM LikedEvents WHERE userId = @userId";
+            int count = 0;
 
-            using (var connection = new SqlConnection(ConnectionString))
+            try
             {
-                await connection.OpenAsync();
-                using (var command = new SqlCommand(query, connection))
+                using (var connection = new SqlConnection(ConnectionString))
                 {
-                    command.Parameters.AddWithValue("@userId", userId);
-                    int count = (int)await command.ExecuteScalarAsync();
-                    return count;
+                    await connection.OpenAsync();
+                    using (var command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@userId", userId);
+                        count = (int)await command.ExecuteScalarAsync();
+                    }
                 }
             }
+            catch(SqlException ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            return count;
         }
     }
 }

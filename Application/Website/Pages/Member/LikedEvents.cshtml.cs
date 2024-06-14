@@ -1,5 +1,6 @@
 using Classes;
 using InterfacesLL;
+using LogicLayer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -20,13 +21,24 @@ namespace Website.Pages.Member
         public bool IsLoggedIn { get; set; }
 
         private readonly IEventService _eventService;
+        private readonly IUserService _userService;
 
-        public LikedEventsModel(IEventService _eventService)
+        public LikedEventsModel(IEventService _eventService, IUserService _userService)
         {
             this._eventService = _eventService;
+            this._userService = _userService;
         }
         public async Task OnGetAsync()
         {
+            //Checks whether there is a user currently logged in
+            if (User.FindFirst("id") != null)
+            {
+                IsLoggedIn = true;
+                if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+                {
+                    RedirectToPage("/Logout");
+                }
+            }
             var totalItemCount = await _eventService.GetUserLikedEventsCountAsync(int.Parse(User.FindFirst("id").Value));
             TotalPages = (int)Math.Ceiling(totalItemCount / (double)PageSize);
 
