@@ -7,7 +7,7 @@ namespace Website.Pages
 {
     public class MenuSoftDrinksModel : PageModel
     {
-        public List<Soft> SoftList { get; set; }
+        public List<Soft>? SoftList { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public int CurrentPage { get; set; } = 1;
@@ -19,10 +19,12 @@ namespace Website.Pages
         public bool IsLoggedIn { get; set; }
 
         private readonly ISoftService _softService;
+        private readonly IUserService _userService;
 
-        public MenuSoftDrinksModel(ISoftService softService)
+        public MenuSoftDrinksModel(ISoftService softService, IUserService _userService)
         {
             _softService = softService;
+            this._userService = _userService;
         }
 
         public async Task OnGetAsync()
@@ -30,6 +32,10 @@ namespace Website.Pages
             if (User.FindFirst("id") != null)
             {
                 IsLoggedIn = true;
+                if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+                {
+                    RedirectToPage("/Logout");
+                }
             }
 
             var totalItemCount = await _softService.GetTotalSoftsCountAsync();

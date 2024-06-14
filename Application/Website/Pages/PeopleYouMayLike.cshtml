@@ -1,6 +1,7 @@
 ﻿@page
 @model Website.Pages.PeopleYouMayLikeModel
 @{
+    Layout = "_LoggedInLayout";
 }
 
 <h1 class="text-center mb-4">People You May Like</h1>
@@ -13,7 +14,7 @@
                 <img src="@Url.Page("PeopleYouMayLike", "Image", new { id = user.Id })" alt="@user.FirstName @user.LastName" class="img-fluid event-image">
                 <div class="card-body">
                     <h5 class="card-title">@user.FirstName @user.LastName</h5>
-                    <p class="card-title">@user.Username<small class="text-muted">@user.Birthday.ToString("MMMM dd, yyyy")</small></p>
+                    <p class="card-title">@user.Username   <small class="text-muted">@user.Birthday.ToString("MMMM dd, yyyy")</small></p>
                 </div>
             </div>
         }

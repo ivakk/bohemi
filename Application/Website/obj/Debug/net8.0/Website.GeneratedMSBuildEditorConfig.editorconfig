@@ -9,99 +9,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Website
 build_property.RootNamespace = Website
-build_property.ProjectDir = C:\Users\ivk\Desktop\y\Application\Website\
+build_property.ProjectDir = C:\Users\ivk\Desktop\v - Copy\Application\Website\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ivk\Desktop\y\Application\Website
+build_property.MSBuildProjectDirectory = C:\Users\ivk\Desktop\v - Copy\Application\Website
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/404.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/404.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcNDA0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Alcohol.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Alcohol.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxjb2hvbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Error.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Event.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Event.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Events.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Events.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZlbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Index.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Login.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Logout.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Member/LikedDrinks.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyXExpa2VkRHJpbmtzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Member/LikedEvents.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Member/LikedEvents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyXExpa2VkRXZlbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Member/Settings.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Member/Settings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVtYmVyXFNldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/MenuAlcohols.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/MenuAlcohols.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudUFsY29ob2xzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/MenuSoftDrinks.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/MenuSoftDrinks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudVNvZnREcmlua3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/PeopleYouMayLike.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/PeopleYouMayLike.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlWW91TWF5TGlrZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Privacy.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/SignUp.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/SoftDrink.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/SoftDrink.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29mdERyaW5rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/_ViewImports.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/_ViewStart.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Shared/_Layout.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y1m2c1ijh3
 
-[C:/Users/ivk/Desktop/y/Application/Website/Pages/Shared/_LoggedInLayout.cshtml]
+[C:/Users/ivk/Desktop/v - Copy/Application/Website/Pages/Shared/_LoggedInLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dnZWRJbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-fftjar0ame

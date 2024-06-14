@@ -488,47 +488,6 @@ namespace DataAccessLayer
                 connection.Close();
             }
         }
-        public UpdateUserDTO GetUserForUpdateDTODAL(int id)
-        {
-            UpdateUserDTO user = null;
-            string query = $"SELECT * FROM {tableName} WHERE id = @id";
-
-
-            try
-            {
-                // Open the connection
-                connection.Open();
-
-                SqlCommand command = new SqlCommand(query, connection);
-
-                // Add the parameters
-                command.Parameters.AddWithValue("@id", id);
-
-                // Execute the query and get the data
-                using SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    user = new UpdateUserDTO((int)reader["id"], (byte[]?)reader["profilePicture"], (string)reader["firstName"], (string)reader["lastName"], 
-                        (DateTime)reader["birthdate"], (string)reader["username"], (string)reader["email"], (string)reader["password"],
-                        !string.IsNullOrEmpty(reader["phoneNumber"].ToString()) ? (string)reader["phoneNumber"] : null, 
-                        (string)reader["role"]);
-                }
-            }
-            catch (SqlException e)
-            {
-                // Handle any errors that may have occurred.
-                System.Diagnostics.Debug.WriteLine(e.Message);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-            finally
-            {
-                connection.Close();
-            }
-            return user;
-        }
         public Tuple<string, string> hashSaltDAL(string username)
         {
             string query = $"SELECT passwordHash, passwordSalt FROM {tableName} WHERE username = @username";

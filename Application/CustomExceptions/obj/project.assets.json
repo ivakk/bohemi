@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\CustomExceptions.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\CustomExceptions\\CustomExceptions.csproj",
       "projectName": "CustomExceptions",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\CustomExceptions.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\CustomExceptions\\CustomExceptions.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\CustomExceptions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",

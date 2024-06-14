@@ -32,11 +32,10 @@ namespace DesktopApplication
         private readonly ICommentsService _commentsService;
         private readonly IEventService _eventService;
         private readonly IReportService _reportService;
-        private readonly IReservationService _reservationService;
         private readonly ISoftService _softService;
 
-        public Menu(Login login, IUserService userService, IAlcoholService alcoholService, ICommentsService commentsService, IEventService eventService, IReportService reportService,
-                     IReservationService reservationService, ISoftService softService)
+        public Menu(Login login, IUserService userService, IAlcoholService alcoholService, ICommentsService commentsService, IEventService eventService, IReportService reportService, 
+                    ISoftService softService)
         {
             this.login = login;
             //this.loggedInUser = user;
@@ -45,7 +44,6 @@ namespace DesktopApplication
             this._commentsService = commentsService;
             this._eventService = eventService;
             this._reportService = reportService;
-            this._reservationService = reservationService;
             this._softService = softService;
 
             userForm = new UserForm(this, _userService) { Dock = DockStyle.Fill, TopLevel = false, TopMost = true, FormBorderStyle = FormBorderStyle.None };
@@ -63,7 +61,7 @@ namespace DesktopApplication
             menuButtons.Add(new MenuButtonUC("Events", eventForm, this));
             menuButtons.Add(new MenuButtonUC("Reports", reportForm, this));
             menuButtons.Add(new MenuButtonUC("Alcohols", alcoholForm, this));
-            menuButtons.Add(new MenuButtonUC("Softs", userForm, this));
+            menuButtons.Add(new MenuButtonUC("Softs", alcoholForm, this));
             foreach (MenuButtonUC button in menuButtons)
             {
                 flpMenu.Controls.Add(button);

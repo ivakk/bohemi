@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using Enums;
 
 namespace LogicLayer
 {
@@ -71,18 +72,6 @@ namespace LogicLayer
                 return _commentsDAL.GetCommentByIdDAL(id);
             }
         }
-
-        public string GetCommentUser(int id)
-        {
-            if (id < 0)
-            {
-                throw new ArgumentNullException();
-            }
-            else
-            {
-                return _commentsDAL.GetCommentUserDAL(id);
-            }
-        }
         public bool CanUserDeleteComment(int userId, string userRole, int commenterId)
         {
             if (userId < 0 || string.IsNullOrWhiteSpace(userRole) || commenterId < 0)
@@ -90,7 +79,7 @@ namespace LogicLayer
                 throw new ArgumentNullException();
             }
 
-            if (userId == commenterId || userRole == "admin")
+            if (userId == commenterId || userRole == Roles.admin.ToString())
             {
                 return true;
             }

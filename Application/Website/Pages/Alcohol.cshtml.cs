@@ -1,7 +1,9 @@
 ﻿using Classes;
 using InterfacesLL;
+using LogicLayer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Diagnostics;
 
 namespace Website.Pages
@@ -14,10 +16,12 @@ namespace Website.Pages
         public bool IsLoggedIn { get; set; }
 
         private readonly IAlcoholService _alcoholService;
+        private readonly IUserService _userService;
 
-        public AlcoholModel(IAlcoholService alcoholService)
+        public AlcoholModel(IAlcoholService alcoholService, IUserService _userService)
         {
             _alcoholService = alcoholService;
+            this._userService = _userService;
         }
         public void OnGet(int id)
         {
@@ -27,6 +31,10 @@ namespace Website.Pages
                 {
                     IsAlcoholLiked = _alcoholService.IsAlcoholLiked(new LikedBeverage(int.Parse(User.FindFirst("id").Value), id));
                     IsLoggedIn = true;
+                    if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+                    {
+                        RedirectToPage("/Logout");
+                    }
                 }
                 Alcohol = _alcoholService.GetAlcoholById(id);
             }
@@ -36,7 +44,7 @@ namespace Website.Pages
             }
             catch (Exception)
             {
-
+                Response.Redirect("/404");
             }
         }
         public IActionResult OnGetImage(int id)
@@ -50,6 +58,12 @@ namespace Website.Pages
         }
         public IActionResult OnPostToggleLiked(int alcoholId)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewData["Error"] = "Something went wrong!";
+                return Page();
+            }
+
             try
             {
                 if (User.FindFirst("id") != null)

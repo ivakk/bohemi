@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDistributedMemoryCache();
 
+
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -37,13 +38,12 @@ builder.Services.AddTransient<ICommentsService, CommentsService>();
 builder.Services.AddTransient<ICommentsDAL, CommentsDAL>();
 builder.Services.AddTransient<IReportService, ReportService>();
 builder.Services.AddTransient<IReportDAL, ReportDAL>();
-builder.Services.AddTransient<IReservationService, ReservationService>();
-builder.Services.AddTransient<IReservationDAL, ReservationDAL>();
 builder.Services.AddTransient<ISoftService, SoftService>();
 builder.Services.AddTransient<ISoftDAL, SoftDAL>();
 builder.Services.AddTransient<IRecommendationStrategy, AgeEventBeverageRecommendationStrategy>();
 builder.Services.AddTransient<IRecommendationStrategy, BirthdayClosenessRecommendationStrategy>();
 builder.Services.AddScoped<UserRecommender>();
+builder.Services.AddScoped<StrategyManager>();
 
 
 var app = builder.Build();
@@ -51,8 +51,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseExceptionHandler("/404");
+    app.UseStatusCodePagesWithReExecute("/404");
     app.UseHsts();
 }
 
@@ -66,6 +66,20 @@ app.UseAuthorization();
 
 app.UseSession();
 
+app.UseStatusCodePages(async context =>
+{
+    if (context.HttpContext.Response.StatusCode == 404)
+    {
+        context.HttpContext.Response.Redirect("/404");
+    }
+});
+
 app.MapRazorPages();
+
+app.MapFallback(context =>
+{
+    context.Response.Redirect("/404");
+    return Task.CompletedTask;
+});
 
 app.Run();

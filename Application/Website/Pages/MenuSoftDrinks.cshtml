@@ -1,6 +1,10 @@
 ﻿@page
 @model Website.Pages.MenuSoftDrinksModel
 @{
+    @if (Model.IsLoggedIn == true)
+    {
+        Layout = "_LoggedInLayout";
+    }
 }
 
 <div class="container mt-5 mb-5">

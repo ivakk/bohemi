@@ -1,0 +1,11 @@
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\bin\Debug\net8.0\Enums.deps.json
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\bin\Debug\net8.0\Enums.dll
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\bin\Debug\net8.0\Enums.pdb
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\Enums.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\Enums.AssemblyInfoInputs.cache
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\Enums.AssemblyInfo.cs
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\Enums.csproj.CoreCompileInputs.cache
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\Enums.dll
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\refint\Enums.dll
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\Enums.pdb
+C:\Users\ivk\Desktop\v - Copy\Application\Enums\obj\Debug\net8.0\ref\Enums.dll

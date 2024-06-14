@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using CustomExceptions;
+using Enums;
 
 namespace DesktopApplication
 {
@@ -22,11 +23,9 @@ namespace DesktopApplication
         private readonly ICommentsService _commentsService;
         private readonly IEventService _eventService;
         private readonly IReportService _reportService;
-        private readonly IReservationService _reservationService;
         private readonly ISoftService _softService;
 
-        public Login(IUserService _userService, IAlcoholService _alcoholService, ICommentsService _commentsService, IEventService eventService, IReportService reportService, 
-                     IReservationService reservationService, ISoftService softService)
+        public Login(IUserService _userService, IAlcoholService _alcoholService, ICommentsService _commentsService, IEventService eventService, IReportService reportService, ISoftService softService)
         {
             InitializeComponent();
             this._userService = _userService;
@@ -34,7 +33,6 @@ namespace DesktopApplication
             this._commentsService = _commentsService;
             this._eventService = eventService;
             this._reportService = reportService;
-            this._reservationService = reservationService;
             this._softService = softService;
         }
 
@@ -68,10 +66,10 @@ namespace DesktopApplication
                 {
                     UserDTO user = _userService.CheckUser(usernameEntry.Text, passwordEntry.Text);
 
-                    if (user.Role == "admin")
+                    if (user.Role == Roles.admin.ToString())
                     {
 
-                        Menu menu = new Menu(this, _userService, _alcoholService, _commentsService, _eventService, _reportService, _reservationService, _softService);
+                        Menu menu = new Menu(this, _userService, _alcoholService, _commentsService, _eventService, _reportService, _softService);
                         menu.Show();
                         this.Hide();
                     }

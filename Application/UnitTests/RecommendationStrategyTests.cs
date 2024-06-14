@@ -99,7 +99,7 @@ namespace UnitTests
 
             // Assert
             var orderedUsers = recommendedUsers.Select(u => u.Id).ToList();
-            Assert.Equal(new List<int> { 4, 2 }, orderedUsers); // Expected order based on birthday closeness
+            Assert.Equal(new List<int> { 4, 5, 2 }, orderedUsers); // Expected order based on birthday closeness
         }
 
         [Fact]
@@ -167,7 +167,8 @@ namespace UnitTests
             List<LikedBeverage> beverages = mockStrategyDAL.GetAllBeverages();
             AgeEventBeverageRecommendationStrategy ageEventBeverageStrategy = new AgeEventBeverageRecommendationStrategy();
             BirthdayClosenessRecommendationStrategy birthdayClosenessStrategy = new BirthdayClosenessRecommendationStrategy();
-            UserRecommender recommender = new UserRecommender(ageEventBeverageStrategy, birthdayClosenessStrategy);
+            var strategyManager = new StrategyManager();
+            UserRecommender recommender = new UserRecommender(strategyManager);
             Users currentUser = users[0]; // Assuming User 1
 
             // Remove sufficient event and drink data for the current user
@@ -183,6 +184,77 @@ namespace UnitTests
             Assert.True(recommendedUsers.All(u => u.Id != currentUser.Id)); // Ensure no self-recommendation
             Assert.True(recommendedUsers.SequenceEqual(users.Where(u => u.Id != currentUser.Id && Math.Abs(u.Birthday.Year - currentUser.Birthday.Year) <= 5)
                                                             .OrderBy(u => Math.Abs((u.Birthday - currentUser.Birthday).Days))));
+        }
+        [Fact]
+        public void Recommender_UsesPrimaryStrategyEfficiently_WhenSufficient()
+        {
+            // Arrange
+            var mockStrategyDAL = new MockStrategyDAL();
+            var users = mockStrategyDAL.GetAllUsers();
+            var events = mockStrategyDAL.GetAllEvents();
+            var beverages = mockStrategyDAL.GetAllBeverages();
+            var strategyManager = new StrategyManager();
+            var recommender = new UserRecommender(strategyManager);
+
+            Users currentUser = users[0]; // Assuming User 1 with enough data for primary strategy
+
+            // Act
+            var recommendedUsers = recommender.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            // Verify that primary strategy provides sufficient results and secondary is not needed
+            var orderedUsers = recommendedUsers.Select(u => u.Id).ToList();
+            Assert.Equal(new List<int> { 2, 5 }, orderedUsers); // Expected order
+        }
+        [Fact]
+        public void Recommender_SwitchesStrategy_WhenPrimaryStrategyGivesFewResults()
+        {
+            // Arrange
+            var mockStrategyDAL = new MockStrategyDAL();
+            var users = mockStrategyDAL.GetAllUsers();
+            var events = mockStrategyDAL.GetAllEvents();
+            var beverages = mockStrategyDAL.GetAllBeverages();
+            var strategyManager = new StrategyManager();
+            var recommender = new UserRecommender(strategyManager);
+
+            // Assuming User 1 initially only gets zero or one recommendation using the AgeEventBeverage strategy
+            // Simulate this scenario by limiting event and beverage data to ensure only 0 or 1 user qualifies
+            Users currentUser = users[0];  // Assuming User 1
+
+            // Remove events and beverages for all but one user to limit the results from the primary strategy
+            events = events.Where(e => e.UserId == currentUser.Id || e.UserId == users[1].Id).ToList();
+            beverages = beverages.Where(b => b.UserId == currentUser.Id || b.UserId == users[1].Id).ToList();
+
+            // Act
+            var recommendedUsers = recommender.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            // Verify that the secondary strategy is invoked to augment the list of recommendations
+            // Check if more than just the primary strategy users are included
+            Assert.True(recommendedUsers.Count >= 1);
+            Assert.Contains(recommendedUsers, u => u.Id != currentUser.Id); // Ensure that other users are recommended
+            Assert.Contains(recommendedUsers, u => u.Id == users[1].Id); // User 2 matches primary strategy
+        }
+        [Fact]
+        public void Recommender_FailsToRecommend_WhenNoStrategyFindsMatches()
+        {
+            // Arrange
+            var mockStrategyDAL = new MockStrategyDAL();
+            var users = mockStrategyDAL.GetAllUsers();
+            var events = new List<LikedEvent>(); // Empty event list simulating no matching interests
+            var beverages = new List<LikedBeverage>(); // Empty beverage list simulating no matching preferences
+            var strategyManager = new StrategyManager();
+            var recommender = new UserRecommender(strategyManager);
+
+            Users currentUser = users[0]; // Assuming User 1, typically has data but here no events or beverages to match
+            users.RemoveAll(u => u.Id != currentUser.Id); // Remove all users besides User 1
+
+            // Act
+            var recommendedUsers = recommender.RecommendUsers(currentUser, users, events, beverages);
+
+            // Assert
+            // Expecting zero recommendations due to no data matching and no users birthday closeness
+            Assert.Empty(recommendedUsers);
         }
     }
 }

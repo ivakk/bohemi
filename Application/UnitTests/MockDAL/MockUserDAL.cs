@@ -12,7 +12,6 @@ namespace UnitTests.MockDAL
     public class MockUserDAL : IUserDAL
     {
         public readonly List<Users> users = new List<Users>();
-        public readonly List<Users> bannedUsers = new List<Users>();
         private int nextId = 1;  // Simulating auto-increment ID
 
         public bool CreateUserDAL(RegisterDTO newUser)

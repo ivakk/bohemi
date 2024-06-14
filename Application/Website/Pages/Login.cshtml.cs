@@ -46,6 +46,7 @@ namespace Website.Pages
 
                 var claims = new List<Claim>
                 {
+                    new Claim(ClaimTypes.Name, LoginDTO.Username),
                     new Claim("id", user.Id.ToString()),
                 };
 
@@ -60,9 +61,14 @@ namespace Website.Pages
                 ViewData["Error"] = "You are currently banned!";
                 return Page();
             }
-            catch (Exception)
+            catch (InvalidDataException)
             {
                 ViewData["Error"] = "Check your login details!";
+                return Page();
+            }
+            catch(Exception)
+            {
+                ViewData["Error"] = "Something went wrong";
                 return Page();
             }
         }

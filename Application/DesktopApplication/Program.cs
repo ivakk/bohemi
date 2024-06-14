@@ -40,8 +40,6 @@ namespace DesktopApplication
                     services.AddTransient<IAlcoholDAL, AlcoholDAL>();
                     services.AddTransient<IReportService, ReportService>();
                     services.AddTransient<IReportDAL, ReportDAL>();
-                    services.AddTransient<IReservationService, ReservationService>();
-                    services.AddTransient<IReservationDAL, ReservationDAL>();
                     services.AddTransient<ICommentsService, CommentsService>();
                     services.AddTransient<ICommentsDAL, CommentsDAL>();
                     services.AddTransient<IBeverageDAL, BeverageDAL>();

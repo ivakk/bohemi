@@ -16,6 +16,7 @@ namespace UnitTests.MockDAL
             users.Add(new Users(2, null, "Test", "User2", new DateTime(1993, 05, 15), "testuser2", "testuser2@mail.com", "0123456789", "customer")); // Within 5-year range
             users.Add(new Users(3, null, "Test", "User3", new DateTime(1987, 05, 15), "testuser3", "testuser3@mail.com", "2134567890", "customer")); // Outside 5-year range
             users.Add(new Users(4, null, "Test", "User4", new DateTime(1996, 05, 15), "testuser4", "testuser4@mail.com", "3124567890", "customer")); // Within 5-year range, no common events/drinks
+            users.Add(new Users(5, null, "Test", "User5", new DateTime(1993, 05, 17), "testuser5", "testuser5@mail.com", "4123456789", "customer")); // Within 5-year range
             return users;
         }
         public List<LikedEvent> GetAllEvents()
@@ -28,6 +29,9 @@ namespace UnitTests.MockDAL
             likedEvents.Add(new LikedEvent(2, 2));
             likedEvents.Add(new LikedEvent(2, 3));
             likedEvents.Add(new LikedEvent(4, 4));
+            likedEvents.Add(new LikedEvent(5, 1));
+            likedEvents.Add(new LikedEvent(5, 2));
+            likedEvents.Add(new LikedEvent(5, 3));
             return likedEvents;
         }
         public List<LikedBeverage> GetAllBeverages()
@@ -36,6 +40,7 @@ namespace UnitTests.MockDAL
             likedBeverages.Add(new LikedBeverage(1, 1));
             likedBeverages.Add(new LikedBeverage(2, 1));
             likedBeverages.Add(new LikedBeverage(4, 2));
+            likedBeverages.Add(new LikedBeverage(5, 1));
             return likedBeverages;
         }
     }

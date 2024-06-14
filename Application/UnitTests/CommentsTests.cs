@@ -13,7 +13,7 @@ namespace UnitTests
     public class CommentsTests
     {
         [Fact]
-        public void CreateCommentDAL_AddsComment_ReturnsTrue()
+        public void CreateComment_AddsComment_ReturnsTrue()
         {
             // Arrange
             var newComment = new CommentsDTO(0, 1, 1, DateTime.Now, "This is a test comment", "testuser");

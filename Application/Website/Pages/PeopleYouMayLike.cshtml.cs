@@ -11,14 +11,13 @@ namespace Website.Pages
     public class PeopleYouMayLikeModel : PageModel
     {
         [BindProperty]
-        public List<Users> RecommendedUsers { get; set; }
+        public List<Users>? RecommendedUsers { get; set; }
 
         private readonly UserRecommender _userRecommender;
         private readonly IUserService _userService;
         private readonly IEventService _eventService;
         private readonly IAlcoholService _alcoholService;
 
-        // Constructor injection of the UserRecommender
         public PeopleYouMayLikeModel(UserRecommender userRecommender, IUserService userService, IEventService eventService, IAlcoholService alcoholService)
         {
             _userRecommender = userRecommender;
@@ -29,6 +28,11 @@ namespace Website.Pages
 
         public void OnGet()
         {
+            if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+            {
+                RedirectToPage("/Logout");
+            }
+
             Users currentUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
             List<Users> allUsers = _userService.GetAllUsers();
             List<LikedEvent> allEvents = _eventService.GetLikedEvents();

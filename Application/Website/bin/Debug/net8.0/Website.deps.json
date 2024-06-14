@@ -12,6 +12,7 @@
           "CustomExceptions": "1.0.0",
           "DTOs": "1.0.0",
           "DataAccessLayer": "1.0.0",
+          "Enums": "1.0.0",
           "InterfacesDAL": "1.0.0",
           "InterfacesLL": "1.0.0",
           "LogicLayer": "1.0.0"
@@ -121,6 +122,11 @@
           "DTOs.dll": {}
         }
       },
+      "Enums/1.0.0": {
+        "runtime": {
+          "Enums.dll": {}
+        }
+      },
       "InterfacesDAL/1.0.0": {
         "dependencies": {
           "Classes": "1.0.0",
@@ -144,6 +150,7 @@
           "Classes": "1.0.0",
           "CustomExceptions": "1.0.0",
           "DTOs": "1.0.0",
+          "Enums": "1.0.0",
           "InterfacesDAL": "1.0.0",
           "InterfacesLL": "1.0.0"
         },
@@ -238,6 +245,11 @@
       "sha512": ""
     },
     "DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Enums/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

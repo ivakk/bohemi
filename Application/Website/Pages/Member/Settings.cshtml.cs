@@ -1,4 +1,5 @@
 using Classes;
+using CustomExceptions;
 using DTOs;
 using InterfacesLL;
 using Microsoft.AspNetCore.Authorization;
@@ -13,19 +14,18 @@ namespace Website.Pages.Member
     public class SettingsModel : PageModel
     {
         [BindProperty]
-        public UpdateUserDTO UpdateUserDTO { get; set; }
+        public UpdateUserDTO? UpdateUserDTO { get; set; }
         [BindProperty]
         public Users? LoggedInUser { get; set; }
         public bool IsLoggedIn { get; set; }
-        public IFormFile UploadedPicture { get; set; }
-        public string Message { get; set; }
+        public IFormFile? UploadedPicture { get; set; }
 
-        private string updatedFirstName;
-        private string updatedLastName;
-        private string updatedUsername;
-        private string updatedEmail;
-        private string updatedPhoneNumber;
-        private string updatedPassword;
+        private string? updatedFirstName;
+        private string? updatedLastName;
+        private string? updatedUsername;
+        private string? updatedEmail;
+        private string? updatedPhoneNumber;
+        private string? updatedPassword;
 
 
         private readonly IUserService _userService;
@@ -41,6 +41,10 @@ namespace Website.Pages.Member
             {
                 IsLoggedIn = true;
                 LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
+                if (_userService.IsUserBanned(_userService.GetUserById(int.Parse(User.FindFirst("id").Value))))
+                {
+                    RedirectToPage("/Logout");
+                }
             }
         }
         public IActionResult OnPostUploadPicture()
@@ -49,11 +53,12 @@ namespace Website.Pages.Member
             {
                 var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
                 var extension = Path.GetExtension(UploadedPicture.FileName).ToLowerInvariant();
+                LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
 
                 if (!allowedExtensions.Contains(extension))
                 {
-                    Message = "Invalid file format. Only JPG and PNG are allowed.";
-                    return Page();
+                    ViewData["Error"] = "Invalid file format. Only JPG and PNG are allowed.";
+                    return RedirectToPage(new { id = LoggedInUser.Id });
                 }
 
                 byte[] pictureBytes;
@@ -63,11 +68,10 @@ namespace Website.Pages.Member
                     pictureBytes = memoryStream.ToArray();
                 }
 
-                LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
-                UpdateUserDTO updateUser = _userService.GetUserForUpdateDTO(LoggedInUser.Id);
+                
+
                 _userService.UpdateUser(new UpdateUserDTO(LoggedInUser.Id, pictureBytes, LoggedInUser.FirstName, LoggedInUser.LastName, LoggedInUser.Birthday, LoggedInUser.Username,
-                    LoggedInUser.Email, updateUser.Password, LoggedInUser.PhoneNumber, LoggedInUser.Role));
-                Message = "File uploaded and processed successfully.";
+                    LoggedInUser.Email, "oaijsnfoiahnofsafgnasaosnfoaiosabfnaofsn", LoggedInUser.PhoneNumber, LoggedInUser.Role));
 
 
                 return RedirectToPage(new { id = LoggedInUser.Id });
@@ -76,6 +80,7 @@ namespace Website.Pages.Member
         }
         public IActionResult OnPostDetails()
         {
+
             try 
             {
                 if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8 && UpdateUserDTO.Password != UpdateUserDTO.ConfirmPassword)
@@ -86,7 +91,6 @@ namespace Website.Pages.Member
                 else
                 {
                     LoggedInUser = _userService.GetUserById(int.Parse(User.FindFirst("id").Value));
-                    Debug.WriteLine("2");
 
                     if (UpdateUserDTO.Password != null && UpdateUserDTO.Password.Length >= 8)
                     {
@@ -142,9 +146,6 @@ namespace Website.Pages.Member
                         updatedPhoneNumber = LoggedInUser.PhoneNumber;
                     }
 
-
-                    Debug.WriteLine("3");
-                    Debug.WriteLine("4");
                     UpdateUserDTO updateUser = new UpdateUserDTO(LoggedInUser.Id,
                                             LoggedInUser.ProfilePicture,
                                             updatedFirstName,
@@ -168,16 +169,14 @@ namespace Website.Pages.Member
                     }
                 }
             }
-            catch (ApplicationException)
+            catch (UsernameUsedException)
             {
                 ViewData["Error"] = "Username is already in use!";
-                System.Diagnostics.Debug.WriteLine("ne tuk");
                 return Page();
             }
-            catch (ArgumentOutOfRangeException)
+            catch (EmailUsedException)
             {
                 ViewData["Error"] = "Email address is already in use!";
-                System.Diagnostics.Debug.WriteLine("tuk");
                 return Page();
             }
             catch (Exception)

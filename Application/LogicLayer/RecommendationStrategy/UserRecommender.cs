@@ -10,45 +10,39 @@ namespace LogicLayer.RecommendationStrategy
 {
     public class UserRecommender
     {
-        private IRecommendationStrategy _strategy;
-        private readonly IRecommendationStrategy _ageEventBeverageStrategy;
-        private readonly IRecommendationStrategy _birthdayClosenessStrategy;
+        private StrategyManager _strategyManager;
 
-        public UserRecommender(IRecommendationStrategy ageEventBeverageStrategy, IRecommendationStrategy birthdayClosenessStrategy)
+        public UserRecommender(StrategyManager strategyManager)
         {
-            _ageEventBeverageStrategy = ageEventBeverageStrategy;
-            _birthdayClosenessStrategy = birthdayClosenessStrategy;
-            _strategy = ageEventBeverageStrategy;  // Default strategy
+            _strategyManager = strategyManager;
         }
 
         public List<Users> RecommendUsers(Users currentUser, List<Users> allUsers, List<LikedEvent> allEvents, List<LikedBeverage> allBeverages)
         {
-            // Check if current user has sufficient data
-            bool hasSufficientData = allEvents.Count(e => e.UserId == currentUser.Id) >= 3 &&
-                                     allBeverages.Count(d => d.UserId == currentUser.Id) >= 1;
+            // Use the StrategyManager to select the primary strategy based on the current user's data
+            IRecommendationStrategy primaryStrategy = _strategyManager.DetermineStrategy(currentUser, allEvents, allBeverages);
 
-            // Decide which strategy to use based on the data availability
-            if (hasSufficientData)
+            // Get initial recommendations using the selected primary strategy
+            List<Users> recommendedUsers = primaryStrategy.RecommendUsers(currentUser, allUsers, allEvents, allBeverages);
+
+            // Check the number of recommendations; if 1 or fewer, apply the BirthdayClosenessStrategy
+            if (recommendedUsers.Count <= 1)
             {
-                _strategy = _ageEventBeverageStrategy;
-                if (_strategy.RecommendUsers(currentUser, allUsers, allEvents, allBeverages).Count() <= 1)
+                // Assuming the BirthdayClosenessStrategy is always the secondary option when primary is insufficient
+                IRecommendationStrategy secondaryStrategy = new BirthdayClosenessRecommendationStrategy();
+                List<Users> additionalRecommendations = secondaryStrategy.RecommendUsers(currentUser, allUsers, allEvents, allBeverages);
+
+                // Add additional recommendations ensuring no duplicates
+                foreach (var user in additionalRecommendations)
                 {
-                    _strategy = _birthdayClosenessStrategy;
+                    if (!recommendedUsers.Contains(user))
+                    {
+                        recommendedUsers.Add(user);
+                    }
                 }
             }
-            else
-            {
-                _strategy = _birthdayClosenessStrategy;
-            }
 
-            // Execute the recommendation strategy
-            return _strategy.RecommendUsers(currentUser, allUsers, allEvents, allBeverages);
-        }
-
-        // Optionally expose a method to manually set the strategy if needed
-        public void SetStrategy(IRecommendationStrategy strategy)
-        {
-            _strategy = strategy;
+            return recommendedUsers;
         }
     }
 }

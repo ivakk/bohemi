@@ -14,6 +14,5 @@ namespace InterfacesDAL
         List<Comments> GetAllCommentsDAL(int eventId);
         bool CreateCommentDAL(CommentsDTO comment);
         bool DeleteCommentDAL(int id);
-        string GetCommentUserDAL(int id);
     }
 }

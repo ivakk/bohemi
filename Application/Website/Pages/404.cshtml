@@ -1,7 +1,12 @@
 ﻿@page
 @model Website.Pages._404Model
 @{
+	@if (Model.IsLoggedIn == true)
+	{
+		Layout = "_LoggedInLayout";
+	}
 }
+
 @section Tags{
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

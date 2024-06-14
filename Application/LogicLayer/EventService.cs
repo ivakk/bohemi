@@ -70,7 +70,7 @@ namespace LogicLayer
         {
             if (updateEvent == null)
             {
-                return false;
+                throw new ArgumentNullException();
             }
             else if (updateEvent.Id == null || string.IsNullOrEmpty(updateEvent.Title) || string.IsNullOrEmpty(updateEvent.Description) || string.IsNullOrEmpty(updateEvent.Day.ToString())
                  || string.IsNullOrEmpty(updateEvent.Picture.ToString()))
@@ -99,7 +99,7 @@ namespace LogicLayer
         {
             if (likedEvent == null)
             {
-                return false;
+                throw new ArgumentNullException();
             }
             else
             {

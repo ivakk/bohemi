@@ -8,7 +8,7 @@ namespace DTOs
 {
     public class BeverageDTO
     {
-        public int Id { get; }
+        public int Id { get; set; }
         public byte[] Picture { get; set; }
         public string Name { get; set; }
         public int Size { get; set; }

@@ -1,6 +1,7 @@
 ﻿using Classes;
 using DesktopApplication.Properties;
 using DTOs;
+using Enums;
 using InterfacesLL;
 using LogicLayer;
 using Microsoft.VisualBasic.ApplicationServices;
@@ -95,7 +96,7 @@ namespace DesktopApplication.Forms.UserSubForms
                         tbEmail.Text,
                         "password",
                         tbPhoneNumber.Text,
-                        "admin");
+                        Roles.admin.ToString());
                         bool success = _userService.CreateUser(user);
                         if (success)
                         {

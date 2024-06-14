@@ -193,6 +193,16 @@
           "bin/placeholder/DTOs.dll": {}
         }
       },
+      "Enums/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Enums.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Enums.dll": {}
+        }
+      },
       "InterfacesDAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -228,6 +238,7 @@
           "Classes": "1.0.0",
           "CustomExceptions": "1.0.0",
           "DTOs": "1.0.0",
+          "Enums": "1.0.0",
           "InterfacesDAL": "1.0.0",
           "InterfacesLL": "1.0.0"
         },
@@ -574,6 +585,11 @@
       "path": "../DTOs/DTOs.csproj",
       "msbuildProject": "../DTOs/DTOs.csproj"
     },
+    "Enums/1.0.0": {
+      "type": "project",
+      "path": "../Enums/Enums.csproj",
+      "msbuildProject": "../Enums/Enums.csproj"
+    },
     "InterfacesDAL/1.0.0": {
       "type": "project",
       "path": "../InterfacesDAL/InterfacesDAL.csproj",
@@ -596,6 +612,7 @@
       "CustomExceptions >= 1.0.0",
       "DTOs >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
+      "Enums >= 1.0.0",
       "InterfacesDAL >= 1.0.0",
       "InterfacesLL >= 1.0.0",
       "LogicLayer >= 1.0.0"
@@ -607,11 +624,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\Website.csproj",
+      "projectUniqueName": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Website\\Website.csproj",
       "projectName": "Website",
-      "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\Website.csproj",
+      "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Website\\Website.csproj",
       "packagesPath": "C:\\Users\\ivk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Website\\obj\\",
+      "outputPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Website\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -628,26 +645,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\Classes\\Classes.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\Classes\\Classes.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Classes\\Classes.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Classes\\Classes.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\CustomExceptions.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\CustomExceptions\\CustomExceptions.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\CustomExceptions\\CustomExceptions.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\CustomExceptions\\CustomExceptions.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\DTOs\\DTOs.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\DTOs\\DTOs.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Enums\\Enums.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\Enums\\Enums.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesLL\\InterfacesLL.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\InterfacesLL\\InterfacesLL.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\InterfacesDAL\\InterfacesDAL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\InterfacesDAL\\InterfacesDAL.csproj"
             },
-            "C:\\Users\\ivk\\Desktop\\y\\Application\\LogicLayer\\LogicLayer.csproj": {
-              "projectPath": "C:\\Users\\ivk\\Desktop\\y\\Application\\LogicLayer\\LogicLayer.csproj"
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\InterfacesLL\\InterfacesLL.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\InterfacesLL\\InterfacesLL.csproj"
+            },
+            "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\LogicLayer\\LogicLayer.csproj": {
+              "projectPath": "C:\\Users\\ivk\\Desktop\\v - Copy\\Application\\LogicLayer\\LogicLayer.csproj"
             }
           }
         }
